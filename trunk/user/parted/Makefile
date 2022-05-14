@@ -1,4 +1,4 @@
-SRC_NAME=parted-3.3
+SRC_NAME=parted-3.5
 SRC_URL=https://ftp.gnu.org/gnu/parted/$(SRC_NAME).tar.xz 
 
 CFLAGS += -ffunction-sections -fdata-sections
@@ -6,7 +6,8 @@ LDFLAGS += -Wl,--gc-sections
 
 THISDIR = $(shell pwd)
 
-all: download_test extract_test config_test
+#all: download_test extract_test config_test
+all: config_test
 	$(MAKE) -j$(HOST_NCPU) -C $(SRC_NAME)
 
 download_test:

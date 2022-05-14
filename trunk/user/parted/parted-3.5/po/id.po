@@ -1,0 +1,3257 @@
+# Pesan Bahasa Indonesia untuk GNU parted
+# Copyright (C) 2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the parted package.
+# Arif E. Nugroho <arif_endro@yahoo.com>, 2006.
+# Andhika Padmawan <andhika.padmawan@gmail.com>, 2009.
+# Arif E. Nugroho <arif_endro@yahoo.com>, 2010.
+# Andika Triwidada <andika@gmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU parted 3.4.64.2\n"
+"Report-Msgid-Bugs-To: bug-parted@gnu.org\n"
+"POT-Creation-Date: 2022-04-18 14:44-0400\n"
+"PO-Revision-Date: 2022-04-07 10:22+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 3.0\n"
+
+#: lib/argmatch.c:147
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "argumen %s tidak valid untuk %s"
+
+#: lib/argmatch.c:148
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "argumen %s ambigu untuk %s"
+
+#: lib/argmatch.c:167 lib/argmatch.h:238
+msgid "Valid arguments are:"
+msgstr "Argumen yang valid adalah:"
+
+#: lib/closeout.c:122 libparted/labels/fdasd.c:145
+msgid "write error"
+msgstr "galat tulis"
+
+#: lib/error.c:195
+msgid "Unknown system error"
+msgstr "Galat sistem tak dikenal"
+
+#: lib/getopt.c:278
+#, c-format
+msgid "%s: option '%s%s' is ambiguous\n"
+msgstr "%s: opsi '%s%s' ambigu\n"
+
+#: lib/getopt.c:284
+#, c-format
+msgid "%s: option '%s%s' is ambiguous; possibilities:"
+msgstr "%s: opsi '%s%s' ambigu; kemungkinan:"
+
+#: lib/getopt.c:319
+#, c-format
+msgid "%s: unrecognized option '%s%s'\n"
+msgstr "%s: opsi tak dikenal '%s%s'\n"
+
+#: lib/getopt.c:345
+#, c-format
+msgid "%s: option '%s%s' doesn't allow an argument\n"
+msgstr "%s: opsi '%s%s' tidak mengizinkan sebuah argumen\n"
+
+#: lib/getopt.c:360
+#, c-format
+msgid "%s: option '%s%s' requires an argument\n"
+msgstr "%s: opsi '%s%s' membutuhkan sebuah argumen\n"
+
+#: lib/getopt.c:621
+#, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: opsi tidak valid -- '%c'\n"
+
+#: lib/getopt.c:636 lib/getopt.c:682
+#, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: opsi membutuhkan sebuah argumen -- '%c'\n"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  For example, a French Unicode local should translate
+#. these to U+00AB (LEFT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), and U+00BB (RIGHT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), respectively.
+#.
+#. If the catalog has no translation, we will try to
+#. use Unicode U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. Unicode U+2019 (RIGHT SINGLE QUOTATION MARK).  If the
+#. current locale is not Unicode, locale_quoting_style
+#. will quote 'like this', and clocale_quoting_style will
+#. quote "like this".  You should always include translations
+#. for "`" and "'" even if U+2018 and U+2019 are appropriate
+#. for your locale.
+#.
+#. If you don't know what to put here, please see
+#. <https://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:355
+msgid "`"
+msgstr "'"
+
+#: lib/quotearg.c:356
+msgid "'"
+msgstr "'"
+
+#: lib/regcomp.c:122
+msgid "Success"
+msgstr "Sukses"
+
+#: lib/regcomp.c:125
+msgid "No match"
+msgstr "Tak ada yang cocok"
+
+#: lib/regcomp.c:128
+msgid "Invalid regular expression"
+msgstr "Ekspresi regular tidak valid"
+
+#: lib/regcomp.c:131
+msgid "Invalid collation character"
+msgstr "Karakter kolasi tidak valid"
+
+#: lib/regcomp.c:134
+msgid "Invalid character class name"
+msgstr "Nama kelas karakter tidak valid"
+
+#: lib/regcomp.c:137
+msgid "Trailing backslash"
+msgstr "Backslash di ekor"
+
+#: lib/regcomp.c:140
+msgid "Invalid back reference"
+msgstr "Back reference tidak valid"
+
+#: lib/regcomp.c:143
+msgid "Unmatched [, [^, [:, [., or [="
+msgstr "Tidak cocok [, [^, [:, [., atau [="
+
+#: lib/regcomp.c:146
+msgid "Unmatched ( or \\("
+msgstr "Tidak cocok ( atau \\("
+
+#: lib/regcomp.c:149
+msgid "Unmatched \\{"
+msgstr "Tidak cocok \\{"
+
+#: lib/regcomp.c:152
+msgid "Invalid content of \\{\\}"
+msgstr "Isi tidak valid dari \\{\\}"
+
+#: lib/regcomp.c:155
+msgid "Invalid range end"
+msgstr "Akhir rentang tidak valid"
+
+#: lib/regcomp.c:158
+msgid "Memory exhausted"
+msgstr "Kehabisan memori"
+
+#: lib/regcomp.c:161
+msgid "Invalid preceding regular expression"
+msgstr "Ekspresi regular pendahulu tidak valid"
+
+#: lib/regcomp.c:164
+msgid "Premature end of regular expression"
+msgstr "Akhir dini dari ekspresi reguler"
+
+#: lib/regcomp.c:167
+msgid "Regular expression too big"
+msgstr "Ekspresi regular terlalu besar"
+
+#: lib/regcomp.c:170
+msgid "Unmatched ) or \\)"
+msgstr "Tidak cocok ) atau \\)"
+
+#: lib/regcomp.c:650
+msgid "No previous regular expression"
+msgstr "Tidak ada ekpresi regular sebelumnya"
+
+#. TRANSLATORS: A regular expression testing for an affirmative answer
+#. (english: "yes").  Testing the first character may be sufficient.
+#. Take care to consider upper and lower case.
+#. To enquire the regular expression that your system uses for this
+#. purpose, you can use the command
+#. locale -k LC_MESSAGES | grep '^yesexpr='
+#: lib/rpmatch.c:150
+msgid "^[yY]"
+msgstr "^[yY]"
+
+#. TRANSLATORS: A regular expression testing for a negative answer
+#. (english: "no").  Testing the first character may be sufficient.
+#. Take care to consider upper and lower case.
+#. To enquire the regular expression that your system uses for this
+#. purpose, you can use the command
+#. locale -k LC_MESSAGES | grep '^noexpr='
+#: lib/rpmatch.c:163
+msgid "^[nN]"
+msgstr "^[tT]"
+
+#: lib/version-etc.c:73
+#, c-format
+msgid "Packaged by %s (%s)\n"
+msgstr "Dipaketkan oleh %s (%s)\n"
+
+#: lib/version-etc.c:76
+#, c-format
+msgid "Packaged by %s\n"
+msgstr "Dipaketkan oleh %s\n"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:83
+msgid "(C)"
+msgstr "(C)"
+
+#. TRANSLATORS: The %s placeholder is the web address of the GPL license.
+#: lib/version-etc.c:88
+#, c-format
+msgid ""
+"License GPLv3+: GNU GPL version 3 or later <%s>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+msgstr ""
+"Lisensi GPLv3+: GNU GPL versi 3 atau yang lebih baru <%s>.\n"
+"Ini adalah perangkat lunak bebas: Anda bebas mengubah dan mendistribusikan "
+"ulang.\n"
+"Tidak ada GARANSI, yang dilindungi oleh hukum yang berlaku.\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:105
+#, c-format
+msgid "Written by %s.\n"
+msgstr "Ditulis oleh %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:109
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "Ditulis oleh %s dan %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:113
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "Ditulis oleh %s, %s, dan %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:120
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Ditulis oleh %s, %s, %s,\n"
+"dan %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:127
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Ditulis oleh %s, %s, %s,\n"
+"%s, dan %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:134
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"Ditulis oleh %s, %s, %s,\n"
+"%s, %s, dan %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:142
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"Ditulis oleh %s, %s, %s,\n"
+"%s, %s, %s, dan %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:150
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Ditulis oleh %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"dan %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:159
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Ditulis oleh %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, dan %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:170
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"Ditulis oleh %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, dan yang lainnya.\n"
+
+#. TRANSLATORS: The placeholder indicates the bug-reporting address
+#. for this package.  Please add _another line_ saying
+#. "Report translation bugs to <...>\n" with the address for translation
+#. bugs (typically your translation team's web or email address).
+#: lib/version-etc.c:249
+#, c-format
+msgid "Report bugs to: %s\n"
+msgstr "Laporkan bug ke: %s\n"
+
+#: lib/version-etc.c:251
+#, c-format
+msgid "Report %s bugs to: %s\n"
+msgstr "Laporkan bug %s ke: %s\n"
+
+#: lib/version-etc.c:255 lib/version-etc.c:257
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "Beranda %s: <%s>\n"
+
+#: lib/version-etc.c:260
+#, c-format
+msgid "General help using GNU software: <%s>\n"
+msgstr "Bantuan umum memakai peranti lunak GNU: <%s>\n"
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "kehabisan memori"
+
+#: libparted/arch/beos.c:246
+msgid "Disk Image"
+msgstr "Image Disk"
+
+#: libparted/arch/beos.c:347 libparted/arch/gnu.c:349
+#: libparted/arch/linux.c:1732
+#, c-format
+msgid "Error opening %s: %s"
+msgstr "Galat saat membuka %s: %s"
+
+#: libparted/arch/beos.c:358 libparted/arch/gnu.c:359
+#: libparted/arch/linux.c:1743
+#, c-format
+msgid "Unable to open %s read-write (%s).  %s has been opened read-only."
+msgstr ""
+"Tidak dapat membuka %s untuk baca-tulis (%s).  %s telah dibuka hanya-baca."
+
+#: libparted/arch/beos.c:420 libparted/arch/linux.c:1908
+#, c-format
+msgid "%s during seek for read on %s"
+msgstr "%s selama seek untuk dibaca pada %s"
+
+#: libparted/arch/beos.c:453 libparted/arch/gnu.c:497 libparted/arch/gnu.c:596
+#: libparted/arch/gnu.c:724 libparted/arch/linux.c:1868
+#: libparted/arch/linux.c:1950
+#, c-format
+msgid "%s during read on %s"
+msgstr "%s selama pembacaan pada %s"
+
+#: libparted/arch/beos.c:489 libparted/arch/gnu.c:557
+#: libparted/arch/linux.c:2027
+#, c-format
+msgid "Can't write to %s, because it is opened read-only."
+msgstr "Tidak bisa menulis ke %s, karena ini dibuka secara hanya-baca."
+
+#: libparted/arch/beos.c:505 libparted/arch/linux.c:2052
+#, c-format
+msgid "%s during seek for write on %s"
+msgstr "%s selama seek untuk menulis pada %s"
+
+#: libparted/arch/beos.c:542 libparted/arch/gnu.c:633 libparted/arch/gnu.c:678
+#: libparted/arch/gnu.c:755 libparted/arch/linux.c:2000
+#: libparted/arch/linux.c:2095 libparted/arch/linux.c:2168
+#, c-format
+msgid "%s during write on %s"
+msgstr "%s selama penulisan pada %s"
+
+#: partprobe/partprobe.c:149
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Coba '%s --help' untuk informasi lebih lanjut.\n"
+
+#: partprobe/partprobe.c:153
+#, c-format
+msgid "Usage: %s [OPTION] [DEVICE]...\n"
+msgstr "Penggunaan: %s [OPSI] [PERANGKAT]...\n"
+
+#: partprobe/partprobe.c:154
+msgid ""
+"Inform the operating system about partition table changes.\n"
+"\n"
+"  -d, --dry-run    do not actually inform the operating system\n"
+"  -s, --summary    print a summary of contents\n"
+"  -h, --help       display this help and exit\n"
+"  -v, --version    output version information and exit\n"
+msgstr ""
+"Beritahukan sistem operasi tentang perubahan tabel partisi.\n"
+"\n"
+"  -d, --dry-run    jangan informasikan ke sistem operasi\n"
+"  -s, --summary    tampilkan rangkuman dari isi\n"
+"  -h, --help       tampilkan bantuan ini dan keluar\n"
+"  -v, --version    keluarkan informasi versi dan keluar\n"
+
+#: partprobe/partprobe.c:162
+msgid ""
+"\n"
+"When no DEVICE is given, probe all partitions.\n"
+msgstr ""
+"\n"
+"Jika tak ada PERANGKAT yang diberikan, selidiki seluruh partisi.\n"
+
+#: partprobe/partprobe.c:166
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"\n"
+"Laporkan bug ke <%s>.\n"
+
+#: libparted/arch/gnu.c:110
+#, c-format
+msgid "Unable to open %s."
+msgstr "Tidak dapat membuka %s."
+
+#: libparted/arch/gnu.c:130
+msgid "Unable to probe store."
+msgstr "Tidak dapat memprobe store."
+
+#: libparted/arch/gnu.c:235
+#, c-format
+msgid ""
+"WARNING: the kernel failed to re-read the partition table on %s (%s).  As a "
+"result, it may not reflect all of your changes until after reboot."
+msgstr ""
+"PERINGATAN: kernel gagal membaca ulang tabel partisi pada %s (%s).  "
+"Akibatnya, itu mungkin tidak mencerminkan semua perubahan Anda sampai "
+"setelah reboot."
+
+#: libparted/arch/gnu.c:261
+#, c-format
+msgid ""
+"Warning: unable to open %s (%s). As a result, it may not reflect all of your "
+"changes until after reboot."
+msgstr ""
+"Peringatan: tidak dapat membuka %s (%s). Akibatnya, itu mungkin tidak "
+"mencerminkan semua perubahan Anda sampai setelah reboot."
+
+#: libparted/arch/gnu.c:274
+#, c-format
+msgid ""
+"Warning: failed to make translator go away on %s (%s). As a result, it may "
+"not reflect all of your changes until after reboot."
+msgstr ""
+"Peringatan: gagal membuat penerjemah pergi pada %s (%s). Akibatnya, itu "
+"mungkin tidak mencerminkan semua perubahan Anda sampai setelah reboot."
+
+#: libparted/arch/gnu.c:820
+#, c-format
+msgid "%s trying to sync %s to disk"
+msgstr "%s mencoba untuk mensinkronisasi %s ke disk"
+
+#: libparted/arch/linux.c:633
+#, c-format
+msgid "Could not stat device %s - %s."
+msgstr "Tidak dapat men-stat perangkat %s - %s."
+
+#: libparted/arch/linux.c:690
+#, c-format
+msgid "Unable to determine the dm type of %s."
+msgstr "Tidak dapat menentukan tipe dm dari %s."
+
+#: libparted/arch/linux.c:774 libparted/arch/linux.c:907
+#, c-format
+msgid ""
+"Could not determine sector size for %s: %s.\n"
+"Using the default sector size (%lld)."
+msgstr ""
+"Tidak dapat menentukan ukuran sektor untuk %s: %s.\n"
+"Menggunakan baku ukuran sektor (%lld)."
+
+#: libparted/arch/linux.c:795
+#, c-format
+msgid ""
+"Could not determine physical sector size for %s.\n"
+"Using the logical sector size (%lld)."
+msgstr ""
+"Tidak dapat menentukan ukuran sektor fisik untuk %s.\n"
+"Menggunakan ukuran sektor logis (%lld)."
+
+#: libparted/arch/linux.c:855
+#, c-format
+msgid "Unable to determine the size of %s (%s)."
+msgstr "Tidak dapat menentukan ukuran dari %s (%s)."
+
+#: libparted/arch/linux.c:958 libparted/arch/linux.c:973
+msgid "Generic IDE"
+msgstr "IDE Generik"
+
+#: libparted/arch/linux.c:963
+#, c-format
+msgid "Could not get identity of device %s - %s"
+msgstr "Tidak dapat memperoleh identitas dari perangkat %s - %s"
+
+#: libparted/arch/linux.c:994
+#, c-format
+msgid ""
+"Device %s has multiple (%d) logical sectors per physical sector.\n"
+"GNU Parted supports this EXPERIMENTALLY for some special disk label/file "
+"system combinations, e.g. GPT and ext2/3.\n"
+"Please consult the web site for up-to-date information."
+msgstr ""
+"Perangkat %s memiliki beberapa (%d) sektor logis dalam setiap sektor fisik.\n"
+"GNU Parted mendukung ini dalam tahap PERCOBAAN untuk beberapa kombinasi "
+"label disk label/sistem berkas khusus, contoh GPT dan ext2/3.\n"
+"Silakan lihat situs web untuk informasi terbaru."
+
+#: libparted/arch/linux.c:1172
+#, c-format
+msgid "Error initialising SCSI device %s - %s"
+msgstr "Galat saat menginisialisasi perangkat SCSI %s - %s"
+
+#: libparted/arch/linux.c:1236
+#, c-format
+msgid ""
+"The device %s is so small that it cannot possibly store a file system or "
+"partition table.  Perhaps you selected the wrong device?"
+msgstr ""
+"Perangkat %s sangat kecil sehingga tidak mungkin menyimpan sistem berkas "
+"atau tabel partisi.  Mungkin Anda memilih perangkat yang salah?"
+
+#: libparted/arch/linux.c:1349
+#, c-format
+msgid ""
+"Unable to determine geometry of file/device %s.  You should not use Parted "
+"unless you REALLY know what you're doing!"
+msgstr ""
+"Tidak dapat menentukan geometri dari berkas/perangkat %s.  Anda seharusnya "
+"tidak menggunakan Parted kecuali Anda BENAR-BENAR tahu apa yang Anda lakukan!"
+
+#: libparted/arch/linux.c:1409
+msgid "Generic SD/MMC Storage Card"
+msgstr "Kartu Penyimpanan SD/MMC Generik"
+
+#: libparted/arch/linux.c:1423
+msgid "NVMe Device"
+msgstr "Perangkat NVMe"
+
+#: libparted/arch/linux.c:1484
+msgid "DAC960 RAID controller"
+msgstr "Pengendali RAID DAC960"
+
+#: libparted/arch/linux.c:1489
+msgid "Promise SX8 SATA Device"
+msgstr "Perangkat Promise SX8 SATA"
+
+#: libparted/arch/linux.c:1494
+msgid "ATA over Ethernet Device"
+msgstr "Perangkat ATA over Ethernet"
+
+#: libparted/arch/linux.c:1500
+msgid "IBM S390 DASD drive"
+msgstr "Drive DASD IBM S390"
+
+#: libparted/arch/linux.c:1506
+msgid "IBM iSeries Virtual DASD"
+msgstr "DASD Virtual IBM iSeries"
+
+#: libparted/arch/linux.c:1511
+msgid "Compaq Smart Array"
+msgstr "Compaq Smart Array"
+
+#: libparted/arch/linux.c:1521
+msgid "NVDIMM Device"
+msgstr "Perangkat NVDIMM"
+
+#: libparted/arch/linux.c:1526
+msgid "ATARAID Controller"
+msgstr "Pengendali ATARAID"
+
+#: libparted/arch/linux.c:1531
+msgid "I2O Controller"
+msgstr "Pengendali I2O"
+
+#: libparted/arch/linux.c:1536
+msgid "User-Mode Linux UBD"
+msgstr "UBD Linux Mode-Pengguna"
+
+#: libparted/arch/linux.c:1546
+msgid "Loopback device"
+msgstr "Perangkat loopback"
+
+#: libparted/arch/linux.c:1554
+#, c-format
+msgid "Linux device-mapper (%s)"
+msgstr "Device-mapper Linux (%s)"
+
+#: libparted/arch/linux.c:1565
+msgid "Xen Virtual Block Device"
+msgstr "Divais Blok Virtual Xen"
+
+#: libparted/arch/linux.c:1570
+msgid "Unknown"
+msgstr "Tak Dikenal"
+
+#: libparted/arch/linux.c:1579
+msgid "Virtio Block Device"
+msgstr "Divais Blok Virtio"
+
+#: libparted/arch/linux.c:1584
+msgid "Linux Software RAID Array"
+msgstr "Larik RAID Perangkat Lunak Linux"
+
+#: libparted/arch/linux.c:1589
+msgid "RAM Drive"
+msgstr "Drive RAM"
+
+#: libparted/arch/linux.c:1596
+msgid "ped_device_new()  Unsupported device type"
+msgstr "ped_device_new()  Tipe perangkat tidak disupport"
+
+#: libparted/arch/linux.c:1690 libparted/arch/linux.c:1775
+#, c-format
+msgid "Error fsyncing/closing %s: %s"
+msgstr "Galat saat fsync/menutup %s: %s"
+
+#: libparted/arch/linux.c:1949
+#, c-format
+msgid "%0.0send of file while reading %s"
+msgstr "%0.0s akhir berkas saat membaca %s"
+
+#: libparted/arch/linux.c:2691
+#, c-format
+msgid ""
+"Error informing the kernel about modifications to partition %s -- %s.  This "
+"means Linux won't know about any changes you made to %s until you reboot -- "
+"so you shouldn't mount it or use it in any way before rebooting."
+msgstr ""
+"Gagal memberitahukan kernel mengenai modifikasi ke partisi %s -- %s.  Ini "
+"berarti Linux tidak tahu tentang segala perubahan yang Anda buat pada %s "
+"sampai Anda me-reboot -- jadi Anda seharusnya tidak mengait itu atau "
+"menggunakannya dalam segala cara sebelum reboot."
+
+#: libparted/arch/linux.c:2811
+#, c-format
+msgid "Unable to determine the start and length of %s."
+msgstr "Tidak dapat menentukan awal dan panjang %s."
+
+#: libparted/arch/linux.c:3225
+#, c-format
+msgid ""
+"Partition(s) %s on %s have been written, but we have been unable to inform "
+"the kernel of the change, probably because it/they are in use.  As a result, "
+"the old partition(s) will remain in use.  You should reboot now before "
+"making further changes."
+msgstr ""
+"Partisi %s pada %s telah ditulis, tetapi kami tidak dapat menginformasikan "
+"kernel tentang perubahan tersebut, mungkin karena itu sedang digunakan.  "
+"Akibatnya, partisi lama akan tetap digunakan.  Anda harus reboot sekarang "
+"sebelum membuat perubahan lebih lanjut."
+
+#: libparted/cs/geom.c:163
+#, c-format
+msgid "Can't have the end before the start! (start sector=%jd length=%jd)"
+msgstr ""
+"Tidak bisa punya (nilai) akhir kurang dari (nilai) awal! (sektor awal=%jd "
+"panjang=%jd)"
+
+#: libparted/cs/geom.c:379
+#, c-format
+msgid "Attempt to write sectors %ld-%ld outside of partition on %s."
+msgstr "Mencoba untuk menulis sektor %ld-%ld di luar partisi pada %s."
+
+#: libparted/cs/geom.c:419
+msgid "checking for bad blocks"
+msgstr "memeriksa blok rusak"
+
+#: libparted/debug.c:97
+#, c-format
+msgid "Backtrace has %d calls on stack:\n"
+msgstr "Backtrace memiliki %d panggilan di stack:\n"
+
+#: libparted/debug.c:110
+#, c-format
+msgid "Assertion (%s) at %s:%d in function %s() failed."
+msgstr "Asersi (%s) di %s:%d dalam fungsi %s() gagal."
+
+#: libparted/disk.c:194
+#, c-format
+msgid "%s: unrecognised disk label"
+msgstr "%s: label diska tak dikenal"
+
+#: libparted/disk.c:487
+#, c-format
+msgid ""
+"This libparted doesn't have write support for %s.  Perhaps it was compiled "
+"read-only."
+msgstr ""
+"libparted ini tidak memiliki dukungan tulis untuk %s.  Mungkin ini "
+"dikompilasi untuk mode hanya baca."
+
+#: libparted/disk.c:632
+#, c-format
+msgid "Partition %d is %s, but the file system is %s."
+msgstr "Partisi %d adalah %s, tetapi sistem berkasnya adalah %s."
+
+#: libparted/disk.c:841
+msgid "cylinder_alignment"
+msgstr "cylinder_alignment"
+
+#: libparted/disk.c:843
+msgid "pmbr_boot"
+msgstr "pmbr_boot"
+
+#: libparted/disk.c:848
+#, c-format
+msgid "Unknown disk flag, %d."
+msgstr "Flag diska tak dikenal, %d."
+
+#: libparted/disk.c:1289
+#, c-format
+msgid "%s disk labels do not support extended partitions."
+msgstr "Label diska %s tidak mendukung partisi extended."
+
+#: libparted/disk.c:1821
+#, c-format
+msgid "%s disk labels don't support logical or extended partitions."
+msgstr "Label diska %s tidak mendukung partisi logis atau extended."
+
+#: libparted/disk.c:1834
+msgid "Too many primary partitions."
+msgstr "Terlalu banyak partisi primer."
+
+#: libparted/disk.c:1843
+#, c-format
+msgid ""
+"Can't add a logical partition to %s, because there is no extended partition."
+msgstr ""
+"Tidak dapat menambahkan sebuah partisi logis pada %s, karena di sana tidak "
+"ada partisi extended."
+
+#: libparted/disk.c:1867
+#, c-format
+msgid "Can't have more than one extended partition on %s."
+msgstr "Tidak dapat memiliki lebih dari satu partisi extended pada %s."
+
+#: libparted/disk.c:1877
+msgid "Can't have logical partitions outside of the extended partition."
+msgstr "Tidak dapat memiliki partisi logis di luar dari partisi extended."
+
+#: libparted/disk.c:1902
+#, c-format
+msgid "Can't have a logical partition outside of the extended partition on %s."
+msgstr "Tidak dapat memiliki partisi logis di luar partisi extended pada %s."
+
+#: libparted/disk.c:1912
+msgid "Can't have a primary partition inside an extended partition."
+msgstr "Tidak dapat memiliki partisi primer di dalam sebuah partisi extended."
+
+#: libparted/disk.c:1921
+msgid "Can't have a partition outside the disk!"
+msgstr "Tidak dapat memiliki partisi di luar dari disk!"
+
+#: libparted/disk.c:1972 libparted/disk.c:2150
+msgid "Can't have overlapping partitions."
+msgstr "Tidak dapat memiliki partisi yang tumpang tindih."
+
+#: libparted/disk.c:2351
+msgid "metadata"
+msgstr "metadata"
+
+#: libparted/disk.c:2353
+msgid "free"
+msgstr "free"
+
+#: libparted/disk.c:2355 parted/ui.c:1271 parted/ui.c:1299
+msgid "extended"
+msgstr "extended"
+
+#: libparted/disk.c:2357 parted/ui.c:1275 parted/ui.c:1303
+msgid "logical"
+msgstr "logis"
+
+#: libparted/disk.c:2359 parted/ui.c:1267 parted/ui.c:1295
+msgid "primary"
+msgstr "primer"
+
+#: libparted/disk.c:2375
+msgid "boot"
+msgstr "boot"
+
+#: libparted/disk.c:2377
+msgid "bios_grub"
+msgstr "bios_grub"
+
+#: libparted/disk.c:2379
+msgid "root"
+msgstr "root"
+
+#: libparted/disk.c:2381
+msgid "swap"
+msgstr "swap"
+
+#: libparted/disk.c:2383
+msgid "hidden"
+msgstr "tersembunyi"
+
+#: libparted/disk.c:2385
+msgid "raid"
+msgstr "raid"
+
+#: libparted/disk.c:2387
+msgid "lvm"
+msgstr "lvm"
+
+#: libparted/disk.c:2389
+msgid "lba"
+msgstr "lba"
+
+#: libparted/disk.c:2391
+msgid "hp-service"
+msgstr "hp-service"
+
+#: libparted/disk.c:2393
+msgid "palo"
+msgstr "palo"
+
+#: libparted/disk.c:2395
+msgid "prep"
+msgstr "prep"
+
+#: libparted/disk.c:2397
+msgid "msftres"
+msgstr "msftres"
+
+#: libparted/disk.c:2399
+msgid "msftdata"
+msgstr "msftdata"
+
+#: libparted/disk.c:2401
+msgid "atvrecv"
+msgstr "atvrecv"
+
+#: libparted/disk.c:2403
+msgid "diag"
+msgstr "diag"
+
+#: libparted/disk.c:2405
+msgid "legacy_boot"
+msgstr "legacy_boot"
+
+#: libparted/disk.c:2407
+msgid "irst"
+msgstr "irst"
+
+#: libparted/disk.c:2409
+msgid "esp"
+msgstr "esp"
+
+#: libparted/disk.c:2411
+msgid "chromeos_kernel"
+msgstr "chromeos_kernel"
+
+#: libparted/disk.c:2413
+msgid "bls_boot"
+msgstr "bls_boot"
+
+#: libparted/disk.c:2415
+msgid "linux-home"
+msgstr "linux-home"
+
+#: libparted/disk.c:2421
+#, c-format
+msgid "Unknown partition flag, %d."
+msgstr "Flag partisi tak dikenal, %d."
+
+#: libparted/exception.c:79
+msgid "Information"
+msgstr "Informasi"
+
+#: libparted/exception.c:80
+msgid "Warning"
+msgstr "Peringatan"
+
+#: libparted/exception.c:81
+msgid "Error"
+msgstr "Galat"
+
+#: libparted/exception.c:82
+msgid "Fatal"
+msgstr "Fatal"
+
+#: libparted/exception.c:83
+msgid "Bug"
+msgstr "Bug"
+
+#: libparted/exception.c:84
+msgid "No Implementation"
+msgstr "Tidak ada Implementasi"
+
+#: libparted/exception.c:88
+msgid "Fix"
+msgstr "Perbaiki"
+
+#: libparted/exception.c:89
+msgid "Yes"
+msgstr "Ya"
+
+#: libparted/exception.c:90
+msgid "No"
+msgstr "Tidak"
+
+#: libparted/exception.c:91
+msgid "OK"
+msgstr "OK"
+
+#: libparted/exception.c:92
+msgid "Retry"
+msgstr "Coba Lagi"
+
+#: libparted/exception.c:93
+msgid "Ignore"
+msgstr "Abaikan"
+
+#: libparted/exception.c:94
+msgid "Cancel"
+msgstr "Batal"
+
+#: libparted/exception.c:134
+#, c-format
+msgid ""
+"A bug has been detected in GNU Parted.  Refer to the web site of parted "
+"http://www.gnu.org/software/parted/parted.html for more information of what "
+"could be useful for bug submitting!  Please email a bug report to %s "
+"containing at least the version (%s) and the following message:  "
+msgstr ""
+"Sebuah bug telah terdeteksi dalam GNU parted. Lihat ke situs web dari parted "
+"di http://www.gnu.org/software/parted/parted.html untuk informasi lebih "
+"lanjut tentang apa yang mungkin berguna dalam mengirimkan laporan bug!  "
+"Tolong kirim surel laporan bug ke %s berisi setidaknya versi (%s) dan pesan "
+"berikut ini:  "
+
+#: libparted/labels/aix.c:92
+msgid "Support for reading AIX disk labels is is not implemented yet."
+msgstr "Dukungan untuk membaca label disk AIX belum diimplementasikan."
+
+#: libparted/labels/aix.c:103
+msgid "Support for writing AIX disk labels is is not implemented yet."
+msgstr "Dukungan untuk menulis label disk AIX belum diimplementasikan."
+
+#: libparted/labels/aix.c:116
+msgid ""
+"Support for adding partitions to AIX disk labels is not implemented yet."
+msgstr ""
+"Dukungan untuk menambahkan partisi ke label disk AIX belum diimplementasikan."
+
+#: libparted/labels/aix.c:126
+msgid ""
+"Support for duplicating partitions in AIX disk labels is not implemented yet."
+msgstr ""
+"Dukungan untuk menduplikasi partisi dalam label disk AIX belum "
+"diimplementasikan."
+
+#: libparted/labels/aix.c:144
+msgid ""
+"Support for setting system type of partitions in AIX disk labels is not "
+"implemented yet."
+msgstr ""
+"Dukungan untuk mengatur tipe partisi sistem di label disk AIX belum "
+"diimplementasikan."
+
+#: libparted/labels/aix.c:154
+msgid "Support for setting flags in AIX disk labels is not implemented yet."
+msgstr ""
+"Dukungan untuk mengatur flag di label disk AIX belum diimplementasikan."
+
+#: libparted/labels/atari.c:278
+#, c-format
+msgid ""
+"Can't use Atari partition tables on disks with a sector size not equal to %d "
+"bytes."
+msgstr ""
+"Tidak dapat menggunakan tabel partisi Atari pada disk dengan ukuran sektor "
+"yang tidak sama dengan %d byte."
+
+#: libparted/labels/atari.c:290
+#, c-format
+msgid "Can't use Atari partition tables on disks with more than %d sectors."
+msgstr ""
+"Tidak dapat menggunakan tabel partisi Atari pada disk dengan lebih dari %d "
+"sektor."
+
+#: libparted/labels/atari.c:403
+msgid ""
+"Too many Atari partitions detected.  Maybe there is a loop in the XGM linked "
+"list.  Aborting."
+msgstr ""
+"Terlalu banyak partisi Atari yang terdeteksi.  Mungkin ada loop dalam daftar "
+"tertaut XGM.  Menggugurkan."
+
+#: libparted/labels/atari.c:601
+#, c-format
+msgid "No data partition found in the ARS at sector %lli."
+msgstr "Tidak ada partisi data yang ditemukan dalam ARS pada sektor %lli."
+
+#: libparted/labels/atari.c:622
+#, c-format
+msgid ""
+"The entry of the next logical ARS is not of type XGM in ARS at sector %lli."
+msgstr ""
+"Entri ARS logis berikutnya bukan dari tipe XGM dalam ARS pada sektor %lli."
+
+#: libparted/labels/atari.c:653
+#, c-format
+msgid ""
+"There doesn't seem to be an Atari partition table on this disk (%s), or it "
+"is corrupted."
+msgstr ""
+"Tampaknya tidak ada tabel partisi Atari pada disk ini (%s), atau rusak."
+
+#: libparted/labels/atari.c:883
+#, c-format
+msgid "No room at sector %lli to store ARS of logical partition %d."
+msgstr ""
+"Tidak ada ruang di sektor %lli untuk menyimpan ARS dari partisi logis %d."
+
+#: libparted/labels/atari.c:890
+#, c-format
+msgid "No room at sector %lli to store ARS."
+msgstr "Tidak ada ruang di sektor %lli untuk menyimpan ARS."
+
+#: libparted/labels/atari.c:967
+msgid ""
+"The sector count that is stored in the partition table does not correspond "
+"to the size of your device.  Do you want to fix the partition table?"
+msgstr ""
+"Cacah sektor yang disimpan dalam tabel partisi tidak sesuai dengan ukuran "
+"perangkat Anda.  Apakah Anda ingin memperbaiki tabel partisi?"
+
+#: libparted/labels/atari.c:1008
+#, c-format
+msgid "No room at sector %lli to store BSL."
+msgstr "Tidak ada ruang di sektor %lli untuk menyimpan BSL."
+
+#: libparted/labels/atari.c:1116
+msgid "There were remaining partitions after filling the main AHDI table."
+msgstr "Ada partisi yang tersisa setelah mengisi tabel AHDI utama."
+
+#: libparted/labels/atari.c:1135
+msgid ""
+"The main AHDI table has been filled with all partitions but the ICD table is "
+"not empty so more partitions of unknown size and position will be detected "
+"by ICD compatible software.  Do you want to invalidate the ICD table?"
+msgstr ""
+"Tabel AHDI utama telah diisi dengan semua partisi tetapi tabel ICD tidak "
+"kosong sehingga lebih banyak partisi dengan ukuran dan posisi yang tidak "
+"diketahui akan terdeteksi oleh perangkat lunak yang kompatibel dengan ICD.  "
+"Apakah Anda ingin membatalkan tabel ICD?"
+
+#: libparted/labels/atari.c:1169
+msgid "ICD entries can't contain extended or logical partitions."
+msgstr "Entri ICD tidak dapat berisi partisi extended atau logis."
+
+#: libparted/labels/atari.c:1191
+msgid "There were remaining partitions after filling the tables."
+msgstr "Ada partisi yang tersisa setelah mengisi tabel."
+
+#: libparted/labels/atari.c:1231
+#, c-format
+msgid ""
+"You can't use an extended XGM partition in ICD mode (more than %d primary "
+"partitions, if XGM is the first one it counts for two)."
+msgstr ""
+"Anda tidak dapat menggunakan partisi XGM extended dalam mode ICD (lebih dari "
+"%d partisi primer, jika XGM adalah yang pertama, itu dihitung dua)."
+
+#: libparted/labels/atari.c:1662 libparted/labels/bsd.c:563
+#: libparted/labels/dasd.c:895 libparted/labels/dos.c:2303
+#: libparted/labels/dvh.c:770 libparted/labels/gpt.c:1769
+#: libparted/labels/loop.c:244 libparted/labels/mac.c:1409
+#: libparted/labels/pc98.c:697 libparted/labels/rdb.c:1054
+#: libparted/labels/sun.c:781
+msgid "Unable to satisfy all constraints on the partition."
+msgstr "Tidak dapat memenuhi semua batasan pada partisi."
+
+#: libparted/labels/atari.c:1762
+#, c-format
+msgid ""
+"You can't use more than %d primary partitions (ICD mode) if you use an "
+"extended XGM partition.  If XGM is the first partition it counts for two."
+msgstr ""
+"Anda tidak dapat menggunakan lebih dari %d partisi primer (mode ICD) jika "
+"Anda menggunakan partisi XGM extended.  Jika XGM adalah partisi pertama, itu "
+"dihitung dua."
+
+#: libparted/labels/atari.c:1828 libparted/labels/rdb.c:1082
+msgid "Unable to allocate a partition number."
+msgstr "Tidak dapat mengalokasikan sebuah nomor partisi."
+
+#: libparted/labels/bsd.c:588
+msgid "Unable to allocate a bsd disklabel slot."
+msgstr "Tidak dapat mengalokasikan sebuah slot disklabel bsd."
+
+#: libparted/labels/dasd.c:626
+msgid "The partition table of DASD-LDL device cannot be changed.\n"
+msgstr "Tabel partisi perangkat DASD-LDL tidak dapat diubah.\n"
+
+#: libparted/labels/dasd.c:921
+msgid "Unable to allocate a dasd disklabel slot"
+msgstr "Tidak dapat mengalokasikan sebuah slot disklabel dasd"
+
+#: libparted/labels/dos.c:1008
+#, c-format
+msgid "Invalid partition table on %s -- wrong signature %x."
+msgstr "Table partisi tidak valid pada %s -- tanda tangan salah %x."
+
+#: libparted/labels/dos.c:1036
+#, c-format
+msgid "Invalid partition table - recursive partition on %s."
+msgstr "Table partisi tidak valid - partisi rekursif pada %s."
+
+#: libparted/labels/dos.c:1567
+msgid "Extended partitions cannot be hidden on msdos disk labels."
+msgstr "Partisi extended tidak dapat disembunyikan pada label disk msdos."
+
+#: libparted/labels/dos.c:1579
+msgid "Extended partitions cannot be recovery partitions on msdos disk labels."
+msgstr ""
+"Partisi extended tidak bisa berupa partisi pemulihan pada label disk msdos."
+
+#: libparted/labels/dos.c:2285
+msgid "Parted can't resize partitions managed by Windows Dynamic Disk."
+msgstr ""
+"Parted tidak bisa mengubah ukuran partisi yang diatur oleh Windows Dynamic "
+"Disk."
+
+#: libparted/labels/dos.c:2541
+msgid "cannot create any more partitions"
+msgstr "tidak bisa membuat lebih banyak partisi lagi"
+
+#: libparted/labels/dvh.c:183
+#, c-format
+msgid "%s has no extended partition (volume header partition)."
+msgstr "%s tidak memiliki partisi extended (partisi header volume)."
+
+#: libparted/labels/dvh.c:309
+msgid "Checksum is wrong, indicating the partition table is corrupt."
+msgstr "Checksum salah, mengindikasikan bahwa tabel partisi terkorupsi."
+
+#: libparted/labels/dvh.c:614
+msgid "Only primary partitions can be root partitions."
+msgstr "Hanya partisi primer yang dapat menjadi partisi root."
+
+#: libparted/labels/dvh.c:628
+msgid "Only primary partitions can be swap partitions."
+msgstr "Hanya partisi primer yang dapat menjadi partisi swap."
+
+#: libparted/labels/dvh.c:642
+msgid "Only logical partitions can be a boot file."
+msgstr "Hanya partisi logis yang dapat menjadi berkas boot."
+
+#: libparted/labels/dvh.c:719
+#, c-format
+msgid ""
+"failed to set dvh partition name to %s:\n"
+"Only logical partitions (boot files) have a name."
+msgstr ""
+"gagal mengatur nama partisi dvh ke %s:\n"
+"Hanya partisi logis (berkas boot) yang memiliki nama."
+
+#: libparted/labels/dvh.c:812
+msgid "Too many primary partitions"
+msgstr "Terlalu banyak partisi primer"
+
+#: libparted/labels/fdasd.c:136
+msgid "open error"
+msgstr "galat buka"
+
+#: libparted/labels/fdasd.c:139
+msgid "seek error"
+msgstr "galat seek"
+
+#: libparted/labels/fdasd.c:142
+msgid "read error"
+msgstr "galat baca"
+
+#: libparted/labels/fdasd.c:148
+msgid "ioctl() error"
+msgstr "galat ioctl()"
+
+#: libparted/labels/fdasd.c:152
+msgid "API version mismatch"
+msgstr "versi API tidak cocok"
+
+#: libparted/labels/fdasd.c:156
+msgid "Unsupported disk type"
+msgstr "Tipe disk tidak didukung"
+
+#: libparted/labels/fdasd.c:160
+msgid "Unsupported disk format"
+msgstr "Format disk tidak didukung"
+
+#: libparted/labels/fdasd.c:164
+msgid "Disk is in use"
+msgstr "Disk sedang digunakan"
+
+#: libparted/labels/fdasd.c:168
+msgid "Syntax error in config file"
+msgstr "Galat sintaks di berkas konfigurasi"
+
+#: libparted/labels/fdasd.c:172
+msgid "Volume label is corrupted"
+msgstr "Label volume terkorupsi"
+
+#: libparted/labels/fdasd.c:176
+msgid "A data set name is corrupted"
+msgstr "Sebuah nama set data terkorupsi"
+
+#: libparted/labels/fdasd.c:180
+msgid "Memory allocation failed"
+msgstr "Alokasi memori gagal"
+
+#: libparted/labels/fdasd.c:184
+msgid "Device verification failed"
+msgstr "Verifikasi perangkat gagal"
+
+#: libparted/labels/fdasd.c:185
+msgid "The specified device is not a valid DASD device"
+msgstr "Perangkat yang dinyatakan bukan perangkat DASD yang valid"
+
+#: libparted/labels/fdasd.c:188
+msgid "VOLSER not found on device"
+msgstr "VOLSER tidak ditemukan di perangkat"
+
+#: libparted/labels/fdasd.c:191 libparted/labels/vtoc.c:179
+msgid "Fatal error"
+msgstr "Galat fatal"
+
+#: libparted/labels/fdasd.c:243
+msgid "No room for volume label."
+msgstr "Tak ada ruang untuk label volume."
+
+#: libparted/labels/fdasd.c:251
+msgid "No room for partition info."
+msgstr "Tak ada ruang untuk info partisi."
+
+#: libparted/labels/fdasd.c:828
+msgid "Invalid VTOC."
+msgstr "VTOC tidak valid."
+
+#: libparted/labels/fdasd.c:912
+msgid "Could not retrieve API version."
+msgstr "Tidak dapat mengambil versi API."
+
+#: libparted/labels/fdasd.c:915
+#, c-format
+msgid ""
+"The current API version '%d' doesn't match dasd driver API version '%d'!"
+msgstr ""
+"Versi API saat ini '%d' tidak cocok dengan versi API penggerak dasd '%d'!"
+
+#: libparted/labels/fdasd.c:1020
+msgid "Could not retrieve disk size."
+msgstr "Tak dapat mengambil ukuran disk."
+
+#: libparted/labels/fdasd.c:1029
+msgid "Could not retrieve disk geometry information."
+msgstr "Tak dapat mengambil informasi geometri disk."
+
+#: libparted/labels/fdasd.c:1035
+msgid "Could not retrieve blocksize information."
+msgstr "Tak dapat mengambil informasi ukuran blok."
+
+#: libparted/labels/fdasd.c:1045
+msgid "Disk geometry does not match a DASD device of type 3390."
+msgstr "Geometri disk tidak cocok dengan perangkat DASD tipe 3390."
+
+#: libparted/labels/gpt.c:569
+msgid "device is too small for GPT"
+msgstr "perangkat terlalu kecil untuk GPT"
+
+#: libparted/labels/gpt.c:771
+#, c-format
+msgid ""
+"The format of the GPT partition table is version %x, which is newer than "
+"what Parted can recognise.  Please report this!"
+msgstr ""
+"Format tabel partisi GPT adalah versi %x, lebih baru dari format yang Parted "
+"dapat mengenalnya.  Harap laporkan ini!"
+
+#: libparted/labels/gpt.c:807
+#, c-format
+msgid ""
+"Not all of the space available to %s appears to be used, you can fix the GPT "
+"to use all of the space (an extra %llu blocks) or continue with the current "
+"setting? "
+msgstr ""
+"Tidak semua ruang kosong yang tersedia untuk %s nampak digunakan, Anda dapat "
+"memperbaiki GPT untuk menggunakan semua ruang kosong (tambahan %llu blok) "
+"atau melanjutkan dengan pengaturan saat ini? "
+
+#: libparted/labels/gpt.c:1006
+msgid ""
+"The backup GPT table is not at the end of the disk, as it should be.  Fix, "
+"by moving the backup to the end (and removing the old backup)?"
+msgstr ""
+"Tabel GPT cadangan tidak ada pada akhir dari disk, seperti yang seharusnya.  "
+"Perbaiki, dengan memindahkan cadangan ke akhir (dan menghapus cadangan lama)?"
+
+#: libparted/labels/gpt.c:1024
+msgid ""
+"Both the primary and backup GPT tables are corrupt.  Try making a fresh "
+"table, and using Parted's rescue feature to recover partitions."
+msgstr ""
+"Kedua tabel GPT primer dan cadangan sudah terkorupsi.  Cobalah untuk membuat "
+"sebuah tabel yang baru, dan gunakan fitur penyelamatan Parted untuk "
+"memulihkan partisi."
+
+#: libparted/labels/gpt.c:1035
+msgid ""
+"The backup GPT table is corrupt, but the primary appears OK, so that will be "
+"used."
+msgstr ""
+"Tabel GPT cadangan telah terkorupsi, tetapi yang primer tampak OK, jadi itu "
+"yang akan digunakan."
+
+#: libparted/labels/gpt.c:1047
+msgid ""
+"The primary GPT table is corrupt, but the backup appears OK, so that will be "
+"used."
+msgstr ""
+"Tabel GPT primer telah terkorupsi, tetapi cadangannya tampak OK, jadi itu "
+"yang akan digunakan."
+
+#: libparted/labels/gpt.c:1071
+msgid "primary partition table array CRC mismatch"
+msgstr "nilai CRC larik tabel partisi primer tidak cocok"
+
+#: libparted/labels/gpt.c:1655 libparted/labels/gpt.c:1682
+msgid "failed to translate partition name"
+msgstr "gagal menerjemahkan nama partisi"
+
+#: libparted/labels/mac.c:185
+#, c-format
+msgid "Invalid signature %x for Mac disk labels."
+msgstr "Tanda tangan %x tidak valid untuk label disk Mac."
+
+#: libparted/labels/mac.c:232
+msgid "Partition map has no partition map entry!"
+msgstr "Peta partisi tidak memiliki entri peta partisi!"
+
+#: libparted/labels/mac.c:280
+#, c-format
+msgid "%s is too small for a Mac disk label!"
+msgstr "%s terlalu kecil untuk sebuah label disk Mac!"
+
+#: libparted/labels/mac.c:507
+#, c-format
+msgid "Partition %d has an invalid signature %x."
+msgstr "Partisi %d memiliki tanda tangan %x yang tidak valid."
+
+#: libparted/labels/mac.c:524
+#, c-format
+msgid "Partition %d has an invalid length of 0 bytes!"
+msgstr "Partisi %d memiliki panjang 0 byte yang tidak valid!"
+
+#: libparted/labels/mac.c:555
+msgid "The data region doesn't start at the start of the partition."
+msgstr "Daerah data tidak dimulai pada awal dari partisi."
+
+#: libparted/labels/mac.c:572
+msgid "The partition's boot region doesn't occupy the entire partition."
+msgstr "Daerah boot partisi tidak menempati seluruh partisi."
+
+#: libparted/labels/mac.c:583
+msgid "The partition's data region doesn't occupy the entire partition."
+msgstr "Daerah data partisi tidak menempati seluruh partisi."
+
+#: libparted/labels/mac.c:635
+#, c-format
+msgid ""
+"Weird block size on device descriptor: %d bytes is not divisible by 512."
+msgstr ""
+"Ukuran blok aneh pada deskriptor perangkat: %d byte tidak dapat dibagi oleh "
+"512."
+
+#: libparted/labels/mac.c:648
+#, c-format
+msgid ""
+"The driver descriptor says the physical block size is %d bytes, but Linux "
+"says it is %d bytes."
+msgstr ""
+"Deskriptor driver mengatakan bahwa ukuran blok fisik adalah %d bytes, tetapi "
+"Linux mengatakan %d byte."
+
+#: libparted/labels/mac.c:701
+msgid "No valid partition map found."
+msgstr "Tidak ditemukan peta partisi yang valid."
+
+#: libparted/labels/mac.c:775
+#, c-format
+msgid ""
+"Conflicting partition map entry sizes!  Entry 1 says it is %d, but entry %d "
+"says it is %d!"
+msgstr ""
+"Konflik ukuran entri peta partisi!  Entri 1 mengatakan %d, tetapi entri %d "
+"mengatakan %d!"
+
+#: libparted/labels/mac.c:806
+msgid "Weird!  There are 2 partitions map entries!"
+msgstr "Aneh!  Ada 2 entri peta partisi!"
+
+#: libparted/labels/mac.c:1345
+msgid ""
+"Changing the name of a root or swap partition will prevent Linux from "
+"recognising it as such."
+msgstr "Mengubah nama partisi root atau swap akan mencegah Linux mengenalinya."
+
+#: libparted/labels/mac.c:1444
+msgid "Can't add another partition -- the partition map is too small!"
+msgstr "Tidak dapat menambah partisi lagi -- peta partisi terlalu kecil!"
+
+#: libparted/labels/pc98.c:285
+#, c-format
+msgid "Invalid partition table on %s."
+msgstr "Tabel partisi tidak valid pada %s."
+
+#: libparted/labels/pc98.c:338 libparted/labels/pc98.c:416
+#, c-format
+msgid ""
+"Partition %d isn't aligned to cylinder boundaries.  This is still "
+"unsupported."
+msgstr ""
+"Partisi %d tidak diratakan ke perbatasan silinder.  Ini masih tidak didukung."
+
+#: libparted/labels/pc98.c:729
+msgid "Can't add another partition."
+msgstr "Tidak dapat menambah partisi lagi."
+
+#: libparted/labels/pt-tools.c:134
+#, c-format
+msgid ""
+"partition length of %jd sectors exceeds the %s-partition-table-imposed "
+"maximum of %jd"
+msgstr ""
+"panjang partisi dari sektor %jd melampaui maksimum yang dibatasi oleh tabel "
+"partisi %s sebesar %jd"
+
+#: libparted/labels/pt-tools.c:147
+#, c-format
+msgid ""
+"starting sector number, %jd exceeds the %s-partition-table-imposed maximum "
+"of %jd"
+msgstr ""
+"memulai penomoran sektor, %jd melampaui maksimum maksimum yang dibatasi "
+"tabel partisi %s sebesar %jd"
+
+#: libparted/labels/rdb.c:170
+#, c-format
+msgid "%s : Bad checksum on block %llu of type %s."
+msgstr "%s : Checksum buruk pada blok %llu dengan tipe %s."
+
+#: libparted/labels/rdb.c:486
+#, c-format
+msgid "%s : Didn't find rdb block, should never happen."
+msgstr "%s : Tidak menemukan blok rdb, seharusnya tidak pernah terjadi."
+
+#: libparted/labels/rdb.c:575
+#, c-format
+msgid "%s : Loop detected at block %d."
+msgstr "%s : Loop terdeteksi pada blok %d."
+
+#: libparted/labels/rdb.c:594
+#, c-format
+msgid "%s : The %s list seems bad at block %s."
+msgstr "%s : Senarai %s kelihatannya buruk pada blok %s."
+
+#: libparted/labels/rdb.c:693
+#, c-format
+msgid "%s : Failed to list bad blocks."
+msgstr "%s : Gagal untuk mendaftar blok buruk."
+
+#: libparted/labels/rdb.c:701
+#, c-format
+msgid "%s : Failed to list partition blocks."
+msgstr "%s : Gagal untuk mendaftar blok partisi."
+
+#: libparted/labels/rdb.c:709
+#, c-format
+msgid "%s : Failed to list file system blocks."
+msgstr "%s : Gagal untuk mendaftar blok sistem berkas."
+
+#: libparted/labels/rdb.c:717
+#, c-format
+msgid "%s : Failed to list boot blocks."
+msgstr "%s : Gagal untuk mendaftar blok boot."
+
+#: libparted/labels/rdb.c:744
+#, c-format
+msgid "Failed to write partition block at %d."
+msgstr "Gagal untuk menulis blok partisi pada %d."
+
+#: libparted/labels/sun.c:162
+msgid "Corrupted Sun disk label detected."
+msgstr "Label disk Sun terdeteksi terkorupsi."
+
+#: libparted/labels/sun.c:277
+#, c-format
+msgid ""
+"The disk CHS geometry (%d,%d,%d) reported by the operating system does not "
+"match the geometry stored on the disk label (%d,%d,%d)."
+msgstr ""
+"Geometri CHS dari disk (%d,%d,%d) yang dilaporkan oleh sistem operasi tidak "
+"cocok dengan geometri yang disimpan pada label disk (%d,%d,%d)."
+
+#: libparted/labels/sun.c:299
+#, c-format
+msgid "The disk label describes a disk bigger than %s."
+msgstr "Label disk mendeskripsikan disk lebih besar dari %s."
+
+#: libparted/labels/sun.c:474
+#, c-format
+msgid "The disk has %d cylinders, which is greater than the maximum of 65536."
+msgstr "Disk memiliki %d silinder, yang besar dari maksimum 65536."
+
+#: libparted/labels/sun.c:813
+msgid ""
+"The Whole Disk partition is the only available one left.  Generally, it is "
+"not a good idea to overwrite this partition with a real one.  Solaris may "
+"not be able to boot without it, and SILO (the sparc boot loader) appreciates "
+"it as well."
+msgstr ""
+"Yang tersisa hanya partisi Seluruh Disk.  Umumnya, bukan ide yang baik untuk "
+"menimpa partisi ini dengan yang nyata.  Solaris mungkin tidak dapat di-boot "
+"tanpanya, dan SILO (boot loader untuk SPARC) menghargainya juga."
+
+#: libparted/labels/sun.c:828
+msgid "Sun disk label is full."
+msgstr "Label disk Sun penuh."
+
+#: libparted/labels/vtoc.c:164
+msgid "opening of device failed"
+msgstr "pembukaan perangkat gagal"
+
+#: libparted/labels/vtoc.c:168
+msgid "seeking on device failed"
+msgstr "seek perangkat gagal"
+
+#: libparted/labels/vtoc.c:172
+msgid "writing to device failed"
+msgstr "penulisan ke perangkat gagal"
+
+#: libparted/labels/vtoc.c:176
+msgid "reading from device failed"
+msgstr "membaca dari perangkat gagal"
+
+#: libparted/labels/vtoc.c:371 libparted/labels/vtoc.c:378
+#: libparted/labels/vtoc.c:399 libparted/labels/vtoc.c:406
+msgid "Could not read volume label."
+msgstr "Tidak dapat membaca label volume."
+
+#: libparted/labels/vtoc.c:426 libparted/labels/vtoc.c:431
+msgid "Could not write volume label."
+msgstr "Tidak dapat menulis label volume."
+
+#: libparted/labels/vtoc.c:537
+msgid "Could not read VTOC labels."
+msgstr "Tidak dapat membaca label VTOC."
+
+#: libparted/labels/vtoc.c:543
+msgid "Could not read VTOC FMT1 DSCB."
+msgstr "Tidak dapat membaca VTOC FMT1 DSCB."
+
+#: libparted/labels/vtoc.c:550
+msgid "Could not read VTOC FMT4 DSCB."
+msgstr "Tidak dapat membaca VTOC FMT4 DSCB."
+
+#: libparted/labels/vtoc.c:557
+msgid "Could not read VTOC FMT5 DSCB."
+msgstr "Tidak dapat membaca VTOC FMT5 DSCB."
+
+#: libparted/labels/vtoc.c:564
+msgid "Could not read VTOC FMT7 DSCB."
+msgstr "Tidak dapat membaca VTOC FMT7 DSCB."
+
+#: libparted/labels/vtoc.c:585
+msgid "Could not write VTOC labels."
+msgstr "Tidak dapat menulis label VTOC."
+
+#: libparted/labels/vtoc.c:591
+msgid "Could not write VTOC FMT1 DSCB."
+msgstr "Tidak dapat menulis VTOC FMT1 DSCB."
+
+#: libparted/labels/vtoc.c:598
+msgid "Could not write VTOC FMT4 DSCB."
+msgstr "Tidak dapat menulis VTOC FMT4 DSCB."
+
+#: libparted/labels/vtoc.c:605
+msgid "Could not write VTOC FMT5 DSCB."
+msgstr "Tidak dapat menulis VTOC FMT5 DSCB."
+
+#: libparted/labels/vtoc.c:612
+msgid "Could not write VTOC FMT7 DSCB."
+msgstr "Tidak dapat menulis VTOC FMT7 DSCB."
+
+#: libparted/labels/vtoc.c:622
+msgid "Could not write VTOC FMT9 DSCB."
+msgstr "Tidak dapat menulis VTOC FMT9 DSCB."
+
+#: libparted/libparted.c:247
+msgid "Out of memory."
+msgstr "Kehabisan memori."
+
+#: libparted/unit.c:140
+msgid "Cannot get unit size for special unit 'COMPACT'."
+msgstr "Tidak dapat mendapatkan ukuran unit untuk unit spesial 'COMPAT'."
+
+#: libparted/unit.c:386
+#, c-format
+msgid "\"%s\" has invalid syntax for locations."
+msgstr "\"%s\" memiliki syntaks yang tidak valid untuk lokasi."
+
+#: libparted/unit.c:394
+#, c-format
+msgid "The maximum head value is %d."
+msgstr "Nilai head maksimum adalah %d."
+
+#: libparted/unit.c:401
+#, c-format
+msgid "The maximum sector value is %d."
+msgstr "Nilai maksimum dari sektor adalah %d."
+
+#: libparted/unit.c:413 libparted/unit.c:565
+#, c-format
+msgid "The location %s is outside of the device %s."
+msgstr "Lokasi %s terletak di luar dari perangkat %s."
+
+#: libparted/unit.c:527
+msgid "Invalid number."
+msgstr "Nomor tidak valid."
+
+#: libparted/unit.c:533
+msgid "Use a smaller unit instead of a value < 1"
+msgstr "Gunakan unit yang lebih kecil alih-alih nilai < 1"
+
+#: libparted/fs/amiga/affs.c:64 libparted/fs/amiga/apfs.c:58
+#: libparted/fs/amiga/asfs.c:72
+#, c-format
+msgid "%s : Failed to allocate partition block\n"
+msgstr "%s : Gagal untuk mengalokasikan blok partisi\n"
+
+#: libparted/fs/amiga/affs.c:78 libparted/fs/amiga/apfs.c:71
+#: libparted/fs/amiga/asfs.c:84
+#, c-format
+msgid "%s : Failed to allocate block\n"
+msgstr "%s : Gagal untuk mengalokasikan blok\n"
+
+#: libparted/fs/amiga/affs.c:83 libparted/fs/amiga/apfs.c:76
+#, c-format
+msgid "%s : Couldn't read boot block %llu\n"
+msgstr "%s : Tidak dapat membaca blok boot %llu\n"
+
+#: libparted/fs/amiga/affs.c:97 libparted/fs/amiga/apfs.c:87
+#: libparted/fs/amiga/asfs.c:90 libparted/fs/amiga/asfs.c:104
+#, c-format
+msgid "%s : Couldn't read root block %llu\n"
+msgstr "%s : Tidak dapat membaca blok root %llu\n"
+
+#: libparted/fs/amiga/amiga.c:72
+#, c-format
+msgid "%s : Failed to allocate id list element\n"
+msgstr "%s : Gagal mengalokasikan elemen senarai id\n"
+
+#: libparted/fs/amiga/amiga.c:189
+#, c-format
+msgid "%s : Couldn't read block %llu\n"
+msgstr "%s : Tidak dapat membaca blok %llu\n"
+
+#: libparted/fs/amiga/amiga.c:202
+#, c-format
+msgid "%s : Bad checksum on block %llu of type %s\n"
+msgstr "%s : Checksum buruk pada blok %llu dengan tipe %s\n"
+
+#: libparted/fs/amiga/amiga.c:212
+#, c-format
+msgid "%s : Couldn't write block %d\n"
+msgstr "%s : Tidak dapat menulis blok %d\n"
+
+#: libparted/fs/amiga/amiga.c:279
+#, c-format
+msgid "%s : Failed to allocate disk_specific rdb block\n"
+msgstr "%s : Gagal untuk mengalokasikan blok rdb disk_specific\n"
+
+#: libparted/fs/amiga/amiga.c:290
+#, c-format
+msgid "%s : Didn't find rdb block, should never happen\n"
+msgstr "%s : Tidak menemukan blok rdb, seharusnya tidak pernah terjadi\n"
+
+#: libparted/fs/amiga/amiga.c:319
+#, c-format
+msgid "%s : Failed to read partition block %llu\n"
+msgstr "%s : Gagal untuk membaca blok partisi %llu\n"
+
+#: libparted/fs/fat/fat.c:149
+msgid ""
+"GNU Parted was miscompiled: the FAT boot sector should be 512 bytes.  FAT "
+"support will be disabled."
+msgstr ""
+"GNU Parted telah salah dikompile: FAT sektor boot seharusnya 512 bytes.  "
+"Dukungan FAT akan dinonaktifkan."
+
+#: libparted/fs/fat/bootsector.c:50 libparted/fs/r/fat/bootsector.c:49
+msgid "File system has an invalid signature for a FAT file system."
+msgstr ""
+"Sistem berkas memiliki tanda tangan yang tidak valid untuk sebuah sistem "
+"berkas FAT."
+
+#: libparted/fs/fat/bootsector.c:58 libparted/fs/r/fat/bootsector.c:57
+msgid "File system has an invalid sector size for a FAT file system."
+msgstr ""
+"Sistem berkas memiliki ukuran sektor yang tidak valid untuk sebuah sistem "
+"berkas FAT."
+
+#: libparted/fs/fat/bootsector.c:65 libparted/fs/r/fat/bootsector.c:64
+msgid "File system has an invalid cluster size for a FAT file system."
+msgstr ""
+"Sistem berkas memiliki ukuran cluster yang tidak valid untuk sistem berkas "
+"FAT."
+
+#: libparted/fs/fat/bootsector.c:72 libparted/fs/r/fat/bootsector.c:71
+msgid ""
+"File system has an invalid number of reserved sectors for a FAT file system."
+msgstr ""
+"Sistem berkas memiliki angka yang tidak valid bagi sektor yang dicadangan "
+"untuk sebuah sistem berkas FAT."
+
+#: libparted/fs/fat/bootsector.c:79 libparted/fs/r/fat/bootsector.c:78
+msgid "File system has an invalid number of FATs."
+msgstr "Sistem berkas memiliki banyaknya FAT yang tidak valid."
+
+#: libparted/fs/fat/bootsector.c:162
+#, c-format
+msgid ""
+"The file system's CHS geometry is (%d, %d, %d), which is invalid.  The "
+"partition table's CHS geometry is (%d, %d, %d)."
+msgstr ""
+"Geometri CHS sistem berkas adalah (%d, %d, %d), yang tidak valid.  Geometri "
+"CHS tabel partisi adalah (%d, %d, %d)."
+
+#: libparted/fs/fat/bootsector.c:197 libparted/fs/r/fat/bootsector.c:194
+msgid "FAT boot sector says logical sector size is 0.  This is weird. "
+msgstr "Sektor boot FAT mengatakan ukuran sektor logis adalah 0.  Ini aneh. "
+
+#: libparted/fs/fat/bootsector.c:203 libparted/fs/r/fat/bootsector.c:200
+msgid "FAT boot sector says there are no FAT tables.  This is weird. "
+msgstr "Sektor boot FAT mengatakan tidak ada tabel FAT.  Ini aneh. "
+
+#: libparted/fs/fat/bootsector.c:209 libparted/fs/r/fat/bootsector.c:206
+msgid "FAT boot sector says clusters are 0 sectors.  This is weird. "
+msgstr "Sektor boot FAT mengatakan cluster adalah 0 sektor.  Ini aneh. "
+
+#: libparted/fs/fat/bootsector.c:219 libparted/fs/r/fat/bootsector.c:216
+msgid "File system is FAT12, which is unsupported."
+msgstr "Sistem berkas adalah FAT12, yang tidak didukung."
+
+#: libparted/fs/linux_swap/linux_swap.c:231
+#, c-format
+msgid "Unrecognised old style linux swap signature '%10s'."
+msgstr "Tanda tangan swap linux gaya lama yang tak dikenal '%10s'."
+
+#: libparted/fs/linux_swap/linux_swap.c:269
+#, c-format
+msgid "Unrecognised new style linux swap signature '%10s'."
+msgstr "Tanda tangan swap linux gaya baru yang tak dikenal '%10s'."
+
+#: libparted/fs/linux_swap/linux_swap.c:309
+#, c-format
+msgid "Unrecognised swsusp linux swap signature '%9s'."
+msgstr "Tanda tangan swap linux swsusp yang tak dikenal '%9s'."
+
+#: libparted/fs/hfs/probe.c:51 libparted/fs/r/hfs/probe.c:51
+#, c-format
+msgid ""
+"Parted can't use HFS file systems on disks with a sector size not equal to "
+"%d bytes."
+msgstr ""
+"Parted tidak dapat menggunakan sistem berkas HFS pada disk dengan ukuran "
+"sektor tidak sama dengan %d byte."
+
+#: libparted/fs/r/fat/bootsector.c:145
+#, c-format
+msgid ""
+"The file system's CHS geometry is (%d, %d, %d), which is invalid.  The "
+"partition table's CHS geometry is (%d, %d, %d).  If you select Ignore, the "
+"file system's CHS geometry will be left unchanged.  If you select Fix, the "
+"file system's CHS geometry will be set to match the partition table's CHS "
+"geometry."
+msgstr ""
+"Geometri CHS sistem berkas adalah (%d, %d, %d), ini tidak valid.  Geometri "
+"CHS tabel partisi adalah (%d, %d, %d).  Jika Anda memilih Abaikan, geometri "
+"CHS sistem berkas akan dibiarkan tak diubah.  Jika Anda memilih Perbaiki, "
+"geometri CHS sistem berkas akan diatur sehingga cocok dengan geometri CHS "
+"tabel partisi."
+
+#: libparted/fs/r/fat/bootsector.c:398
+#, c-format
+msgid ""
+"The information sector has the wrong signature (%x).  Select cancel for now, "
+"and send in a bug report.  If you're desperate, it's probably safe to ignore."
+msgstr ""
+"Sektor informasi memiliki tanda tangan (%x) yang salah.  Pilih batal "
+"sekarang, dan kirim dalam laporan bug.  Jika Anda putus asa, mungkin aman "
+"untuk mengabaikannya."
+
+#: libparted/fs/r/fat/calc.c:134
+#, c-format
+msgid ""
+"You need %s of free disk space to shrink this partition to this size.  "
+"Currently, only %s is free."
+msgstr ""
+"Anda butuh ruang kosong disk %s untuk mengecilkan partisi ke ukuran ini.  "
+"Saat ini hanya %s yang kosong."
+
+#: libparted/fs/r/fat/context.c:56
+#, c-format
+msgid ""
+"Cluster start delta = %d, which is not a multiple of the cluster size %d."
+msgstr "Delta awal cluster = %d, yang bukan kelipatan dari ukuran cluster %d."
+
+#: libparted/fs/r/fat/count.c:84
+#, c-format
+msgid "Bad directory entry for %s: first cluster is the end of file marker."
+msgstr ""
+"Entri direktori buruk untuk %s: cluster pertama merupakan akhir dari penanda "
+"berkas."
+
+#: libparted/fs/r/fat/count.c:97
+#, c-format
+msgid ""
+"Bad FAT: unterminated chain for %s.  You should run dosfsck or scandisk."
+msgstr ""
+"FAT buruk: rantai tak diakhiri untuk %s.  Anda mesti menjalankan dosfsck "
+"atau scandisk."
+
+#: libparted/fs/r/fat/count.c:106
+#, c-format
+msgid ""
+"Bad FAT: cluster %d outside file system in chain for %s.  You should run "
+"dosfsck or scandisk."
+msgstr ""
+"FAT buruk: cluster %d di luar dari sistem berkas dalam rantai untuk %s.  "
+"Anda mesti menjalankan dosfsck atau scandisk."
+
+#: libparted/fs/r/fat/count.c:116
+#, c-format
+msgid ""
+"Bad FAT: cluster %d is cross-linked for %s.  You should run dosfsck or "
+"scandisk."
+msgstr ""
+"FAT buruk: cluster %d cross-linked untuk %s.  Anda mesti menjalankan dosfsck "
+"atan scandisk."
+
+#: libparted/fs/r/fat/count.c:135
+#, c-format
+msgid "%s is %dk, but it has %d clusters (%dk)."
+msgstr "%s adalah %dk, tetapi ini memiliki %d cluster (%dk)."
+
+#: libparted/fs/r/fat/fat.c:244
+#, c-format
+msgid "Partition too big/small for a %s file system."
+msgstr "Partisi terlalu besar/kecil untuk sebuah sistem berkas %s."
+
+#: libparted/fs/r/fat/fat.c:410
+msgid ""
+"The FATs don't match.  If you don't know what this means, then select "
+"cancel, run scandisk on the file system, and then come back."
+msgstr ""
+"Kedua FAT tidak cocok.  Jika Anda tidak tahu apa artinya ini, maka pilih "
+"batal, jalankan scandisk pada sistem berkas, dan coba lagi."
+
+#: libparted/fs/r/fat/fat.c:450
+msgid "There are no possible configurations for this FAT type."
+msgstr "Tidak ada konfigurasi yang mungkin untuk tipe FAT ini."
+
+#: libparted/fs/r/fat/fat.c:462
+#, c-format
+msgid ""
+"File system doesn't have expected sizes for Windows to like it.  Cluster "
+"size is %dk (%dk expected); number of clusters is %d (%d expected); size of "
+"FATs is %d sectors (%d expected)."
+msgstr ""
+"Sistem berkas tidak memiliki ukuran yang diharapkan bagi Windows untuk "
+"menyukainya.  Ukuran cluster %dk (diharapkan %dk); banyaknya cluster %d "
+"(diharapkan %d); ukuran FAT %d sektor (diharapkan %d)."
+
+#: libparted/fs/r/fat/fat.c:485
+#, c-format
+msgid ""
+"File system is reporting the free space as %d clusters, not %d clusters."
+msgstr ""
+"Sistem berkas melaporkan ruang kosong sebagai %d cluster, bukan %d cluster."
+
+#: libparted/fs/r/fat/resize.c:159
+msgid ""
+"There's not enough room in the root directory for all of the files.  Either "
+"cancel, or ignore to lose the files."
+msgstr ""
+"Tidak ada cukup ruang bagi direktori root untuk semua berkas.  Pilih batal, "
+"atau abaikan untuk kehilangan berkas."
+
+#: libparted/fs/r/fat/resize.c:303
+msgid "Error writing to the root directory."
+msgstr "Galat saat menulis ke direktori root."
+
+#: libparted/fs/r/fat/resize.c:479
+msgid "If you leave your file system as FAT16, then you will have no problems."
+msgstr ""
+"Jika Anda membiarkan sistem berkas Anda sebagai FAT16, maka Anda tidak akan "
+"punya masalah."
+
+#: libparted/fs/r/fat/resize.c:482
+msgid ""
+"If you convert to FAT16, and MS Windows is installed on this partition, then "
+"you must re-install the MS Windows boot loader.  If you want to do this, you "
+"should consult the Parted manual (or your distribution's manual)."
+msgstr ""
+"Jika Anda mengubah ke FAT16, dan MS Windows terpasang pada partisi ini, maka "
+"Anda harus memasang ulang boot loader MS Windows.  Jika Anda ingin melakukan "
+"ini, Anda mesti membaca terlebih dahulu manual Parted (atau manual dari "
+"distribusi Anda)."
+
+#: libparted/fs/r/fat/resize.c:490
+msgid ""
+"If you leave your file system as FAT32, then you will not introduce any new "
+"problems."
+msgstr ""
+"Jika Anda membiarkan sistem berkas sebagai FAT32, mungkin Anda tidak menemui "
+"masalah baru."
+
+#: libparted/fs/r/fat/resize.c:494
+msgid ""
+"If you convert to FAT32, and MS Windows is installed on this partition, then "
+"you must re-install the MS Windows boot loader.  If you want to do this, you "
+"should consult the Parted manual (or your distribution's manual).  Also, "
+"converting to FAT32 will make the file system unreadable by MS DOS, MS "
+"Windows 95a, and MS Windows NT."
+msgstr ""
+"Jika Anda mengubah ke FAT16, dan MS Windows terpasang pada partisi ini, maka "
+"Anda harus memasang ulang boot loader MS Windows.  Jika Anda ingin melakukan "
+"ini, Anda mesti membaca terlebih dahulu manual Parted (atau manual dari "
+"distribusi Anda). Juga, mengubah ke FAT32 akan membuat sistem berkas tidak "
+"dapat dibaca oleh MS DOS, MS Windows 95a, dan MS Windows NT."
+
+#: libparted/fs/r/fat/resize.c:508
+#, c-format
+msgid "%s  %s  %s"
+msgstr "%s  %s  %s"
+
+#: libparted/fs/r/fat/resize.c:509
+msgid "Would you like to use FAT32?"
+msgstr "Maukah Anda menggunakan FAT32?"
+
+#: libparted/fs/r/fat/resize.c:540 libparted/fs/r/fat/resize.c:556
+#, c-format
+msgid "%s  %s"
+msgstr "%s  %s"
+
+#: libparted/fs/r/fat/resize.c:541
+msgid ""
+"The file system can only be resized to this size by converting to FAT16."
+msgstr ""
+"Sistem berkas hanya dapat diubah ke ukuran ini dengan mengonversi ke FAT16."
+
+#: libparted/fs/r/fat/resize.c:557
+msgid ""
+"The file system can only be resized to this size by converting to FAT32."
+msgstr ""
+"Sistem berkas hanya dapat diubah ke ukuran ini dengan mengonversi ke FAT32."
+
+#: libparted/fs/r/fat/resize.c:570
+msgid ""
+"GNU Parted cannot resize this partition to this size.  We're working on it!"
+msgstr ""
+"GNU Parted tidak dapat mengubah partisi ini ke ukuran ini.  Kami sedang "
+"mengerjakannya!"
+
+#: libparted/fs/r/fat/table.c:137
+#, c-format
+msgid ""
+"FAT %d media %x doesn't match the boot sector's media %x.  You should "
+"probably run scandisk."
+msgstr ""
+"FAT %d media %x tidak cocok dengan sektor boot media %x.  Anda mungkin mesti "
+"menjalankan scandisk."
+
+#: libparted/fs/r/fat/table.c:269
+#, c-format
+msgid "fat_table_set: cluster %ld outside file system"
+msgstr "fat_table_set: cluster %ld di luar sistem berkas"
+
+#: libparted/fs/r/fat/table.c:301
+#, c-format
+msgid "fat_table_get: cluster %ld outside file system"
+msgstr "fat_table_get: cluster %ld di luar sistem berkas"
+
+#: libparted/fs/r/fat/table.c:343
+msgid "fat_table_alloc_cluster: no free clusters"
+msgstr "fat_table_alloc_cluster: tidak ada cluster bebas"
+
+#: libparted/fs/r/filesys.c:152
+msgid "Could not detect file system."
+msgstr "Tidak dapat mendeteksi sistem berkas."
+
+#: libparted/fs/r/filesys.c:159 libparted/fs/r/filesys.c:284
+#, c-format
+msgid "resizing %s file systems is not supported"
+msgstr "mengubah ukuran sistem berkas %s tidak didukung"
+
+#: libparted/fs/r/filesys.c:171
+msgid "The file system is bigger than its volume!"
+msgstr "Sistem berkas lebih besar dari volumenya!"
+
+#: libparted/fs/r/hfs/advfs.c:123 libparted/fs/r/hfs/advfs_plus.c:122
+#: libparted/fs/r/hfs/reloc.c:417 libparted/fs/r/hfs/reloc.c:513
+#: libparted/fs/r/hfs/reloc_plus.c:540 libparted/fs/r/hfs/reloc_plus.c:660
+#: libparted/fs/r/hfs/reloc_plus.c:774
+msgid "The file system contains errors."
+msgstr "Sistem berkas mengandung kesalahan."
+
+#: libparted/fs/r/hfs/advfs_plus.c:287
+msgid "Bad blocks could not be read."
+msgstr "Blok buruk tidak dapat dibaca."
+
+#: libparted/fs/r/hfs/cache.c:137
+#, c-format
+msgid ""
+"Trying to register an extent starting at block 0x%X, but another one already "
+"exists at this position.  You should check the file system!"
+msgstr ""
+"Mencoba untuk me-register sebuah extent yang dimulai dari blok 0x%X, tetapi "
+"sudah ada yang lain di posiisi ini.  Anda mesti memeriksa sistem berkas!"
+
+#: libparted/fs/r/hfs/cache.c:214
+#, c-format
+msgid ""
+"Trying to move an extent from block 0x%X to block 0x%X, but another one "
+"already exists at this position.  This should not happen!"
+msgstr ""
+"Mencoba untuk memindahkan sebuah extent dari blok 0x%X ke blok 0x%X, tetapi "
+"sudah ada yang lain di posisi ini.  Ini seharusnya tidak terjadi!"
+
+#: libparted/fs/r/hfs/file.c:143
+#, c-format
+msgid "Could not update the extent cache for HFS file with CNID %X."
+msgstr ""
+"Tidak dapat memperbarui singgahan extent untuk berkas HFS dengan CNID %X."
+
+#: libparted/fs/r/hfs/file.c:180
+#, c-format
+msgid "Trying to read HFS file with CNID %X behind EOF."
+msgstr "Mencoba untuk membaca berkas HFS dengan CNID %X di belakang EOF."
+
+#: libparted/fs/r/hfs/file.c:190 libparted/fs/r/hfs/file.c:220
+#, c-format
+msgid "Could not find sector %lli of HFS file with CNID %X."
+msgstr "Tidak dapat menemukan sektor %lli dari berkas HFS dengan CNID %X."
+
+#: libparted/fs/r/hfs/file.c:210
+#, c-format
+msgid "Trying to write HFS file with CNID %X behind EOF."
+msgstr "Mencoba untuk menulis berkas HFS dengan CNID %X di belakang EOF."
+
+#: libparted/fs/r/hfs/file_plus.c:157
+#, c-format
+msgid "Could not update the extent cache for HFS+ file with CNID %X."
+msgstr ""
+"Tidak dapat memperbarui singgahan extent untuk berkas HFS+ dengan CNID %X."
+
+#: libparted/fs/r/hfs/file_plus.c:202
+#, c-format
+msgid "Trying to read HFS+ file with CNID %X behind EOF."
+msgstr "Mencoba untuk membaca berkas HFS+ dengan CNID %X di belakang EOF."
+
+#: libparted/fs/r/hfs/file_plus.c:213 libparted/fs/r/hfs/file_plus.c:256
+#, c-format
+msgid "Could not find sector %lli of HFS+ file with CNID %X."
+msgstr "Tidak dapat menemukan sektor %lli dari berkas HFS+ dengan CNID %X."
+
+#: libparted/fs/r/hfs/file_plus.c:245
+#, c-format
+msgid "Trying to write HFS+ file with CNID %X behind EOF."
+msgstr "Mencoba untuk menulis berkas HFS+ dengan CNID %X di belakang EOF."
+
+#: libparted/fs/r/hfs/hfs.c:212
+msgid "Sorry, HFS cannot be resized that way yet."
+msgstr "Maaf, HFS belum dapat diubah ukurannya dengan cara itu."
+
+#: libparted/fs/r/hfs/hfs.c:230 libparted/fs/r/hfs/hfs.c:573
+msgid "shrinking"
+msgstr "mengecilkan"
+
+#: libparted/fs/r/hfs/hfs.c:242 libparted/fs/r/hfs/hfs.c:585
+msgid "Data relocation has failed."
+msgstr "Relokasi data telah gagal."
+
+#: libparted/fs/r/hfs/hfs.c:261
+msgid "Data relocation left some data in the end of the volume."
+msgstr "Relokasi data meninggalkan sebagian data di akhir volume."
+
+#: libparted/fs/r/hfs/hfs.c:300
+msgid "writing HFS Master Directory Block"
+msgstr "menulis HFS Master Directory Block"
+
+#: libparted/fs/r/hfs/hfs.c:412
+msgid "No valid HFS[+X] signature has been found while opening."
+msgstr "Tidak ditemukan tanda tangan HFS[+X] yang valid ketika membuka."
+
+#: libparted/fs/r/hfs/hfs.c:422
+#, c-format
+msgid "Version %d of HFS+ isn't supported."
+msgstr "HFS+ versi %d tidak didukung."
+
+#: libparted/fs/r/hfs/hfs.c:433
+#, c-format
+msgid "Version %d of HFSX isn't supported."
+msgstr "HFSX versi %d tidak didukung."
+
+#: libparted/fs/r/hfs/hfs.c:616
+msgid "Data relocation left some data at the end of the volume."
+msgstr "Relokasi data meninggalkan sebagian data di akhir volume."
+
+#: libparted/fs/r/hfs/hfs.c:664
+msgid "Error while writing the allocation file."
+msgstr "Galat saat menulis berkas alokasi."
+
+#: libparted/fs/r/hfs/hfs.c:679
+msgid "Error while writing the compatibility part of the allocation file."
+msgstr "Galat ketika menulis bagian kompatibilitas dari berkas alokasi."
+
+#: libparted/fs/r/hfs/hfs.c:694
+msgid "writing HFS+ Volume Header"
+msgstr "menulis HFS+ Volume Header"
+
+#: libparted/fs/r/hfs/hfs.c:794
+msgid "An error occurred while looking for the mandatory bad blocks file."
+msgstr "Sebuah galat terjadi ketika mencari berkas blok buruk yang wajib."
+
+#: libparted/fs/r/hfs/hfs.c:847
+msgid ""
+"It seems there is an error in the HFS wrapper: the bad blocks file doesn't "
+"contain the embedded HFS+ volume."
+msgstr ""
+"Kelihatannya terjadi kesalahan dalam pembungkus HFS: berkas blok buruk tidak "
+"berisi volume HFS+ tertanam."
+
+#: libparted/fs/r/hfs/hfs.c:883
+msgid "Sorry, HFS+ cannot be resized that way yet."
+msgstr "Maaf, HFS+ belum dapat diubah ukuran dengan cara itu."
+
+#: libparted/fs/r/hfs/hfs.c:918
+msgid "shrinking embedded HFS+ volume"
+msgstr "mengecilkan volume HFS+ tertanam"
+
+#: libparted/fs/r/hfs/hfs.c:935
+msgid "Resizing the HFS+ volume has failed."
+msgstr "Mengubah ukuran volume HFS+ telah gagal."
+
+#: libparted/fs/r/hfs/hfs.c:942
+msgid "shrinking HFS wrapper"
+msgstr "mengecilkan pembungkus HFS"
+
+#: libparted/fs/r/hfs/hfs.c:951
+msgid "Updating the HFS wrapper has failed."
+msgstr "Memperbarui pembungkus HFS telah gagal."
+
+#: libparted/fs/r/hfs/hfs.c:1053 libparted/fs/r/hfs/hfs.c:1138
+#, c-format
+msgid ""
+"This is not a real %s check.  This is going to extract special low level "
+"files for debugging purposes."
+msgstr ""
+"Ini bukan sebuah pemeriksaan %s nyata.  Ini akan mengekstrak berkas spesial "
+"level bawah untuk tujuan debugging."
+
+#: libparted/fs/r/hfs/journal.c:155
+msgid "Bad block list header checksum."
+msgstr "Checksum header senarai blok buruk."
+
+#: libparted/fs/r/hfs/journal.c:168
+#, c-format
+msgid ""
+"Invalid size of a transaction block while replaying the journal (%i bytes)."
+msgstr ""
+"Ukuran tidak valid dari suatu blok transaksi ketika memutar ulang jurnal "
+"transaksi (%i byte)."
+
+#: libparted/fs/r/hfs/journal.c:260
+msgid ""
+"Journal stored outside of the volume are not supported.  Try to deactivate "
+"the journal and run Parted again."
+msgstr ""
+"Jurnal yang disimpan di luar dari volume tidak didukung.  Cobalah untuk "
+"menonaktifkan jurnal dan jalankan Parted lagi."
+
+#: libparted/fs/r/hfs/journal.c:271
+msgid "Journal offset or size is not multiple of the sector size."
+msgstr "Ukuran atau ofset dari journal bukan kelipatan dari ukuran sektor."
+
+#: libparted/fs/r/hfs/journal.c:292
+msgid "Incorrect magic values in the journal header."
+msgstr "Nilai magic tidak benar dalam header jurnal."
+
+#: libparted/fs/r/hfs/journal.c:302
+msgid "Journal size mismatch between journal info block and journal header."
+msgstr ""
+"Ukuran jurnal tidak cocok di antara blok info jurnal dan header jurnal."
+
+#: libparted/fs/r/hfs/journal.c:314
+msgid "Some header fields are not multiple of the sector size."
+msgstr "Beberapa ruas header bukan kelipatan dari ukuran sektor."
+
+#: libparted/fs/r/hfs/journal.c:323
+msgid ""
+"The sector size stored in the journal is not 512 bytes.  Parted only "
+"supports 512 bytes length sectors."
+msgstr ""
+"Ukuran sektor yang disimpan dalam jurnal bukan 512 byte.  Parted hanya "
+"mendukung ukuran sektor 512 byte."
+
+#: libparted/fs/r/hfs/journal.c:335
+msgid "Bad journal checksum."
+msgstr "Checksum jurnal jelek."
+
+#: libparted/fs/r/hfs/journal.c:355
+msgid ""
+"The journal is not empty.  Parted must replay the transactions before "
+"opening the file system.  This will modify the file system."
+msgstr ""
+"Jurnal tidak kosong.  Parted harus memutar ulang transaksi sebelum membuka "
+"sistem berkas.  Ini akan memodifikasi sistem berkas."
+
+#: libparted/fs/r/hfs/journal.c:383
+msgid ""
+"The volume header or the master directory block has changed while replaying "
+"the journal.  You should restart Parted."
+msgstr ""
+"Header volume atau blok induk direktori telah berubah ketika memainkan ulang "
+"transaksi jurnal.  Anda mesti menjalankan ulang Parted."
+
+#: libparted/fs/r/hfs/reloc.c:151 libparted/fs/r/hfs/reloc_plus.c:155
+msgid "An extent has not been relocated."
+msgstr "Sebuah extent belum direlokasikan."
+
+#: libparted/fs/r/hfs/reloc.c:251 libparted/fs/r/hfs/reloc_plus.c:307
+msgid ""
+"A reference to an extent comes from a place it should not.  You should check "
+"the file system!"
+msgstr ""
+"Suatu referensi untuk sebuah extent datang dari tempat yang tidak "
+"seharusnya.  Anda mesti memeriksa sistem berkas!"
+
+#: libparted/fs/r/hfs/reloc.c:382
+msgid "This HFS volume has no catalog file.  This is very unusual!"
+msgstr "Volume HFS ini tidak memiliki berkas katalog.  Ini sangat tidak biasa!"
+
+#: libparted/fs/r/hfs/reloc.c:479
+msgid "This HFS volume has no extents overflow file.  This is quite unusual!"
+msgstr ""
+"Volume HFS+ ini tidak memiliki berkas overflow extent.  Ini tidak biasa!"
+
+#: libparted/fs/r/hfs/reloc.c:522 libparted/fs/r/hfs/reloc_plus.c:670
+msgid ""
+"The extents overflow file should not contain its own extents!  You should "
+"check the file system."
+msgstr ""
+"Berkas overflow extent seharusnya tidak berisi extentnya sendiri!  Anda "
+"mesti memeriksa sistem berkas."
+
+#: libparted/fs/r/hfs/reloc.c:579 libparted/fs/r/hfs/reloc_plus.c:849
+msgid "Could not cache the file system in memory."
+msgstr "Tidak dapat menyinggahkan sistem berkas dalam memori."
+
+#: libparted/fs/r/hfs/reloc.c:640 libparted/fs/r/hfs/reloc_plus.c:910
+msgid "Bad blocks list could not be loaded."
+msgstr "Daftar blok buruk tidak bisa dimuat."
+
+#: libparted/fs/r/hfs/reloc.c:654 libparted/fs/r/hfs/reloc_plus.c:926
+msgid "An error occurred during extent relocation."
+msgstr "Terjadi galat ketika merelokasi extent."
+
+#: libparted/fs/r/hfs/reloc_plus.c:495
+msgid "This HFS+ volume has no catalog file.  This is very unusual!"
+msgstr ""
+"Volume HFS+ ini tidak memiliki berkas katalog.  Ini sangat tidak biasa!"
+
+#: libparted/fs/r/hfs/reloc_plus.c:620
+msgid "This HFS+ volume has no extents overflow file.  This is quite unusual!"
+msgstr ""
+"Volume HFS+ ini tidak memiliki berkas overflow extent.  Ini tidak biasa!"
+
+#: parted/parted.c:137
+msgid "displays this help message"
+msgstr "tampilkan pesan bantuan ini"
+
+#: parted/parted.c:138
+msgid "lists partition layout on all block devices"
+msgstr "tampilkan tata letak partisi di seluruh perangkat blok"
+
+#: parted/parted.c:139
+msgid "displays machine parseable output"
+msgstr "tampilkan keluaran yang dapat diurai mesin"
+
+#: parted/parted.c:140
+msgid "displays JSON output"
+msgstr "tampilkan keluaran JSON"
+
+#: parted/parted.c:141
+msgid "never prompts for user intervention"
+msgstr "jangan pernah tanyakan untuk intervensi pengguna"
+
+#: parted/parted.c:142
+msgid "in script mode, fix instead of abort when asked"
+msgstr "dalam mode skrip, perbaiki alih-alih menggugurkan saat diminta"
+
+#: parted/parted.c:143
+msgid "displays the version"
+msgstr "tampilkan versi"
+
+#: parted/parted.c:144
+msgid "alignment for new partitions"
+msgstr "perataan untuk partisi baru"
+
+#: parted/parted.c:157
+msgid ""
+"NUMBER is the partition number used by Linux.  On MS-DOS disk labels, the "
+"primary partitions number from 1 to 4, logical partitions from 5 onwards.\n"
+msgstr ""
+"NOMOR adalah nomor partisi yang biasa digunakan oleh Linux. Pada label disk "
+"MS-DOS, partisi primer bernomor dari 1 sampai 4, partisi logis dari 5 ke "
+"atas.\n"
+
+#: parted/parted.c:160
+msgid "LABEL-TYPE is one of: "
+msgstr "TIPE-LABEL adalah salah satu dari: "
+
+#: parted/parted.c:161 parted/parted.c:162
+msgid "FLAG is one of: "
+msgstr "FLAG adalah salah satu dari: "
+
+#: parted/parted.c:163
+msgid "UNIT is one of: "
+msgstr "SATUAN adalah salah satu dari: "
+
+#: parted/parted.c:164
+msgid "desired alignment: minimum or optimal"
+msgstr "perataan yang diinginkan: minimal atau optimal"
+
+#: parted/parted.c:165
+msgid "PART-TYPE is one of: primary, logical, extended\n"
+msgstr "TIPE-PART adalah salah satu dari: primer, logis, extended\n"
+
+#: parted/parted.c:167
+msgid "FS-TYPE is one of: "
+msgstr "TIPE-FS adalah salah satu dari: "
+
+#: parted/parted.c:168
+msgid ""
+"START and END are disk locations, such as 4GB or 10%.  Negative values count "
+"from the end of the disk.  For example, -1s specifies exactly the last "
+"sector.\n"
+msgstr ""
+"AWAL dan AKHIR adalah lokasi dari disk, seperti 4GB atau 10%.  Nilai negatif "
+"dihitung dari akhir alamat disk.  Sebagai contoh, -1s menyatakan persis "
+"sektor terakhir.\n"
+
+#: parted/parted.c:171
+msgid ""
+"END is disk location, such as 4GB or 10%.  Negative value counts from the "
+"end of the disk.  For example, -1s specifies exactly the last sector.\n"
+msgstr ""
+"AKHIR adalah lokasi dari disk, seperti 4GB atau 10%.  Nilai negatif dihitung "
+"dari akhir alamat disk.  sebagai contoh, -1s menyatakan persis sektor "
+"terakhir.\n"
+
+#: parted/parted.c:174
+msgid "STATE is one of: on, off\n"
+msgstr "KEADAAN adalah salah satu dari: on, off\n"
+
+#: parted/parted.c:175
+msgid "DEVICE is usually /dev/hda or /dev/sda\n"
+msgstr "PERANGKAT biasanya adalah /dev/hda atau /dev/sda\n"
+
+#: parted/parted.c:176
+msgid "NAME is any word you want\n"
+msgstr "NAMA adalah kata apapun yang Anda inginkan\n"
+
+#: parted/parted.c:179
+msgid ""
+"Copyright (C) 1998 - 2006 Free Software Foundation, Inc.\n"
+"This program is free software, covered by the GNU General Public License.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+msgstr ""
+"Hak Cipta (C) 1998 - 2006 Free Software Foundation, Inc.\n"
+"Program ini adalah perangkat lunak bebas, dilindungi oleh GNU General Public "
+"Licence.\n"
+"\n"
+"Program ini didistribusikan dengan harapan akan berguna,\n"
+"tetapi TANPA ADANYA GARANSI; bahkan untuk garansi dalam hal\n"
+"PENJUALAN atau KESESUAIAN UNTUK TUJUAN TERTENTU. Lihat\n"
+"GNU General Public License untuk informasi yang lebih detail.\n"
+"\n"
+
+#: parted/parted.c:229
+#, c-format
+msgid "%0.f%%\t(time left %.2d:%.2d)"
+msgstr "%0.f%%\t(sisa waktu %.2d:%.2d)"
+
+#: parted/parted.c:248
+#, c-format
+msgid "Partition %s is being used. Are you sure you want to continue?"
+msgstr "Partisi %s sedang digunakan. Anda yakin ingin melanjutkan?"
+
+#: parted/parted.c:269
+#, c-format
+msgid "Partition(s) on %s are being used."
+msgstr "Partisi pada %s sedang digunakan."
+
+#: parted/parted.c:281
+#, c-format
+msgid ""
+"The existing disk label on %s will be destroyed and all data on this disk "
+"will be lost. Do you want to continue?"
+msgstr ""
+"Disk label yang ada di %s akan dirusak dan seluruh data di disk ini akan "
+"hilang. Apakah Anda ingin melanjutkan?"
+
+#: parted/parted.c:542
+msgid "New disk label type?"
+msgstr "Tipe label disk baru?"
+
+#: parted/parted.c:680
+msgid "Partition type?"
+msgstr "Tipe partisi?"
+
+#: parted/parted.c:698 parted/parted.c:902
+msgid "Partition name?"
+msgstr "Nama partisi?"
+
+#: parted/parted.c:708
+msgid "File system type?"
+msgstr "Tipe sistem berkas?"
+
+#: parted/parted.c:713 parted/parted.c:1683
+msgid "Start?"
+msgstr "Awal?"
+
+#: parted/parted.c:715 parted/parted.c:1685 parted/parted.c:1768
+msgid "End?"
+msgstr "Akhir?"
+
+#: parted/parted.c:782
+#, c-format
+msgid ""
+"You requested a partition from %s to %s (sectors %llu..%llu).\n"
+"The closest location we can manage is %s to %s (sectors %llu..%llu).%s"
+msgstr ""
+"Anda meminta sebuah partisi dari %s sampai %s (sektor %llu..%llu).\n"
+"Lokasi terdekat yang dapat kami tangani adalah %s sampai %s (sektor %llu.."
+"%llu).%s"
+
+#: parted/parted.c:791
+msgid ""
+"\n"
+"Is this still acceptable to you?"
+msgstr ""
+"\n"
+"Apakah ini masih dapat Anda terima?"
+
+#: parted/parted.c:814
+#, c-format
+msgid ""
+"The resulting partition is not properly aligned for best performance: %s"
+msgstr ""
+"Partisi yang dihasilkan tidak diratakan dengan benar untuk kinerja terbaik: "
+"%s"
+
+#: parted/parted.c:816 parted/parted.c:1925
+msgid "unknown (malloc failed)"
+msgstr "tidak diketahui (malloc gagal)"
+
+#: parted/parted.c:894
+#, c-format
+msgid "%s disk labels do not support partition name."
+msgstr "Label disk %s tidak mendukung partisi extended."
+
+#: parted/parted.c:899 parted/parted.c:1748 parted/parted.c:1814
+#: parted/parted.c:1908 parted/parted.c:1983
+msgid "Partition number?"
+msgstr "Nomor partisi?"
+
+#: parted/parted.c:1050
+#, c-format
+msgid "BIOS cylinder,head,sector geometry: %d,%d,%d.  Each cylinder is %s.\n"
+msgstr ""
+"Geometri silinder,head,sektor BIOS: %d,%d,%d.  Setiap silinder adalah %s.\n"
+
+#: parted/parted.c:1137
+#, c-format
+msgid "Model: %s (%s)\n"
+msgstr "Model: %s (%s)\n"
+
+#: parted/parted.c:1139
+#, c-format
+msgid "Disk %s: %s\n"
+msgstr "Disk %s: %s\n"
+
+#: parted/parted.c:1140
+#, c-format
+msgid "Sector size (logical/physical): %lldB/%lldB\n"
+msgstr "Ukuran sektor (logis/fisik): %lldB/%lldB\n"
+
+#: parted/parted.c:1152
+#, c-format
+msgid "Partition Table: %s\n"
+msgstr "Tabel Partisi: %s\n"
+
+#: parted/parted.c:1153
+#, c-format
+msgid "Disk Flags: %s\n"
+msgstr "Flag Disk: %s\n"
+
+#: parted/parted.c:1279 parted/parted.c:1282
+msgid "Number"
+msgstr "Nomor"
+
+#: parted/parted.c:1279 parted/parted.c:1282
+msgid "Start"
+msgstr "Mulai"
+
+#: parted/parted.c:1280 parted/parted.c:1283
+msgid "End"
+msgstr "Akhir"
+
+#: parted/parted.c:1283
+msgid "Size"
+msgstr "Ukuran"
+
+#: parted/parted.c:1287
+msgid "Type"
+msgstr "Tipe"
+
+#: parted/parted.c:1289
+msgid "File system"
+msgstr "Sistem berkas"
+
+#: parted/parted.c:1292
+msgid "Name"
+msgstr "Nama"
+
+#: parted/parted.c:1294
+msgid "Flags"
+msgstr "Flag"
+
+#: parted/parted.c:1352
+msgid "Free Space"
+msgstr "Ruang Kosong"
+
+#: parted/parted.c:1570
+#, c-format
+msgid ""
+"A %s %s partition was found at %s -> %s.  Do you want to add it to the "
+"partition table?"
+msgstr ""
+"Sebuah partisi %s %s ditemukan pada %s -> %s.  Anda ingin menambahkan ini "
+"pada tabel partisi?"
+
+#: parted/parted.c:1613
+msgid "searching for file systems"
+msgstr "mencari sistem berkass"
+
+#: parted/parted.c:1720
+msgid "The resize command has been removed in parted 3.0"
+msgstr "Perintah resize telah dihapus di parted 3.0"
+
+#: parted/parted.c:1782
+msgid ""
+"Shrinking a partition can cause data loss, are you sure you want to continue?"
+msgstr ""
+"Mengecilkan partisi dapat menyebabkan kehilangan data, Anda yakin ingin "
+"melanjutkan?"
+
+#: parted/parted.c:1838
+msgid "New device?"
+msgstr "Perangkat baru?"
+
+#: parted/parted.c:1906
+msgid "alignment type(min/opt)"
+msgstr "tipe perataan(min/opt)"
+
+#: parted/parted.c:1921
+#, c-format
+msgid "%d aligned\n"
+msgstr "%d diratakan\n"
+
+#: parted/parted.c:1923
+#, c-format
+msgid "%d not aligned: %s\n"
+msgstr "%d tidak diratakan: %s\n"
+
+#: parted/parted.c:1948 parted/parted.c:1985
+msgid "Flag to Invert?"
+msgstr "Flag yang akan Dibalik?"
+
+#: parted/parted.c:1953 parted/parted.c:1990
+msgid "New state?"
+msgstr "Keadaan baru?"
+
+#: parted/parted.c:2036
+msgid "Unit?"
+msgstr "Satuan?"
+
+#: parted/parted.c:2171
+msgid "align-check"
+msgstr "align-check"
+
+#: parted/parted.c:2174
+msgid ""
+"align-check TYPE N                       check partition N for TYPE(min|opt) "
+"alignment"
+msgstr ""
+"align-check TIPE N                       periksa partisi N untuk perataan "
+"TIPE (min|opt)"
+
+#: parted/parted.c:2182
+msgid "help"
+msgstr "help"
+
+#: parted/parted.c:2185
+msgid ""
+"help [COMMAND]                           print general help, or help on "
+"COMMAND"
+msgstr ""
+"help [PERINTAH]                          menampilkan bantuan umum, atau "
+"bantuan tentang PERINTAH"
+
+#: parted/parted.c:2191
+msgid "mklabel"
+msgstr "mklabel"
+
+#: parted/parted.c:2191
+msgid "mktable"
+msgstr "mktable"
+
+#: parted/parted.c:2194
+msgid ""
+"mklabel,mktable LABEL-TYPE               create a new disklabel (partition "
+"table)"
+msgstr ""
+"mklabel,mktable TIPE-LABEL               membuat sebuah disklabel baru "
+"(tabel partisi)"
+
+#: parted/parted.c:2200
+msgid "mkpart"
+msgstr "mkpart"
+
+#: parted/parted.c:2203
+msgid "mkpart PART-TYPE [FS-TYPE] START END     make a partition"
+msgstr "mkpart TIPE-PART [TIPE-FS] AWAL AKHIR    membuat sebuah partisi"
+
+#: parted/parted.c:2209
+msgid ""
+"'mkpart' makes a partition without creating a new file system on the "
+"partition.  FS-TYPE may be specified to set an appropriate partition ID.\n"
+msgstr ""
+"'mkpart' membuat sebuah partisi tanpa membuat sebuah sistem berkas baru pada "
+"partisi.  TIPE-FS dapat dinyatakan untuk menata ID partisi yang sesuai.\n"
+
+#: parted/parted.c:2214
+msgid "name"
+msgstr "name"
+
+#: parted/parted.c:2217
+msgid "name NUMBER NAME                         name partition NUMBER as NAME"
+msgstr ""
+"name NOMOR NAMA                          memberi nama partisi NOMOR dengan "
+"NAMA"
+
+#: parted/parted.c:2222
+msgid "print"
+msgstr "print"
+
+#: parted/parted.c:2225
+msgid ""
+"print [devices|free|list,all]            display the partition table, or "
+"available devices, or free space, or all found partitions"
+msgstr ""
+"print [devices|free|list,all]            tampilkan tabel partisi, atau "
+"perangkat yang bisa dipakai, atau ruang kosong, atau seluruh partisi yang "
+"ditemukan"
+
+#: parted/parted.c:2229
+msgid ""
+"Without arguments, 'print' displays the entire partition table. However with "
+"the following arguments it performs various other actions.\n"
+msgstr ""
+"Tanpa argumen, 'print' menampilkan seluruh tabel partisi. Akan tetapi dengan "
+"diikuti argumen ini akan melakukan beberapa aksi yang berbeda.\n"
+
+#: parted/parted.c:2231
+msgid "  devices   : display all active block devices\n"
+msgstr "  devices   : menampilkan seluruh perangkat blok yang aktif\n"
+
+#: parted/parted.c:2232
+msgid ""
+"  free      : display information about free unpartitioned space on the "
+"current block device\n"
+msgstr ""
+"  free      : menampilkan informasi tentang ruang partisi kosong di perngkat "
+"blok yang sedang dipakai\n"
+
+#: parted/parted.c:2234
+msgid ""
+"  list, all : display the partition tables of all active block devices\n"
+msgstr ""
+"  list, all : tampilkan tabel partisi dari seluruh perangkat blok yang "
+"aktif\n"
+
+#: parted/parted.c:2238
+msgid "quit"
+msgstr "quit"
+
+#: parted/parted.c:2241
+msgid "quit                                     exit program"
+msgstr "quit                                     keluar dari program"
+
+#: parted/parted.c:2246
+msgid "rescue"
+msgstr "rescue"
+
+#: parted/parted.c:2249
+msgid ""
+"rescue START END                         rescue a lost partition near START "
+"and END"
+msgstr ""
+"rescue AWAL AKHIR                        menyelamatkan partisi yang hilang "
+"di dekat AWAL dan AKHIR"
+
+#: parted/parted.c:2255
+msgid "resize"
+msgstr "resize"
+
+#: parted/parted.c:2258
+msgid "The resize command was removed in parted 3.0\n"
+msgstr "Perintah resize telah dihapus di parted 3.0\n"
+
+#: parted/parted.c:2261
+msgid "resizepart"
+msgstr "resizepart"
+
+#: parted/parted.c:2264
+msgid "resizepart NUMBER END                    resize partition NUMBER"
+msgstr "resizepart NOMOR AKHIR                   mengubah ukuran partisi NOMOR"
+
+#: parted/parted.c:2269
+msgid "rm"
+msgstr "rm"
+
+#: parted/parted.c:2272
+msgid "rm NUMBER                                delete partition NUMBER"
+msgstr "rm NOMOR                                 hapus partisi NOMOR"
+
+#: parted/parted.c:2277
+msgid "select"
+msgstr "select"
+
+#: parted/parted.c:2280
+msgid "select DEVICE                            choose the device to edit"
+msgstr ""
+"select PERANGKAT                         pilih perangkat yang akan disunting"
+
+#: parted/parted.c:2285
+msgid "disk_set"
+msgstr "disk_set"
+
+#: parted/parted.c:2288
+msgid ""
+"disk_set FLAG STATE                      change the FLAG on selected device"
+msgstr ""
+"disk_set FLAG STATE                      ubah FLAG pada perangkat yang "
+"dipilih"
+
+#: parted/parted.c:2293
+msgid "disk_toggle"
+msgstr "disk_toggle"
+
+#: parted/parted.c:2296
+msgid ""
+"disk_toggle [FLAG]                       toggle the state of FLAG on "
+"selected device"
+msgstr ""
+"disk_toggle [FLAG]                       jungkitkan keadaan FLAG pada "
+"perangkat yang dipilih"
+
+#: parted/parted.c:2302
+msgid "set"
+msgstr "set"
+
+#: parted/parted.c:2305
+msgid ""
+"set NUMBER FLAG STATE                    change the FLAG on partition NUMBER"
+msgstr "set NOMOR FLAG STATE                     ubah FLAG pada partisi NOMOR"
+
+#: parted/parted.c:2311
+msgid "toggle"
+msgstr "toggle"
+
+#: parted/parted.c:2314
+msgid ""
+"toggle [NUMBER [FLAG]]                   toggle the state of FLAG on "
+"partition NUMBER"
+msgstr ""
+"toggle [NOMOR [FLAG]]                    jungkitkan keadaan FLAG pada "
+"partisi NOMOR"
+
+#: parted/parted.c:2320
+msgid "unit"
+msgstr "unit"
+
+#: parted/parted.c:2323
+msgid "unit UNIT                                set the default unit to UNIT"
+msgstr "unit SATUAN                              menata satuan baku ke SATUAN"
+
+#: parted/parted.c:2328
+msgid "version"
+msgstr "version"
+
+#: parted/parted.c:2331
+msgid ""
+"version                                  display the version number and "
+"copyright information of GNU Parted"
+msgstr ""
+"version                                  menampilkan versi dan informasi hak "
+"cipta dari GNU Parted"
+
+#: parted/parted.c:2335
+msgid ""
+"'version' displays copyright and version information corresponding to this "
+"copy of GNU Parted\n"
+msgstr ""
+"'version' menampilkan hak cipta dan informasi versi yang sesuai dengan "
+"salinan dari GNU Parted ini\n"
+
+#: parted/parted.c:2405
+#, c-format
+msgid "Usage: %s [-hlmsfv] [-a<align>] [DEVICE [COMMAND [PARAMETERS]]...]\n"
+msgstr ""
+"Penggunaan: %s [-hlmsfv] [-a<perataan>] [PERANGKAT [PERINTAH "
+"[PARAMETER]]...]\n"
+
+#: parted/parted.c:2449
+msgid "No device found"
+msgstr "Tak ada perangkat yang ditemukan"
+
+#: parted/parted.c:2486
+msgid "WARNING: You are not superuser.  Watch out for permissions.\n"
+msgstr "PERINGATAN: Anda bukan superuser.  Hati-hati dengan izin.\n"
+
+#: parted/parted.c:2519
+msgid ""
+"You should reinstall your boot loader before rebooting.  Read section 4 of "
+"the Parted User documentation for more information."
+msgstr ""
+"Anda seharusnya memasang ulang boot loader Anda sebelum reboot.  Baca bagian "
+"4 dari dokumentasi pengguna Parted untuk informasi lebih lanjut."
+
+#: parted/parted.c:2526
+msgid "You may need to update /etc/fstab.\n"
+msgstr "Anda mungkin perlu memperbarui /etc/fstab.\n"
+
+#: parted/ui.c:164
+msgid "Welcome to GNU Parted! Type 'help' to view a list of commands.\n"
+msgstr ""
+"Selamat datang di GNU Parted| Ketik 'help' untuk melihat daftar perintah.\n"
+
+#: parted/ui.c:167
+msgid ""
+"Usage: parted [OPTION]... [DEVICE [COMMAND [PARAMETERS]...]...]\n"
+"Apply COMMANDs with PARAMETERS to DEVICE.  If no COMMAND(s) are given, run "
+"in\n"
+"interactive mode.\n"
+msgstr ""
+"Penggunaan: parted [OPSI]... [PERANGKAT [PERINTAH [PARAMETER]...]...]\n"
+"Menerapkan PERINTAH dengan PARAMETER ke PERANGKAT. Jika tidak ada PERINTAH "
+"yang diberikan,\n"
+"maka parted akan berjalan dalam mode interaktif.\n"
+
+#: parted/ui.c:172
+#, c-format
+msgid ""
+"\n"
+"\n"
+"You found a bug in GNU Parted! Here's what you have to do:\n"
+"\n"
+"Don't panic! The bug has most likely not affected any of your data.\n"
+"Help us to fix this bug by doing the following:\n"
+"\n"
+"Check whether the bug has already been fixed by checking\n"
+"the last version of GNU Parted that you can find at:\n"
+"\n"
+"\thttp://ftp.gnu.org/gnu/parted/\n"
+"\n"
+"Please check this version prior to bug reporting.\n"
+"\n"
+"If this has not been fixed yet or if you don't know how to check,\n"
+"please visit the GNU Parted website:\n"
+"\n"
+"\thttp://www.gnu.org/software/parted\n"
+"\n"
+"for further information.\n"
+"\n"
+"Your report should contain the version of this release (%s)\n"
+"along with the error message below, the output of\n"
+"\n"
+"\tparted DEVICE unit co print unit s print\n"
+"\n"
+"and the following history of commands you entered.\n"
+"Also include any additional information about your setup you\n"
+"consider important.\n"
+msgstr ""
+"\n"
+"\n"
+"Anda menemukan sebuah bug dalam GNU Parted! Ini yang harus Anda lakukan:\n"
+"\n"
+"Jangan panik! Bug tersebut sangat boleh jadi tidak mempengaruhi data Anda.\n"
+"Bantu kami untuk memperbaiki bug ini dengan melakukan hal berikut:\n"
+"\n"
+"Periksa apakah bug telah diperbaiki dengan memeriksa\n"
+"versi terbaru dari GNU Parted yang dapat Anda temukan di:\n"
+"\n"
+"\thttp://ftp.gnu.org/gnu/parted/\n"
+"\n"
+"Tolong periksa versi ini terlebih dahulu sebelum melaporkan bug.\n"
+"\n"
+"Jika bug ini belum diperbaiki atau jika Anda tidak tahu bagaimana\n"
+"cara memeriksanya, kunjungi situs web GNU Parted:\n"
+"\n"
+"\thttp://www.gnu.org/software/parted\n"
+"\n"
+"untuk informasi lebih lanjut.\n"
+"\n"
+"Laporan Anda seharusnya berisi versi dari rilis ini (%s)\n"
+"dengan pesan galat di bawah ini, dan keluaran dari perintah\n"
+"\n"
+"\tparted DEVICE unit co print unit s print\n"
+"\n"
+"dan riwayat dari perintah yang telah Anda jalankan.\n"
+"Sertakan juga informasi tambahan mengenai penyiapan yang\n"
+"Anda anggap penting.\n"
+
+#: parted/ui.c:293
+msgid ""
+"\n"
+"Command History:\n"
+msgstr ""
+"\n"
+"Riwayat Perintah:\n"
+
+#: parted/ui.c:356
+msgid ""
+"\n"
+"Error: SEGV_MAPERR (Address not mapped to object)\n"
+msgstr ""
+"\n"
+"Galat: SEGV_MAPPER (Alamat tidak dipetakan ke objek)\n"
+
+#: parted/ui.c:362
+msgid ""
+"\n"
+"Error: SEGV_ACCERR (Invalid permissions for mapped object)\n"
+msgstr ""
+"\n"
+"Galat: SEGV_ACCER (Izin tidak sah untuk objek yang dipetakan)\n"
+
+#: parted/ui.c:367
+msgid ""
+"\n"
+"Error: A general SIGSEGV signal was encountered.\n"
+msgstr ""
+"\n"
+"Galat: Sebuah sinyal SIGSEGV umum telah dijumpai.\n"
+
+#: parted/ui.c:391
+msgid ""
+"\n"
+"Error: FPE_INTDIV (Integer: divide by zero)"
+msgstr ""
+"\n"
+"Galat: FPE_INTDIV (Integer: pembagian dengan nol)"
+
+#: parted/ui.c:396
+msgid ""
+"\n"
+"Error: FPE_INTOVF (Integer: overflow)"
+msgstr ""
+"\n"
+"Galat: FPE_INTOVF (Integer: overflow)"
+
+#: parted/ui.c:401
+msgid ""
+"\n"
+"Error: FPE_FLTDIV (Float: divide by zero)"
+msgstr ""
+"\n"
+"Galat: FPE_FLTDIV (Float: pembagian dengan nol)"
+
+#: parted/ui.c:406
+msgid ""
+"\n"
+"Error: FPE_FLTOVF (Float: overflow)"
+msgstr ""
+"\n"
+"Galat: FPE_FLTOVF (Float: overflow)"
+
+#: parted/ui.c:411
+msgid ""
+"\n"
+"Error: FPE_FLTUND (Float: underflow)"
+msgstr ""
+"\n"
+"Galat: FPE_FLTUND (Float: underflow)"
+
+#: parted/ui.c:416
+msgid ""
+"\n"
+"Error: FPE_FLTRES (Float: inexact result)"
+msgstr ""
+"\n"
+"Galat: FPE_FLTRES (Float: hasil tidak eksak)"
+
+#: parted/ui.c:421
+msgid ""
+"\n"
+"Error: FPE_FLTINV (Float: invalid operation)"
+msgstr ""
+"\n"
+"Galat: FPE_FLTINV (Float: operasi tidak valid)"
+
+#: parted/ui.c:426
+msgid ""
+"\n"
+"Error: FPE_FLTSUB (Float: subscript out of range)"
+msgstr ""
+"\n"
+"Galat: FPE_FLTSUB (Float: subskrip di luar dari jangkauan)"
+
+#: parted/ui.c:431
+msgid ""
+"\n"
+"Error: A general SIGFPE signal was encountered."
+msgstr ""
+"\n"
+"Galat: Sebuah sinyal SIGFPE umum telah dijumpai."
+
+#: parted/ui.c:455
+msgid ""
+"\n"
+"Error: ILL_ILLOPC (Illegal Opcode)"
+msgstr ""
+"\n"
+"Galat: ILL_ILLOPC (Opcode Ilegal)"
+
+#: parted/ui.c:460
+msgid ""
+"\n"
+"Error: ILL_ILLOPN (Illegal Operand)"
+msgstr ""
+"\n"
+"Galat: ILL_ILLOPN (Operand Ilegal)"
+
+#: parted/ui.c:465
+msgid ""
+"\n"
+"Error: ILL_ILLADR (Illegal addressing mode)"
+msgstr ""
+"\n"
+"Galat: ILL_ILLADDR (Mode pengalamatan ilegal)"
+
+#: parted/ui.c:470
+msgid ""
+"\n"
+"Error: ILL_ILLTRP (Illegal Trap)"
+msgstr ""
+"\n"
+"Galat: ILL_ILLTRP (Trap Ilegal)"
+
+#: parted/ui.c:475
+msgid ""
+"\n"
+"Error: ILL_PRVOPC (Privileged Opcode)"
+msgstr ""
+"\n"
+"Galat: ILL_PRVOPC (Opcode Privileged)"
+
+#: parted/ui.c:480
+msgid ""
+"\n"
+"Error: ILL_PRVREG (Privileged Register)"
+msgstr ""
+"\n"
+"Galat: ILL_PRVREG (Register Privileged)"
+
+#: parted/ui.c:485
+msgid ""
+"\n"
+"Error: ILL_COPROC (Coprocessor Error)"
+msgstr ""
+"\n"
+"Galat: ILL_COPROC (Galat Koprosesor)"
+
+#: parted/ui.c:490
+msgid ""
+"\n"
+"Error: ILL_BADSTK (Internal Stack Error)"
+msgstr ""
+"\n"
+"Galat: ILL_BADSTK (Galat Stack Internal)"
+
+#: parted/ui.c:495
+msgid ""
+"\n"
+"Error: A general SIGILL signal was encountered."
+msgstr ""
+"\n"
+"Galat: Sebuah sinyal SIGILL umum telah dijumpai."
+
+#: parted/ui.c:901
+#, c-format
+msgid "invalid token: %s"
+msgstr "token tidak valid: %s"
+
+#: parted/ui.c:1082
+msgid "Expecting a partition number."
+msgstr "Mengharapkan sebuah nomor partisi."
+
+#: parted/ui.c:1091
+msgid "Partition doesn't exist."
+msgstr "Partisi tidak ada."
+
+#: parted/ui.c:1111
+msgid "Expecting a file system type."
+msgstr "Mengharapkan sebuah tipe sistem berkas."
+
+#: parted/ui.c:1118
+#, c-format
+msgid "Unknown file system type \"%s\"."
+msgstr "Tipe sistem berkas tak dikenal \"%s\"."
+
+#: parted/ui.c:1139
+msgid "Expecting a disk label type."
+msgstr "Mengharapkan sebuah tipe label disk."
+
+#: parted/ui.c:1170 parted/ui.c:1206
+msgid "No flags supported"
+msgstr "Tidak ada flag yang didukung"
+
+#: parted/ui.c:1280
+msgid "Can't create any more partitions."
+msgstr "Tidak dapat membuat partisi lagi."
+
+#: parted/ui.c:1290
+msgid "Expecting a partition type."
+msgstr "Mengharapkan sebuah tipe partisi."
+
+#: parted/ui.c:1439
+msgid "on"
+msgstr "nyala"
+
+#: parted/ui.c:1440
+msgid "off"
+msgstr "mati"
+
+#: parted/ui.c:1457
+msgid "optimal"
+msgstr "optimal"
+
+#: parted/ui.c:1458
+msgid "minimal"
+msgstr "minimal"
+
+#: parted/ui.c:1591
+msgid "OPTIONs:"
+msgstr "OPSI:"
+
+#: parted/ui.c:1596
+msgid "COMMANDs:"
+msgstr "PERINTAH:"
+
+#: parted/ui.c:1599
+#, c-format
+msgid ""
+"\n"
+"Report bugs to %s\n"
+msgstr ""
+"\n"
+"Laporkan bug ke: %s\n"
+
+#: parted/ui.c:1606
+#, c-format
+msgid "Using %s\n"
+msgstr "Menggunakan %s\n"
+
+#: parted/ui.c:1686
+msgid "This command does not make sense in non-interactive mode.\n"
+msgstr "Perintah ini tidak masuk akal dalam mode non-interaktif.\n"

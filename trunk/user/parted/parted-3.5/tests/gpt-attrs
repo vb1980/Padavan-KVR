@@ -1,0 +1,72 @@
+#!/usr/bin/python3
+
+# Copyright (C) 2021 SUSE LLC
+
+# program to show gpt partition attributes or set attributes of
+# partition 1
+
+# only works with 512 sectors and standard GPT header layout (128
+# partition entires with 128 bytes each, secondary header at end of
+# device)
+
+
+from struct import unpack_from, pack_into
+from zipfile import crc32
+import array
+import sys
+
+
+class Gpt:
+
+    # Calculate and insert the CRCs of the partition entires and the
+    # header.
+    def calc_crcs(self, header, entries):
+        # compute crc of partition entries
+        crc2 = crc32(entries) & 0xFFFFFFFF
+        pack_into('<L', header, 88, crc2)
+
+        # compute crc of header
+        pack_into('<L', header, 16, 0)
+        crc1 = crc32(header[:92]) & 0xFFFFFFFF
+        pack_into('<L', header, 16, crc1)
+
+    def read(self, name):
+        self.name = name
+
+        file = open(name, 'rb+')
+
+        file.seek(512)
+        self.primary_header = array.array('B', file.read(512))
+        self.primary_entries = array.array('B', file.read(32 * 512))
+
+        file.seek(-33 * 512, 2)
+        self.secondary_entries = array.array('B', file.read(32 * 512))
+        self.secondary_header = array.array('B', file.read(512))
+
+    def write(self):
+        file = open(self.name, 'rb+')
+
+        self.calc_crcs(self.primary_header, self.primary_entries)
+        file.seek(512)
+        file.write(self.primary_header)
+        file.write(self.primary_entries)
+
+        self.calc_crcs(self.secondary_header, self.secondary_entries)
+        file.seek(-33 * 512, 2)
+        file.write(self.secondary_entries)
+        file.write(self.secondary_header)
+
+
+gpt = Gpt()
+
+gpt.read(sys.argv[1])
+
+if sys.argv[2] == "show":
+    attrs = unpack_from('<Q', gpt.primary_entries, 48)[0]
+    print(hex(attrs))
+
+if sys.argv[2] == "set":
+    attrs = int(sys.argv[3], 0)
+    pack_into('<Q', gpt.primary_entries, 48, attrs)
+    pack_into('<Q', gpt.secondary_entries, 48, attrs)
+    gpt.write()

@@ -1,0 +1,3272 @@
+# Korean translation for the parted package.
+# This file is distributed under the same license as the parted package.
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2016, 2021, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: parted 3.4.64.2\n"
+"Report-Msgid-Bugs-To: bug-parted@gnu.org\n"
+"POT-Creation-Date: 2022-04-18 14:44-0400\n"
+"PO-Revision-Date: 2022-04-07 15:50+0900\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
+"Language-Team: Korean <translation-team-ko@googlegroups.com>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/argmatch.c:147
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "%2$s의 잘못된 %1$s인자"
+
+#: lib/argmatch.c:148
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "%2$s의 애매한 인자 %1$s"
+
+#: lib/argmatch.c:167 lib/argmatch.h:238
+msgid "Valid arguments are:"
+msgstr "유효한 인자:"
+
+#: lib/closeout.c:122 libparted/labels/fdasd.c:145
+msgid "write error"
+msgstr "기록 오류"
+
+#: lib/error.c:195
+msgid "Unknown system error"
+msgstr "알 수 없는 시스템 오류"
+
+#: lib/getopt.c:278
+#, c-format
+msgid "%s: option '%s%s' is ambiguous\n"
+msgstr "%s: '%s%s' 옵션은 애매합니다\n"
+
+#: lib/getopt.c:284
+#, c-format
+msgid "%s: option '%s%s' is ambiguous; possibilities:"
+msgstr "%s: ‘%s%s’ 옵션은 애매합니다. 쓸 수 있는 옵션은 다음과 같습니다:"
+
+#: lib/getopt.c:319
+#, c-format
+msgid "%s: unrecognized option '%s%s'\n"
+msgstr "%s: 인식할 수 없는 ‘%s%s’ 옵션\n"
+
+#: lib/getopt.c:345
+#, c-format
+msgid "%s: option '%s%s' doesn't allow an argument\n"
+msgstr "%s: ‘%s%s’ 옵션은 인자를 허용하지 않습니다\n"
+
+#: lib/getopt.c:360
+#, c-format
+msgid "%s: option '%s%s' requires an argument\n"
+msgstr "%s: ‘%s%s’ 옵션은 인자가 필요합니다\n"
+
+#: lib/getopt.c:621
+#, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: 잘못된 옵션 -- ‘%c’\n"
+
+#: lib/getopt.c:636 lib/getopt.c:682
+#, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: 옵션에 인자가 필요합니다 -- ‘%c’\n"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  For example, a French Unicode local should translate
+#. these to U+00AB (LEFT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), and U+00BB (RIGHT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), respectively.
+#.
+#. If the catalog has no translation, we will try to
+#. use Unicode U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. Unicode U+2019 (RIGHT SINGLE QUOTATION MARK).  If the
+#. current locale is not Unicode, locale_quoting_style
+#. will quote 'like this', and clocale_quoting_style will
+#. quote "like this".  You should always include translations
+#. for "`" and "'" even if U+2018 and U+2019 are appropriate
+#. for your locale.
+#.
+#. If you don't know what to put here, please see
+#. <https://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:355
+msgid "`"
+msgstr "`"
+
+#: lib/quotearg.c:356
+msgid "'"
+msgstr "‘"
+
+#: lib/regcomp.c:122
+msgid "Success"
+msgstr "성공"
+
+#: lib/regcomp.c:125
+msgid "No match"
+msgstr "일치하는 항목 없음"
+
+#: lib/regcomp.c:128
+msgid "Invalid regular expression"
+msgstr "잘못된 정규 표현식"
+
+#: lib/regcomp.c:131
+msgid "Invalid collation character"
+msgstr "잘못된 대조 문자"
+
+#: lib/regcomp.c:134
+msgid "Invalid character class name"
+msgstr "잘못된 문자 클래스 이름"
+
+#: lib/regcomp.c:137
+msgid "Trailing backslash"
+msgstr "역 슬래시가 따라붙음"
+
+#: lib/regcomp.c:140
+msgid "Invalid back reference"
+msgstr "잘못된 역 참조"
+
+#: lib/regcomp.c:143
+msgid "Unmatched [, [^, [:, [., or [="
+msgstr "일치하지 않는 [ 또는 [^, [:, [., [="
+
+#: lib/regcomp.c:146
+msgid "Unmatched ( or \\("
+msgstr "일치하지 않는 ( 또는 \\("
+
+#: lib/regcomp.c:149
+msgid "Unmatched \\{"
+msgstr "일치하지 않는 \\{"
+
+#: lib/regcomp.c:152
+msgid "Invalid content of \\{\\}"
+msgstr "잘못된 \\{\\} 컨텐트"
+
+#: lib/regcomp.c:155
+msgid "Invalid range end"
+msgstr "잘못된 범위의 끝"
+
+#: lib/regcomp.c:158
+msgid "Memory exhausted"
+msgstr "메모리가 부족합니다"
+
+#: lib/regcomp.c:161
+msgid "Invalid preceding regular expression"
+msgstr "잘못된 정규 표현식 앞 부분"
+
+#: lib/regcomp.c:164
+msgid "Premature end of regular expression"
+msgstr "정규 표현식이 예상치 않게 미리 끝났습니다"
+
+#: lib/regcomp.c:167
+msgid "Regular expression too big"
+msgstr "정규 표현식이 너무 깁니다"
+
+#: lib/regcomp.c:170
+msgid "Unmatched ) or \\)"
+msgstr "일치하지 않는 ) 또는 \\)"
+
+#: lib/regcomp.c:650
+msgid "No previous regular expression"
+msgstr "정규 표현식 앞 부분이 없습니다"
+
+#. TRANSLATORS: A regular expression testing for an affirmative answer
+#. (english: "yes").  Testing the first character may be sufficient.
+#. Take care to consider upper and lower case.
+#. To enquire the regular expression that your system uses for this
+#. purpose, you can use the command
+#. locale -k LC_MESSAGES | grep '^yesexpr='
+#: lib/rpmatch.c:150
+msgid "^[yY]"
+msgstr "^[yY]"
+
+#. TRANSLATORS: A regular expression testing for a negative answer
+#. (english: "no").  Testing the first character may be sufficient.
+#. Take care to consider upper and lower case.
+#. To enquire the regular expression that your system uses for this
+#. purpose, you can use the command
+#. locale -k LC_MESSAGES | grep '^noexpr='
+#: lib/rpmatch.c:163
+msgid "^[nN]"
+msgstr "^[nN]"
+
+#: lib/version-etc.c:73
+#, c-format
+msgid "Packaged by %s (%s)\n"
+msgstr "%s이(가) 패키징함(%s)\n"
+
+#: lib/version-etc.c:76
+#, c-format
+msgid "Packaged by %s\n"
+msgstr "%s이(가) 패키징함\n"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:83
+msgid "(C)"
+msgstr "(C)"
+
+#. TRANSLATORS: The %s placeholder is the web address of the GPL license.
+#: lib/version-etc.c:88
+#, c-format
+msgid ""
+"License GPLv3+: GNU GPL version 3 or later <%s>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+msgstr ""
+"라이선스 GPLv3+: GNU GPL 버전 3 이상 <%s>.\n"
+"이 프로그램은 자유 소프트웨어입니다: 자유롭게 바꾸거나 재배포할 수 있습니"
+"다.\n"
+"법이 허용하는 한도까지 보증할 수 없습니다.\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:105
+#, c-format
+msgid "Written by %s.\n"
+msgstr "%s이(가) 작성함.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:109
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "%s, %s이(가) 작성함.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:113
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "%s, %s, %s이(가) 작성함.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:120
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"%s, %s, %s,\n"
+"%s이(가) 작성함.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:127
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"%s, %s, %s, %s,\n"
+"%s이(가) 작성함.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:134
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"%s, %s, %s, %s,\n"
+"%s, %s이(가) 작성함.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:142
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"%s, %s, %s, %s,\n"
+"%s, %s, %s이(가) 작성함.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:150
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"%s, %s, %s, %s, \n"
+"%s, %s, %s,\n"
+"%s이(가) 작성함.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:159
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"%s, %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s이(가) 작성함.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:170
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"%s, %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s 외 여러 참여자가 작성함.\n"
+
+#. TRANSLATORS: The placeholder indicates the bug-reporting address
+#. for this package.  Please add _another line_ saying
+#. "Report translation bugs to <...>\n" with the address for translation
+#. bugs (typically your translation team's web or email address).
+#: lib/version-etc.c:249
+#, c-format
+msgid "Report bugs to: %s\n"
+msgstr "버그 보고 주소: %s\n"
+
+#: lib/version-etc.c:251
+#, c-format
+msgid "Report %s bugs to: %s\n"
+msgstr "%s 버그 보고 주소: %s\n"
+
+#: lib/version-etc.c:255 lib/version-etc.c:257
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "%s 홈페이지: <%s>\n"
+
+#: lib/version-etc.c:260
+#, c-format
+msgid "General help using GNU software: <%s>\n"
+msgstr "GNU 프로그램 활용 일반 도움말: <%s>\n"
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "메모리가 부족합니다"
+
+#: libparted/arch/beos.c:246
+msgid "Disk Image"
+msgstr "디스크 이미지"
+
+#: libparted/arch/beos.c:347 libparted/arch/gnu.c:349
+#: libparted/arch/linux.c:1732
+#, c-format
+msgid "Error opening %s: %s"
+msgstr "%s 열기 오류: %s"
+
+#: libparted/arch/beos.c:358 libparted/arch/gnu.c:359
+#: libparted/arch/linux.c:1743
+#, c-format
+msgid "Unable to open %s read-write (%s).  %s has been opened read-only."
+msgstr ""
+"%s을(를) 읽기/쓰기 용도로 열 수 없습니다(%s). %s을(를) 읽기 전용으로 열었습니"
+"다."
+
+#: libparted/arch/beos.c:420 libparted/arch/linux.c:1908
+#, c-format
+msgid "%s during seek for read on %s"
+msgstr "%2$s 읽기 용도로 탐색 중 %1$s"
+
+#: libparted/arch/beos.c:453 libparted/arch/gnu.c:497 libparted/arch/gnu.c:596
+#: libparted/arch/gnu.c:724 libparted/arch/linux.c:1868
+#: libparted/arch/linux.c:1950
+#, c-format
+msgid "%s during read on %s"
+msgstr "%2$s을(를) 읽는 중 %1$s"
+
+#: libparted/arch/beos.c:489 libparted/arch/gnu.c:557
+#: libparted/arch/linux.c:2027
+#, c-format
+msgid "Can't write to %s, because it is opened read-only."
+msgstr "읽기 전용으로 열어 %s에 쓸 수 없습니다."
+
+#: libparted/arch/beos.c:505 libparted/arch/linux.c:2052
+#, c-format
+msgid "%s during seek for write on %s"
+msgstr "%2$s에 기록 용도로 탐색 중 %1$s"
+
+#: libparted/arch/beos.c:542 libparted/arch/gnu.c:633 libparted/arch/gnu.c:678
+#: libparted/arch/gnu.c:755 libparted/arch/linux.c:2000
+#: libparted/arch/linux.c:2095 libparted/arch/linux.c:2168
+#, c-format
+msgid "%s during write on %s"
+msgstr "%2$s에 기록 중 %1$s"
+
+#: partprobe/partprobe.c:149
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "자세한 정보는 ‘%s --help’를 입력하십시오.\n"
+
+#: partprobe/partprobe.c:153
+#, c-format
+msgid "Usage: %s [OPTION] [DEVICE]...\n"
+msgstr "사용법: %s [<옵션>] [<장치>]...\n"
+
+#: partprobe/partprobe.c:154
+msgid ""
+"Inform the operating system about partition table changes.\n"
+"\n"
+"  -d, --dry-run    do not actually inform the operating system\n"
+"  -s, --summary    print a summary of contents\n"
+"  -h, --help       display this help and exit\n"
+"  -v, --version    output version information and exit\n"
+msgstr ""
+"분할 영역 테이블의 바뀐 상태를 운영체제에 알립니다.\n"
+"\n"
+"  -d, —dry-run    실제로 운영체제에 알려주지 않습니다\n"
+"  -s, —summary    요약 내용을 출력합니다\n"
+"  -h, —help       이 도움말을 나타낸 후 빠져나갑니다\n"
+"  -v, —version    버전 정보를 출력한 후 빠져나갑니다\n"
+
+#: partprobe/partprobe.c:162
+msgid ""
+"\n"
+"When no DEVICE is given, probe all partitions.\n"
+msgstr ""
+"\n"
+"<장치> 값이 없으면, 모든 분할 영역을 찾습니다.\n"
+
+#: partprobe/partprobe.c:166
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"\n"
+"<%s>에 버그를 보고하십시오.\n"
+
+#: libparted/arch/gnu.c:110
+#, c-format
+msgid "Unable to open %s."
+msgstr "%s을(를) 열 수 없습니다."
+
+#: libparted/arch/gnu.c:130
+msgid "Unable to probe store."
+msgstr "저장 장치를 찾을 수 없습니다."
+
+#: libparted/arch/gnu.c:235
+#, c-format
+msgid ""
+"WARNING: the kernel failed to re-read the partition table on %s (%s).  As a "
+"result, it may not reflect all of your changes until after reboot."
+msgstr ""
+"경고: 커널에서 %s의 분할 영역 테이블 다시 읽기 실패(%s).  결과적으로, 바뀐 모"
+"든 설정이 다시 부팅한 다음 반영이 안 될 수도 있습니다."
+
+#: libparted/arch/gnu.c:261
+#, c-format
+msgid ""
+"Warning: unable to open %s (%s). As a result, it may not reflect all of your "
+"changes until after reboot."
+msgstr ""
+"경고: %s 열 수 없음(%s). 결과적으로, 바뀐 모든 설정이 다시 부팅한 다음 반영"
+"이 안 될 수도 있습니다."
+
+#: libparted/arch/gnu.c:274
+#, c-format
+msgid ""
+"Warning: failed to make translator go away on %s (%s). As a result, it may "
+"not reflect all of your changes until after reboot."
+msgstr ""
+"경고: %s에서 벗어난 트랜스레이터 생성 실패(%s). 결과적으로, 바뀐 모든 설정이 "
+"다시 부팅한 다음 반영이 안 될 수도 있습니다."
+
+#: libparted/arch/gnu.c:820
+#, c-format
+msgid "%s trying to sync %s to disk"
+msgstr "%s에서 디스크로 %s 동기화를 시도합니다"
+
+#: libparted/arch/linux.c:633
+#, c-format
+msgid "Could not stat device %s - %s."
+msgstr "%s 장치의 상태를 가져올 수 없습니다 - %s."
+
+#: libparted/arch/linux.c:690
+#, c-format
+msgid "Unable to determine the dm type of %s."
+msgstr "%s의 dm 형식을 파악할 수 없습니다."
+
+#: libparted/arch/linux.c:774 libparted/arch/linux.c:907
+#, c-format
+msgid ""
+"Could not determine sector size for %s: %s.\n"
+"Using the default sector size (%lld)."
+msgstr ""
+"%s의 섹터 크기를 파악할 수 없습니다: %s.\n"
+"기본 섹터 크기(%lld)를 활용합니다."
+
+#: libparted/arch/linux.c:795
+#, c-format
+msgid ""
+"Could not determine physical sector size for %s.\n"
+"Using the logical sector size (%lld)."
+msgstr ""
+"%s의 실제 섹터 크기를 파악할 수 없습니다.\n"
+"논리 섹터 크기(%lld)를 활용합니다."
+
+#: libparted/arch/linux.c:855
+#, c-format
+msgid "Unable to determine the size of %s (%s)."
+msgstr "%s 크기를 파악할 수 없습니다(%s)."
+
+#: libparted/arch/linux.c:958 libparted/arch/linux.c:973
+msgid "Generic IDE"
+msgstr "일반 IDE"
+
+#: libparted/arch/linux.c:963
+#, c-format
+msgid "Could not get identity of device %s - %s"
+msgstr "%s 장치의 식별 정보를 가져올 수 없습니다 - %s"
+
+#: libparted/arch/linux.c:994
+#, c-format
+msgid ""
+"Device %s has multiple (%d) logical sectors per physical sector.\n"
+"GNU Parted supports this EXPERIMENTALLY for some special disk label/file "
+"system combinations, e.g. GPT and ext2/3.\n"
+"Please consult the web site for up-to-date information."
+msgstr ""
+"%s 장치에 실제 섹터 당 다중(%d) 논리 섹터가 있습니다.\n"
+"GNU Parted에서는 GPT와 ext2/3을 사용하는 것처럼 일부 특수 디스크 레이블/파일 "
+"시스템 혼용을 실험적으로 지원합니다.\n"
+"최신 정보는 웹사이트를 참고하십시오."
+
+#: libparted/arch/linux.c:1172
+#, c-format
+msgid "Error initialising SCSI device %s - %s"
+msgstr "%s SCSI 장치 초기화 중 오류 - %s"
+
+#: libparted/arch/linux.c:1236
+#, c-format
+msgid ""
+"The device %s is so small that it cannot possibly store a file system or "
+"partition table.  Perhaps you selected the wrong device?"
+msgstr ""
+"%s 장치는 파일 시스템 또는 분할 영역 테이블을 저장할 수 없을 정도로 용량이 너"
+"무 작습니다. 잘못된 장치를 선택하지 않았습니까?"
+
+#: libparted/arch/linux.c:1349
+#, c-format
+msgid ""
+"Unable to determine geometry of file/device %s.  You should not use Parted "
+"unless you REALLY know what you're doing!"
+msgstr ""
+"%s 파일/장치의 크기를 파악할 수 없습니다. 정확히 어떤 과정을 행하는 지 모르"
+"면 Parted를 사용하지 마십시오!"
+
+#: libparted/arch/linux.c:1409
+msgid "Generic SD/MMC Storage Card"
+msgstr "일반 SD/MMC 저장소 카드"
+
+#: libparted/arch/linux.c:1423
+msgid "NVMe Device"
+msgstr "NVMe 장치"
+
+#: libparted/arch/linux.c:1484
+msgid "DAC960 RAID controller"
+msgstr "DAC960 RAID 컨트롤러"
+
+#: libparted/arch/linux.c:1489
+msgid "Promise SX8 SATA Device"
+msgstr "Promise SX8 SATA 장치"
+
+#: libparted/arch/linux.c:1494
+msgid "ATA over Ethernet Device"
+msgstr "이더넷 경유 ATA 장치"
+
+#: libparted/arch/linux.c:1500
+msgid "IBM S390 DASD drive"
+msgstr "IBM S390 DASD 드라이브"
+
+#: libparted/arch/linux.c:1506
+msgid "IBM iSeries Virtual DASD"
+msgstr "IBM iSeries 가상 DASD"
+
+#: libparted/arch/linux.c:1511
+msgid "Compaq Smart Array"
+msgstr "컴팩 스마트 어레이"
+
+#: libparted/arch/linux.c:1521
+msgid "NVDIMM Device"
+msgstr "NVDIMM 장치"
+
+#: libparted/arch/linux.c:1526
+msgid "ATARAID Controller"
+msgstr "ATARAID 컨트롤러"
+
+#: libparted/arch/linux.c:1531
+msgid "I2O Controller"
+msgstr "I2O 컨트롤러"
+
+#: libparted/arch/linux.c:1536
+msgid "User-Mode Linux UBD"
+msgstr "유저 모드 리눅스 UBD"
+
+#: libparted/arch/linux.c:1546
+msgid "Loopback device"
+msgstr "루프백 장치"
+
+#: libparted/arch/linux.c:1554
+#, c-format
+msgid "Linux device-mapper (%s)"
+msgstr "리눅스 장치 매퍼(%s)"
+
+#: libparted/arch/linux.c:1565
+msgid "Xen Virtual Block Device"
+msgstr "젠 가상 블록 장치"
+
+#: libparted/arch/linux.c:1570
+msgid "Unknown"
+msgstr "알 수 없음"
+
+#: libparted/arch/linux.c:1579
+msgid "Virtio Block Device"
+msgstr "Virtio 블록 장치"
+
+#: libparted/arch/linux.c:1584
+msgid "Linux Software RAID Array"
+msgstr "리눅스 소프트웨어 RAID 어레이"
+
+#: libparted/arch/linux.c:1589
+msgid "RAM Drive"
+msgstr "RAM 드라이브"
+
+#: libparted/arch/linux.c:1596
+msgid "ped_device_new()  Unsupported device type"
+msgstr "ped_device_new()  지원하지 않는 장치 형식"
+
+#: libparted/arch/linux.c:1690 libparted/arch/linux.c:1775
+#, c-format
+msgid "Error fsyncing/closing %s: %s"
+msgstr "%s fsync/닫기 처리 중 오류: %s"
+
+#: libparted/arch/linux.c:1949
+#, c-format
+msgid "%0.0send of file while reading %s"
+msgstr "%0.0s %s 읽는 동안 파일 끝에 도달했습니다"
+
+#: libparted/arch/linux.c:2691
+#, c-format
+msgid ""
+"Error informing the kernel about modifications to partition %s -- %s.  This "
+"means Linux won't know about any changes you made to %s until you reboot -- "
+"so you shouldn't mount it or use it in any way before rebooting."
+msgstr ""
+"%s 분할 영역 수정 내용을 커널에 알리는 중 오류가 발생했습니다 -- %s. 다시 부"
+"팅하기 전에는 리눅스에서 %s을(를) 바꾼 내용을 알지 못합니다 -- 따라서 다시 부"
+"팅하기 전에는 마운트하거나 사용하면 안됩니다."
+
+#: libparted/arch/linux.c:2811
+#, c-format
+msgid "Unable to determine the start and length of %s."
+msgstr "%s의 시작 점 및 길이를 파악할 수 없습니다."
+
+#: libparted/arch/linux.c:3225
+#, c-format
+msgid ""
+"Partition(s) %s on %s have been written, but we have been unable to inform "
+"the kernel of the change, probably because it/they are in use.  As a result, "
+"the old partition(s) will remain in use.  You should reboot now before "
+"making further changes."
+msgstr ""
+"%2$s의 %1$s 분할 영역을 기록했지만, 사용중이기 때문에 바꾼 내용을 커널에 알"
+"릴 수 없습니다. 결과적으로 이전 분할 영역은 사용 중인 그대로 남습니다. 분할 "
+"영역 배치를 바꾸기 전 다시 부팅해야합니다."
+
+#: libparted/cs/geom.c:163
+#, c-format
+msgid "Can't have the end before the start! (start sector=%jd length=%jd)"
+msgstr "시작 지점 이전에 끝 지점이 있으면 안됩니다! (시작 섹터=%jd 길이=%jd)"
+
+#: libparted/cs/geom.c:379
+#, c-format
+msgid "Attempt to write sectors %ld-%ld outside of partition on %s."
+msgstr "%3$s 분할 영역 밖에  %1$ld-%2$ld 섹터 기록을 시도합니다."
+
+#: libparted/cs/geom.c:419
+msgid "checking for bad blocks"
+msgstr "불량 블록 검사 중"
+
+#: libparted/debug.c:97
+#, c-format
+msgid "Backtrace has %d calls on stack:\n"
+msgstr "스택 역추적 목록에 호출 항목 %d개가 있습니다:\n"
+
+#: libparted/debug.c:110
+#, c-format
+msgid "Assertion (%s) at %s:%d in function %s() failed."
+msgstr "%4$s() 함수의 %2$s:%3$d에서 검증(%1$s)에 실패했습니다."
+
+#: libparted/disk.c:194
+#, c-format
+msgid "%s: unrecognised disk label"
+msgstr "%s: 인식할 수 없는 디스크 레이블"
+
+#: libparted/disk.c:487
+#, c-format
+msgid ""
+"This libparted doesn't have write support for %s.  Perhaps it was compiled "
+"read-only."
+msgstr ""
+"libparted에서는 %s 기록을 지원하지 않습니다.  아마도 읽기 전용으로 컴파일한 "
+"것 같습니다."
+
+#: libparted/disk.c:632
+#, c-format
+msgid "Partition %d is %s, but the file system is %s."
+msgstr "분할 영역 %d번은 %s(이)지만, 파일 시스템은 %s입니다."
+
+#: libparted/disk.c:841
+msgid "cylinder_alignment"
+msgstr "cylinder_alignment"
+
+#: libparted/disk.c:843
+msgid "pmbr_boot"
+msgstr "pmbr_boot"
+
+#: libparted/disk.c:848
+#, c-format
+msgid "Unknown disk flag, %d."
+msgstr "알 수 없는 %d 디스크 플래그."
+
+#: libparted/disk.c:1289
+#, c-format
+msgid "%s disk labels do not support extended partitions."
+msgstr "%s 디스크 레이블은 확장 분할 영역을 지원하지 않습니다."
+
+#: libparted/disk.c:1821
+#, c-format
+msgid "%s disk labels don't support logical or extended partitions."
+msgstr ""
+"%s 디스크 레이블은 논리 분할 영역 또는 확장 분할 영역을 지원하지 않습니다."
+
+#: libparted/disk.c:1834
+msgid "Too many primary partitions."
+msgstr "주 분할 영역이 너무 많습니다."
+
+#: libparted/disk.c:1843
+#, c-format
+msgid ""
+"Can't add a logical partition to %s, because there is no extended partition."
+msgstr "%s에 확장 분할 영역이 없어 논리 분할 영역을 추가할 수 없습니다."
+
+#: libparted/disk.c:1867
+#, c-format
+msgid "Can't have more than one extended partition on %s."
+msgstr "%s에 하나 이상의 확장 분할 영역이 없습니다."
+
+#: libparted/disk.c:1877
+msgid "Can't have logical partitions outside of the extended partition."
+msgstr "확장 분할 영역 밖에 논리 분할 영역을 배치할 수 없습니다."
+
+#: libparted/disk.c:1902
+#, c-format
+msgid "Can't have a logical partition outside of the extended partition on %s."
+msgstr "%s에 확장 분할 영역 밖으로 논리 분할 영역을 배치할 수 없습니다."
+
+#: libparted/disk.c:1912
+msgid "Can't have a primary partition inside an extended partition."
+msgstr "확장 분할 영역 안에 주 분할 영역을 배치할 수 없습니다."
+
+#: libparted/disk.c:1921
+msgid "Can't have a partition outside the disk!"
+msgstr "디스크 영역 밖에 분할 영역을 배치할 수 없습니다!"
+
+#: libparted/disk.c:1972 libparted/disk.c:2150
+msgid "Can't have overlapping partitions."
+msgstr "분할 영역을 중복 지정할 수 없습니다."
+
+#: libparted/disk.c:2351
+msgid "metadata"
+msgstr "metadata"
+
+#: libparted/disk.c:2353
+msgid "free"
+msgstr "free"
+
+#: libparted/disk.c:2355 parted/ui.c:1271 parted/ui.c:1299
+msgid "extended"
+msgstr "extended"
+
+#: libparted/disk.c:2357 parted/ui.c:1275 parted/ui.c:1303
+msgid "logical"
+msgstr "logical"
+
+#: libparted/disk.c:2359 parted/ui.c:1267 parted/ui.c:1295
+msgid "primary"
+msgstr "primary"
+
+#: libparted/disk.c:2375
+msgid "boot"
+msgstr "boot"
+
+#: libparted/disk.c:2377
+msgid "bios_grub"
+msgstr "bios_grub"
+
+#: libparted/disk.c:2379
+msgid "root"
+msgstr "root"
+
+#: libparted/disk.c:2381
+msgid "swap"
+msgstr "swap"
+
+#: libparted/disk.c:2383
+msgid "hidden"
+msgstr "hidden"
+
+#: libparted/disk.c:2385
+msgid "raid"
+msgstr "RAID"
+
+#: libparted/disk.c:2387
+msgid "lvm"
+msgstr "lvm"
+
+#: libparted/disk.c:2389
+msgid "lba"
+msgstr "lba"
+
+#: libparted/disk.c:2391
+msgid "hp-service"
+msgstr "hp-service"
+
+#: libparted/disk.c:2393
+msgid "palo"
+msgstr "palo"
+
+#: libparted/disk.c:2395
+msgid "prep"
+msgstr "prep"
+
+#: libparted/disk.c:2397
+msgid "msftres"
+msgstr "msftres"
+
+#: libparted/disk.c:2399
+msgid "msftdata"
+msgstr "msftdata"
+
+#: libparted/disk.c:2401
+msgid "atvrecv"
+msgstr "atvrecv"
+
+#: libparted/disk.c:2403
+msgid "diag"
+msgstr "diag"
+
+#: libparted/disk.c:2405
+msgid "legacy_boot"
+msgstr "legacy_boot"
+
+#: libparted/disk.c:2407
+msgid "irst"
+msgstr "irst"
+
+#: libparted/disk.c:2409
+msgid "esp"
+msgstr "esp"
+
+#: libparted/disk.c:2411
+msgid "chromeos_kernel"
+msgstr "chromeos_kernel"
+
+#: libparted/disk.c:2413
+msgid "bls_boot"
+msgstr "bls_boot"
+
+#: libparted/disk.c:2415
+msgid "linux-home"
+msgstr "linux-home"
+
+#: libparted/disk.c:2421
+#, c-format
+msgid "Unknown partition flag, %d."
+msgstr "알 수 없는 분할 영역의 %d 플래그입니다."
+
+#: libparted/exception.c:79
+msgid "Information"
+msgstr "정보"
+
+#: libparted/exception.c:80
+msgid "Warning"
+msgstr "경고"
+
+#: libparted/exception.c:81
+msgid "Error"
+msgstr "오류"
+
+#: libparted/exception.c:82
+msgid "Fatal"
+msgstr "실패"
+
+#: libparted/exception.c:83
+msgid "Bug"
+msgstr "버그"
+
+#: libparted/exception.c:84
+msgid "No Implementation"
+msgstr "기능 없음"
+
+#: libparted/exception.c:88
+msgid "Fix"
+msgstr "고침"
+
+#: libparted/exception.c:89
+msgid "Yes"
+msgstr "예"
+
+#: libparted/exception.c:90
+msgid "No"
+msgstr "아니요"
+
+#: libparted/exception.c:91
+msgid "OK"
+msgstr "확인"
+
+#: libparted/exception.c:92
+msgid "Retry"
+msgstr "다시 시도"
+
+#: libparted/exception.c:93
+msgid "Ignore"
+msgstr "무시"
+
+#: libparted/exception.c:94
+msgid "Cancel"
+msgstr "취소"
+
+#: libparted/exception.c:134
+#, c-format
+msgid ""
+"A bug has been detected in GNU Parted.  Refer to the web site of parted "
+"http://www.gnu.org/software/parted/parted.html for more information of what "
+"could be useful for bug submitting!  Please email a bug report to %s "
+"containing at least the version (%s) and the following message:  "
+msgstr ""
+"GNU Parted의 버그를 찾았습니다. http://www.gnu.org/software/parted/parted."
+"html Parted 웹사이트에서 버그 제출에 유용한 정보를 찾아보십시오! %s에게 버전"
+"(%s) 정보와 다음 메시지를 넣어 버그 보고서를 메일로 보내주십시오:"
+
+#: libparted/labels/aix.c:92
+msgid "Support for reading AIX disk labels is is not implemented yet."
+msgstr "AIC 디스크 레이블의 읽기 지원 기능이 없습니다."
+
+#: libparted/labels/aix.c:103
+msgid "Support for writing AIX disk labels is is not implemented yet."
+msgstr "AIX 디스크 레이블 기록 지원 기능이 없습니다."
+
+#: libparted/labels/aix.c:116
+msgid ""
+"Support for adding partitions to AIX disk labels is not implemented yet."
+msgstr "AIX 디스크 레이블의 분할 영역 추가 지원 기능이 없습니다."
+
+#: libparted/labels/aix.c:126
+msgid ""
+"Support for duplicating partitions in AIX disk labels is not implemented yet."
+msgstr "AIX 디스크 레이블의 분할 영역 복제 지원 기능이 없습니다."
+
+#: libparted/labels/aix.c:144
+msgid ""
+"Support for setting system type of partitions in AIX disk labels is not "
+"implemented yet."
+msgstr "AIX 디스크 레이블의 시스템 분할 영역 형식 설정 지원 기능이 없습니다."
+
+#: libparted/labels/aix.c:154
+msgid "Support for setting flags in AIX disk labels is not implemented yet."
+msgstr "AIX 디스크 레이블의 설정 플래그 지원 기능이 없습니다."
+
+#: libparted/labels/atari.c:278
+#, c-format
+msgid ""
+"Can't use Atari partition tables on disks with a sector size not equal to %d "
+"bytes."
+msgstr ""
+"Parted에서 섹터 크기가 %d 바이트가 아닌 아타리 분할 영역 테이블을 사용할 수 "
+"없습니다."
+
+#: libparted/labels/atari.c:290
+#, c-format
+msgid "Can't use Atari partition tables on disks with more than %d sectors."
+msgstr "디스크의 아타리 분할 테이블에서는 %d 섹터 이상 사용할 수 없습니다."
+
+#: libparted/labels/atari.c:403
+msgid ""
+"Too many Atari partitions detected.  Maybe there is a loop in the XGM linked "
+"list.  Aborting."
+msgstr ""
+"아타리 분할 영역이 너무 많습니다.  아마도 XGM 연결 리스트에 루프가 있는 것 같"
+"습니다.  중단함."
+
+#: libparted/labels/atari.c:601
+#, c-format
+msgid "No data partition found in the ARS at sector %lli."
+msgstr "%lli번 섹터의 ARS에 데이터 분할 영역이 없습니다."
+
+#: libparted/labels/atari.c:622
+#, c-format
+msgid ""
+"The entry of the next logical ARS is not of type XGM in ARS at sector %lli."
+msgstr "다음 논리 ARS 항목은 %lli번 섹터 ARS의 XGM 형식이 아닙니다."
+
+#: libparted/labels/atari.c:653
+#, c-format
+msgid ""
+"There doesn't seem to be an Atari partition table on this disk (%s), or it "
+"is corrupted."
+msgstr "이 디스크(%s)에 아타리 분할 영역이 없거나 손상을 입은 것 같습니다."
+
+#: libparted/labels/atari.c:883
+#, c-format
+msgid "No room at sector %lli to store ARS of logical partition %d."
+msgstr "%lli번 섹터에 %d번 논리 분할 영역의 ARS를 저장할 공간이 없습니다."
+
+#: libparted/labels/atari.c:890
+#, c-format
+msgid "No room at sector %lli to store ARS."
+msgstr "%lli번 섹터에 ARS를 저장할 공간이 없습니다."
+
+#: libparted/labels/atari.c:967
+msgid ""
+"The sector count that is stored in the partition table does not correspond "
+"to the size of your device.  Do you want to fix the partition table?"
+msgstr ""
+"분할 영역에 저장한 섹터 수가 장치 크기에 맞지 않습니다.  분할 테이블을 수정하"
+"시겠습니까?"
+
+#: libparted/labels/atari.c:1008
+#, c-format
+msgid "No room at sector %lli to store BSL."
+msgstr "%lli번 섹터에 BSL을 저장할 공간이 없습니다."
+
+#: libparted/labels/atari.c:1116
+msgid "There were remaining partitions after filling the main AHDI table."
+msgstr "주 AHDI 케이블을 채운 후 분할 영역이 남아있습니다."
+
+#: libparted/labels/atari.c:1135
+msgid ""
+"The main AHDI table has been filled with all partitions but the ICD table is "
+"not empty so more partitions of unknown size and position will be detected "
+"by ICD compatible software.  Do you want to invalidate the ICD table?"
+msgstr ""
+"주 AHDI 테이블을 모든 분할 영역으로 채웠지만 ICD 테이블이 비어있지 않아 알 "
+"수 없는 크기의 더 많은 분할 영역과 위치를 ICD 호환 프로그램에서 찾을 수 있습"
+"니다.  ICD 테이블을 갱신하시겠습니까?"
+
+#: libparted/labels/atari.c:1169
+msgid "ICD entries can't contain extended or logical partitions."
+msgstr "ICD 항목에 확장, 논리 분할 영역을 넣을 수 없습니다."
+
+#: libparted/labels/atari.c:1191
+msgid "There were remaining partitions after filling the tables."
+msgstr "테이블을 채운 다음 분할 영역이 남아있습니다."
+
+#: libparted/labels/atari.c:1231
+#, c-format
+msgid ""
+"You can't use an extended XGM partition in ICD mode (more than %d primary "
+"partitions, if XGM is the first one it counts for two)."
+msgstr ""
+"ICD 모드에서 확장 XGM 분할 영역을 사용할 수 없습니다 (XGM 분할 영역이 처음에 "
+"둘 배치했을 때 주 분할 영역 %d개 이상)."
+
+#: libparted/labels/atari.c:1662 libparted/labels/bsd.c:563
+#: libparted/labels/dasd.c:895 libparted/labels/dos.c:2303
+#: libparted/labels/dvh.c:770 libparted/labels/gpt.c:1769
+#: libparted/labels/loop.c:244 libparted/labels/mac.c:1409
+#: libparted/labels/pc98.c:697 libparted/labels/rdb.c:1054
+#: libparted/labels/sun.c:781
+msgid "Unable to satisfy all constraints on the partition."
+msgstr "분할 영역의 모든 제약 조건을 만족할 수 없습니다."
+
+#: libparted/labels/atari.c:1762
+#, c-format
+msgid ""
+"You can't use more than %d primary partitions (ICD mode) if you use an "
+"extended XGM partition.  If XGM is the first partition it counts for two."
+msgstr ""
+"XGM 확장 분할 영역을 사용할 경우 (ICD 모드에서) 주 분할 영역 %d개 이상 사용"
+"할 수 없습니다.  XGM "
+
+#: libparted/labels/atari.c:1828 libparted/labels/rdb.c:1082
+msgid "Unable to allocate a partition number."
+msgstr "분할 영역 번호를 할당할 수 없습니다."
+
+#: libparted/labels/bsd.c:588
+msgid "Unable to allocate a bsd disklabel slot."
+msgstr "BSD 디스크 레이블 슬롯을 할당할 수 없습니다."
+
+#: libparted/labels/dasd.c:626
+msgid "The partition table of DASD-LDL device cannot be changed.\n"
+msgstr "DASD-LDL 장치의 분할 테이블을 바꿀 수 없습니다.\n"
+
+#: libparted/labels/dasd.c:921
+msgid "Unable to allocate a dasd disklabel slot"
+msgstr "DASD 디스크 레이블 슬롯을 할당할 수 없습니다."
+
+#: libparted/labels/dos.c:1008
+#, c-format
+msgid "Invalid partition table on %s -- wrong signature %x."
+msgstr "%s에 잘못된 분할 영역 테이블 -- 잘못된 %x 서명."
+
+#: libparted/labels/dos.c:1036
+#, c-format
+msgid "Invalid partition table - recursive partition on %s."
+msgstr "잘못된 분할 영역 테이블 - %s에 재귀 분할 영역."
+
+#: libparted/labels/dos.c:1567
+msgid "Extended partitions cannot be hidden on msdos disk labels."
+msgstr "확장 분할 영역은 MSDOS 디스크 레이블에서 숨길 수 없습니다."
+
+#: libparted/labels/dos.c:1579
+msgid "Extended partitions cannot be recovery partitions on msdos disk labels."
+msgstr ""
+"확장 분할 영역은 MSDOS 디스크 레이블에서 복구 분할 영역으로 지정할 수 없습니"
+"다."
+
+#: libparted/labels/dos.c:2285
+msgid "Parted can't resize partitions managed by Windows Dynamic Disk."
+msgstr ""
+"Parted에서는 윈도우 동적 디스크에서 관리하는 분할 영역의 크기를 조절할 수 없"
+"습니다."
+
+#: libparted/labels/dos.c:2541
+msgid "cannot create any more partitions"
+msgstr "분할 영역을 더 만들 수 없습니다."
+
+#: libparted/labels/dvh.c:183
+#, c-format
+msgid "%s has no extended partition (volume header partition)."
+msgstr "%s에 확장 분할 영역(볼륨 헤더 분할 영역)이 없습니다."
+
+#: libparted/labels/dvh.c:309
+msgid "Checksum is wrong, indicating the partition table is corrupt."
+msgstr "검사합이 잘못됐습니다. 분할 영역 테이블이 깨진 것 같습니다."
+
+#: libparted/labels/dvh.c:614
+msgid "Only primary partitions can be root partitions."
+msgstr "주 분할 영역만 루트 분할 영역이 될 수 있습니다."
+
+#: libparted/labels/dvh.c:628
+msgid "Only primary partitions can be swap partitions."
+msgstr "주 분할 영역만 스왑 분할 영역이 될 수 있습니다."
+
+#: libparted/labels/dvh.c:642
+msgid "Only logical partitions can be a boot file."
+msgstr "논리 분할 영역만 부트 파일이 될 수 있습니다."
+
+#: libparted/labels/dvh.c:719
+#, c-format
+msgid ""
+"failed to set dvh partition name to %s:\n"
+"Only logical partitions (boot files) have a name."
+msgstr ""
+"dvh 분할 영역 이름을 %s(으)로 설정하는데 실패했습니다:\n"
+"논리 분할 영역(부트 파일)만 이름을 보유합니다."
+
+#: libparted/labels/dvh.c:812
+msgid "Too many primary partitions"
+msgstr "주 분할 영역이 너무 많습니다"
+
+#: libparted/labels/fdasd.c:136
+msgid "open error"
+msgstr "열기 오류"
+
+#: libparted/labels/fdasd.c:139
+msgid "seek error"
+msgstr "탐색 오류"
+
+#: libparted/labels/fdasd.c:142
+msgid "read error"
+msgstr "읽기 오류"
+
+#: libparted/labels/fdasd.c:148
+msgid "ioctl() error"
+msgstr "ioctl() 오류"
+
+#: libparted/labels/fdasd.c:152
+msgid "API version mismatch"
+msgstr "API 버전 일치 안함"
+
+#: libparted/labels/fdasd.c:156
+msgid "Unsupported disk type"
+msgstr "지원하지 않는 디스크 형식"
+
+#: libparted/labels/fdasd.c:160
+msgid "Unsupported disk format"
+msgstr "지원하지 않는 디스크 구성 형식"
+
+#: libparted/labels/fdasd.c:164
+msgid "Disk is in use"
+msgstr "디스크를 사용 중입니다"
+
+#: libparted/labels/fdasd.c:168
+msgid "Syntax error in config file"
+msgstr "설정 파일 문법 오류"
+
+#: libparted/labels/fdasd.c:172
+msgid "Volume label is corrupted"
+msgstr "볼륨 레이블이 깨졌습니다"
+
+#: libparted/labels/fdasd.c:176
+msgid "A data set name is corrupted"
+msgstr "데이터 세트 이름이 깨졌습니다"
+
+#: libparted/labels/fdasd.c:180
+msgid "Memory allocation failed"
+msgstr "메모리 할당에 실패했습니다"
+
+#: libparted/labels/fdasd.c:184
+msgid "Device verification failed"
+msgstr "장치 검증에 실패했습니다"
+
+#: libparted/labels/fdasd.c:185
+msgid "The specified device is not a valid DASD device"
+msgstr "지정 장치는 유효한 DASD 장치가 아닙니다"
+
+#: libparted/labels/fdasd.c:188
+msgid "VOLSER not found on device"
+msgstr "장치에 VOLSER이 없습니다"
+
+#: libparted/labels/fdasd.c:191 libparted/labels/vtoc.c:179
+msgid "Fatal error"
+msgstr "치명적인 오류"
+
+#: libparted/labels/fdasd.c:243
+msgid "No room for volume label."
+msgstr "볼륨 레이블을 설정할 공간이 없습니다."
+
+#: libparted/labels/fdasd.c:251
+msgid "No room for partition info."
+msgstr "분할 영역 정보를 저장할 공간이 없습니다."
+
+#: libparted/labels/fdasd.c:828
+msgid "Invalid VTOC."
+msgstr "잘못된 VTOC."
+
+#: libparted/labels/fdasd.c:912
+msgid "Could not retrieve API version."
+msgstr "API 버전을 가져올 수 없습니다."
+
+#: libparted/labels/fdasd.c:915
+#, c-format
+msgid ""
+"The current API version '%d' doesn't match dasd driver API version '%d'!"
+msgstr ""
+"현재 API 버전 ‘%d’이(가) DASD 드라이버 API 버전 ‘%d’와(과) 일치하지 않습니다!"
+
+#: libparted/labels/fdasd.c:1020
+msgid "Could not retrieve disk size."
+msgstr "디스크 크기 정보를 가져올 수 없습니다."
+
+#: libparted/labels/fdasd.c:1029
+msgid "Could not retrieve disk geometry information."
+msgstr "디스크 크기 정보를 가져올 수 없습니다."
+
+#: libparted/labels/fdasd.c:1035
+msgid "Could not retrieve blocksize information."
+msgstr "블록 크기 정보를 가져올 수 없습니다."
+
+#: libparted/labels/fdasd.c:1045
+msgid "Disk geometry does not match a DASD device of type 3390."
+msgstr "디스크 구조 정보가 3390 형식의 DASD 장치에 맞지 않습니다."
+
+#: libparted/labels/gpt.c:569
+msgid "device is too small for GPT"
+msgstr "GPT를 설정하기에는 장치 용량이 너무 작습니다"
+
+#: libparted/labels/gpt.c:771
+#, c-format
+msgid ""
+"The format of the GPT partition table is version %x, which is newer than "
+"what Parted can recognise.  Please report this!"
+msgstr ""
+"GPT 분할 영역 테이블 형식은 Parted에서 인식할 수 있는 버전보다 높은 %x 버전"
+"을 지니고 있습니다. 보고해주십시오!"
+
+#: libparted/labels/gpt.c:807
+#, c-format
+msgid ""
+"Not all of the space available to %s appears to be used, you can fix the GPT "
+"to use all of the space (an extra %llu blocks) or continue with the current "
+"setting? "
+msgstr ""
+"%s 사용 여분 공간 전체를 활용할 수 있는건 아닌 것 같습니다만, 모든 공간(추가 "
+"%llu 블록)을 사용할 수 있도록 GPT를 수정할 수 있습니다. 아니면 현재 설정 상태"
+"로 계속 진행하시겠습니까?"
+
+#: libparted/labels/gpt.c:1006
+msgid ""
+"The backup GPT table is not at the end of the disk, as it should be.  Fix, "
+"by moving the backup to the end (and removing the old backup)?"
+msgstr ""
+"백업 GPT 테이블 영역이 디스크 마지막 공간까지 차지해야 하는데 그렇지 않습니"
+"다. 백업 영역을 마지막으로 이동하(고 이전 백업을 제거하)여 문제를 수정하시겠"
+"습니까?"
+
+#: libparted/labels/gpt.c:1024
+msgid ""
+"Both the primary and backup GPT tables are corrupt.  Try making a fresh "
+"table, and using Parted's rescue feature to recover partitions."
+msgstr ""
+"주 GPT 테이블과 백업 GPT 테이블이 깨졌습니다.  분할 영역을 복구하려면 테이블"
+"을 새로 만들고 Parted의 복구 기능을 사용하십시오."
+
+#: libparted/labels/gpt.c:1035
+msgid ""
+"The backup GPT table is corrupt, but the primary appears OK, so that will be "
+"used."
+msgstr ""
+"백업 GPT 테이블이 깨졌지만, 주 GPT 테이블은 문제가 없으므로 주 GPT 테이블을 "
+"사용하겠습니다."
+
+#: libparted/labels/gpt.c:1047
+msgid ""
+"The primary GPT table is corrupt, but the backup appears OK, so that will be "
+"used."
+msgstr ""
+"주 GPT 테이블이 깨졌지만, 백업 GPT 테이블은 문제가 없으므로 백업 GPT 테이블"
+"을 사용하겠습니다."
+
+#: libparted/labels/gpt.c:1071
+msgid "primary partition table array CRC mismatch"
+msgstr "주 분할 영역 테이블 어레이 CRC가 일치하지 않습니다"
+
+#: libparted/labels/gpt.c:1655 libparted/labels/gpt.c:1682
+msgid "failed to translate partition name"
+msgstr "분할 영역 이름 해석에 실패했습니다."
+
+#: libparted/labels/mac.c:185
+#, c-format
+msgid "Invalid signature %x for Mac disk labels."
+msgstr "맥 디스크 레이블에 잘못된 %x 서명이 있습니다."
+
+#: libparted/labels/mac.c:232
+msgid "Partition map has no partition map entry!"
+msgstr "분할 영역 맵에 분할 영역 맵 항목이 없습니다!"
+
+#: libparted/labels/mac.c:280
+#, c-format
+msgid "%s is too small for a Mac disk label!"
+msgstr "%s은(는) 맥 디스크 레이블로 활용하기에 너무 작습니다!"
+
+#: libparted/labels/mac.c:507
+#, c-format
+msgid "Partition %d has an invalid signature %x."
+msgstr "%d번 분할 영역에 잘못된 %x 서명이 있습니다."
+
+#: libparted/labels/mac.c:524
+#, c-format
+msgid "Partition %d has an invalid length of 0 bytes!"
+msgstr "%d번 분할 영역에 잘못된 0바이트 길이가 있습니다!"
+
+#: libparted/labels/mac.c:555
+msgid "The data region doesn't start at the start of the partition."
+msgstr "데이터 영역이 분할 영역 시작 지점에서 시작하지 않았습니다."
+
+#: libparted/labels/mac.c:572
+msgid "The partition's boot region doesn't occupy the entire partition."
+msgstr "분할 영역의 부트 영역이 전체 분할 영역을 차지하지 않았습니다."
+
+#: libparted/labels/mac.c:583
+msgid "The partition's data region doesn't occupy the entire partition."
+msgstr "분할 영역의 데이터 영역이 전체 분할 영역을 차지하지 않았습니다."
+
+#: libparted/labels/mac.c:635
+#, c-format
+msgid ""
+"Weird block size on device descriptor: %d bytes is not divisible by 512."
+msgstr ""
+"장치 서술자의 블록 크기가 이상합니다: %d 바이트는 512의 배수가 아닙니다."
+
+#: libparted/labels/mac.c:648
+#, c-format
+msgid ""
+"The driver descriptor says the physical block size is %d bytes, but Linux "
+"says it is %d bytes."
+msgstr ""
+"드라이버 서술자에서 실제 블록 사이즈는 %d 바이트라고 하지만, 리눅스에서는 %d "
+"바이트라고 합니다."
+
+#: libparted/labels/mac.c:701
+msgid "No valid partition map found."
+msgstr "올바른 분할 영역 맵이 없습니다."
+
+#: libparted/labels/mac.c:775
+#, c-format
+msgid ""
+"Conflicting partition map entry sizes!  Entry 1 says it is %d, but entry %d "
+"says it is %d!"
+msgstr ""
+"분할 영역 맵 항목 크기가 맞지 않습니다! 1번 항목은 %d라고 하지만 %d번 항목은 "
+"%d라고 합니다!"
+
+#: libparted/labels/mac.c:806
+msgid "Weird!  There are 2 partitions map entries!"
+msgstr "이상합니다! 분할 영역 맵 항목이 두 개 있습니다!"
+
+#: libparted/labels/mac.c:1345
+msgid ""
+"Changing the name of a root or swap partition will prevent Linux from "
+"recognising it as such."
+msgstr ""
+"루트 분할 영역 또는 스왑 분할 영역의 이름을 바꾸면, 리눅스에서 해당 분할 영역"
+"을 인식하지 못합니다."
+
+#: libparted/labels/mac.c:1444
+msgid "Can't add another partition -- the partition map is too small!"
+msgstr "다른 분할 영역을 추가할 수 없습니다 -- 분할 영역 맵이 너무 작습니다!"
+
+#: libparted/labels/pc98.c:285
+#, c-format
+msgid "Invalid partition table on %s."
+msgstr "%s에 잘못된 분할 영역 테이블이 있습니다."
+
+#: libparted/labels/pc98.c:338 libparted/labels/pc98.c:416
+#, c-format
+msgid ""
+"Partition %d isn't aligned to cylinder boundaries.  This is still "
+"unsupported."
+msgstr ""
+"%d번 분할 영역을 실린더 범위 내로 정렬하지 않았습니다.  여전히 지원하지 않습"
+"니다."
+
+#: libparted/labels/pc98.c:729
+msgid "Can't add another partition."
+msgstr "다른 분할 영역을 추가할 수 없습니다."
+
+#: libparted/labels/pt-tools.c:134
+#, c-format
+msgid ""
+"partition length of %jd sectors exceeds the %s-partition-table-imposed "
+"maximum of %jd"
+msgstr ""
+"%jd 섹터 분할 영역 길이는 %s 분할 영역 테이블에 명시한 최대 값 %jd을(를) 넘습"
+"니다"
+
+#: libparted/labels/pt-tools.c:147
+#, c-format
+msgid ""
+"starting sector number, %jd exceeds the %s-partition-table-imposed maximum "
+"of %jd"
+msgstr ""
+"시작 섹터 번호 %jd은(는) %s 뷴할 영역 테이블에 명시한 최대값 %jd을(를) 넘습니"
+"다"
+
+#: libparted/labels/rdb.c:170
+#, c-format
+msgid "%s : Bad checksum on block %llu of type %s."
+msgstr "%1$s : %3$s 형식의 %2$llu번째 블록에 잘못된 검사합 값이 있습니다."
+
+#: libparted/labels/rdb.c:486
+#, c-format
+msgid "%s : Didn't find rdb block, should never happen."
+msgstr "%s : rdb 블록을 찾을 수 없어 아무 일도 일어나지 않습니다."
+
+#: libparted/labels/rdb.c:575
+#, c-format
+msgid "%s : Loop detected at block %d."
+msgstr "%s : %d번째 블록에 루프가 있습니다."
+
+#: libparted/labels/rdb.c:594
+#, c-format
+msgid "%s : The %s list seems bad at block %s."
+msgstr "%s : %s 목록의 %s 불량 블록이 있는 것 같습니다."
+
+#: libparted/labels/rdb.c:693
+#, c-format
+msgid "%s : Failed to list bad blocks."
+msgstr "%s : 불량 블록 조회에 실패했습니다."
+
+#: libparted/labels/rdb.c:701
+#, c-format
+msgid "%s : Failed to list partition blocks."
+msgstr "%s : 분할 영역 블록 조회에 실패했습니다."
+
+#: libparted/labels/rdb.c:709
+#, c-format
+msgid "%s : Failed to list file system blocks."
+msgstr "%s : 파일 시스템 블록 조회에 실패했습니다."
+
+#: libparted/labels/rdb.c:717
+#, c-format
+msgid "%s : Failed to list boot blocks."
+msgstr "%s : 부트 블록 조회에 실패했습니다."
+
+#: libparted/labels/rdb.c:744
+#, c-format
+msgid "Failed to write partition block at %d."
+msgstr "%d번째 분할 영역 블록 쓰기에 실패했습니다."
+
+#: libparted/labels/sun.c:162
+msgid "Corrupted Sun disk label detected."
+msgstr "깨진 썬 디스크 레이블을 찾았습니다."
+
+#: libparted/labels/sun.c:277
+#, c-format
+msgid ""
+"The disk CHS geometry (%d,%d,%d) reported by the operating system does not "
+"match the geometry stored on the disk label (%d,%d,%d)."
+msgstr ""
+"디스크의 실린더, 헤드, 섹터 크기(%d,%d,%d) 정보가 디스크 레이블에 저장한 크기"
+"(%d, %d, %d)와 일치하지 않음을 운영 체제에서 보고했습니다."
+
+#: libparted/labels/sun.c:299
+#, c-format
+msgid "The disk label describes a disk bigger than %s."
+msgstr "디스크 레이블은 %s보다 큰 디스크를 언급합니다."
+
+#: libparted/labels/sun.c:474
+#, c-format
+msgid "The disk has %d cylinders, which is greater than the maximum of 65536."
+msgstr "디스크의 실린더 갯수는 최대 65536보다 큰 %d입니다."
+
+#: libparted/labels/sun.c:813
+msgid ""
+"The Whole Disk partition is the only available one left.  Generally, it is "
+"not a good idea to overwrite this partition with a real one.  Solaris may "
+"not be able to boot without it, and SILO (the sparc boot loader) appreciates "
+"it as well."
+msgstr ""
+"전체 디스크 분할 영역은 하나만 가능합니다.  보통 실제 분할 영역으로 이 분할 "
+"영역을 덮어쓰는건 좋은 방식이 아닙니다.  솔라리스는 이 분할 영역이 없으면 부"
+"팅할 수 없으며, SILO(스팍 부트 로더)도 마찬가지로 이 문제를 인식합니다."
+
+#: libparted/labels/sun.c:828
+msgid "Sun disk label is full."
+msgstr "썬 디스크 레이블이 다 찼습니다."
+
+#: libparted/labels/vtoc.c:164
+msgid "opening of device failed"
+msgstr "장치 열기 실패"
+
+#: libparted/labels/vtoc.c:168
+msgid "seeking on device failed"
+msgstr "장치 탐색 실패"
+
+#: libparted/labels/vtoc.c:172
+msgid "writing to device failed"
+msgstr "장치 쓰기 실패"
+
+#: libparted/labels/vtoc.c:176
+msgid "reading from device failed"
+msgstr "장치 읽기 실패"
+
+#: libparted/labels/vtoc.c:371 libparted/labels/vtoc.c:378
+#: libparted/labels/vtoc.c:399 libparted/labels/vtoc.c:406
+msgid "Could not read volume label."
+msgstr "볼륨 레이블을 읽을 수 없습니다."
+
+#: libparted/labels/vtoc.c:426 libparted/labels/vtoc.c:431
+msgid "Could not write volume label."
+msgstr "볼륨 레이블을 쓸 수 없습니다."
+
+#: libparted/labels/vtoc.c:537
+msgid "Could not read VTOC labels."
+msgstr "VTOC 레이블을 읽을 수 없습니다."
+
+#: libparted/labels/vtoc.c:543
+msgid "Could not read VTOC FMT1 DSCB."
+msgstr "VTOC FMT1 DSCB를 읽을 수 없습니다."
+
+#: libparted/labels/vtoc.c:550
+msgid "Could not read VTOC FMT4 DSCB."
+msgstr "VTOC FMT4 DSCB를 읽을 수 없습니다."
+
+#: libparted/labels/vtoc.c:557
+msgid "Could not read VTOC FMT5 DSCB."
+msgstr "VTOC FMT5 DSCB를 읽을 수 없습니다."
+
+#: libparted/labels/vtoc.c:564
+msgid "Could not read VTOC FMT7 DSCB."
+msgstr "VTOC FMT7 DSCB를 읽을 수 없습니다."
+
+#: libparted/labels/vtoc.c:585
+msgid "Could not write VTOC labels."
+msgstr "VTOC 레이블을 쓸 수 없습니다."
+
+#: libparted/labels/vtoc.c:591
+msgid "Could not write VTOC FMT1 DSCB."
+msgstr "VTOC FMT1 DSCB를 쓸 수 없습니다."
+
+#: libparted/labels/vtoc.c:598
+msgid "Could not write VTOC FMT4 DSCB."
+msgstr "VTOC FMT4 DSCB를 쓸 수 없습니다."
+
+#: libparted/labels/vtoc.c:605
+msgid "Could not write VTOC FMT5 DSCB."
+msgstr "VTOC FMT5 DSCB를 쓸 수 없습니다."
+
+#: libparted/labels/vtoc.c:612
+msgid "Could not write VTOC FMT7 DSCB."
+msgstr "VTOC FMT7 DSCB를 쓸 수 없습니다."
+
+#: libparted/labels/vtoc.c:622
+msgid "Could not write VTOC FMT9 DSCB."
+msgstr "VTOC FMT9 DSCB를 쓸 수 없습니다."
+
+#: libparted/libparted.c:247
+msgid "Out of memory."
+msgstr "메모리가 부족합니다."
+
+#: libparted/unit.c:140
+msgid "Cannot get unit size for special unit 'COMPACT'."
+msgstr "'COMPACT' 특수 단위의 단위 크기를 가져올 수 없습니다."
+
+#: libparted/unit.c:386
+#, c-format
+msgid "\"%s\" has invalid syntax for locations."
+msgstr "\"%s\"은(는) 잘못된 위치 문법입니다."
+
+#: libparted/unit.c:394
+#, c-format
+msgid "The maximum head value is %d."
+msgstr "최대 헤드 값은 %d입니다."
+
+#: libparted/unit.c:401
+#, c-format
+msgid "The maximum sector value is %d."
+msgstr "최대 섹터 값은 %d입니다."
+
+#: libparted/unit.c:413 libparted/unit.c:565
+#, c-format
+msgid "The location %s is outside of the device %s."
+msgstr "%s위치는 %s 장치 이외의 영역에 있습니다."
+
+#: libparted/unit.c:527
+msgid "Invalid number."
+msgstr "잘못된 숫자 값."
+
+#: libparted/unit.c:533
+msgid "Use a smaller unit instead of a value < 1"
+msgstr "1보다 작은 값을 사용하는 대신 작은 단위를 사용하십시오"
+
+#: libparted/fs/amiga/affs.c:64 libparted/fs/amiga/apfs.c:58
+#: libparted/fs/amiga/asfs.c:72
+#, c-format
+msgid "%s : Failed to allocate partition block\n"
+msgstr "%s : 분할 영역 블록 할당에 실패했습니다\n"
+
+#: libparted/fs/amiga/affs.c:78 libparted/fs/amiga/apfs.c:71
+#: libparted/fs/amiga/asfs.c:84
+#, c-format
+msgid "%s : Failed to allocate block\n"
+msgstr "%s : 블록 할당에 실패했습니다\n"
+
+#: libparted/fs/amiga/affs.c:83 libparted/fs/amiga/apfs.c:76
+#, c-format
+msgid "%s : Couldn't read boot block %llu\n"
+msgstr "%s : %llu 부트 블록을 읽을 수 없습니다\n"
+
+#: libparted/fs/amiga/affs.c:97 libparted/fs/amiga/apfs.c:87
+#: libparted/fs/amiga/asfs.c:90 libparted/fs/amiga/asfs.c:104
+#, c-format
+msgid "%s : Couldn't read root block %llu\n"
+msgstr "%s : %llu 루트 블록을 읽을 수 없습니다\n"
+
+#: libparted/fs/amiga/amiga.c:72
+#, c-format
+msgid "%s : Failed to allocate id list element\n"
+msgstr "%s : ID 목록 구성 요소 할당에 실패했습니다\n"
+
+#: libparted/fs/amiga/amiga.c:189
+#, c-format
+msgid "%s : Couldn't read block %llu\n"
+msgstr "%s : %llu 블록을 읽을 수 없습니다\n"
+
+#: libparted/fs/amiga/amiga.c:202
+#, c-format
+msgid "%s : Bad checksum on block %llu of type %s\n"
+msgstr "%1$s : %3$s 형식의 %2$llu 블록에 잘못된 검사합 값이 있습니다\n"
+
+#: libparted/fs/amiga/amiga.c:212
+#, c-format
+msgid "%s : Couldn't write block %d\n"
+msgstr "%s : %d 블록을 쓸 수 없습니다\n"
+
+#: libparted/fs/amiga/amiga.c:279
+#, c-format
+msgid "%s : Failed to allocate disk_specific rdb block\n"
+msgstr "%s : disk_specific rdb 블록 할당에 실패했습니다\n"
+
+#: libparted/fs/amiga/amiga.c:290
+#, c-format
+msgid "%s : Didn't find rdb block, should never happen\n"
+msgstr "%s : rdb 블록을 찾을 수 없어 아무 일도 일어나지 않습니다\n"
+
+#: libparted/fs/amiga/amiga.c:319
+#, c-format
+msgid "%s : Failed to read partition block %llu\n"
+msgstr "%s : %llu 분할 영역 블록 읽기에 실패했습니다\n"
+
+#: libparted/fs/fat/fat.c:149
+msgid ""
+"GNU Parted was miscompiled: the FAT boot sector should be 512 bytes.  FAT "
+"support will be disabled."
+msgstr ""
+"GNU Parted 컴파일에 문제가 있습니다: FAT 부트 섹터 크기는 512 바이트여야 합니"
+"다. FAT 지원을 비활성화합니다."
+
+#: libparted/fs/fat/bootsector.c:50 libparted/fs/r/fat/bootsector.c:49
+msgid "File system has an invalid signature for a FAT file system."
+msgstr "FAT 파일 시스템에 잘못된 서명이 있습니다."
+
+#: libparted/fs/fat/bootsector.c:58 libparted/fs/r/fat/bootsector.c:57
+msgid "File system has an invalid sector size for a FAT file system."
+msgstr "FAT 파일 시스템의 섹터 크기가 잘못되었습니다."
+
+#: libparted/fs/fat/bootsector.c:65 libparted/fs/r/fat/bootsector.c:64
+msgid "File system has an invalid cluster size for a FAT file system."
+msgstr "FAT 파일 시스템의 클러스터 크기가 잘못되었습니다."
+
+#: libparted/fs/fat/bootsector.c:72 libparted/fs/r/fat/bootsector.c:71
+msgid ""
+"File system has an invalid number of reserved sectors for a FAT file system."
+msgstr "FAT 파일 시스템의 예약 섹터 수가 잘못되었습니다."
+
+#: libparted/fs/fat/bootsector.c:79 libparted/fs/r/fat/bootsector.c:78
+msgid "File system has an invalid number of FATs."
+msgstr "FAT 갯수가 잘못되었습니다."
+
+#: libparted/fs/fat/bootsector.c:162
+#, c-format
+msgid ""
+"The file system's CHS geometry is (%d, %d, %d), which is invalid.  The "
+"partition table's CHS geometry is (%d, %d, %d)."
+msgstr ""
+"파일 시스템의 실린더, 헤드, 섹터 크기(%d, %d, %d)가 잘못되었습니다.  분할 영"
+"역 테이블의 실린더, 헤드, 섹터 크기는(%d, %d, %d) 입니다."
+
+#: libparted/fs/fat/bootsector.c:197 libparted/fs/r/fat/bootsector.c:194
+msgid "FAT boot sector says logical sector size is 0.  This is weird. "
+msgstr "FAT 부트 섹터의 논리 섹터 크기가 0입니다.  이상한 값입니다."
+
+#: libparted/fs/fat/bootsector.c:203 libparted/fs/r/fat/bootsector.c:200
+msgid "FAT boot sector says there are no FAT tables.  This is weird. "
+msgstr "FAT 부트 섹터에 FAT 테이블이 없습니다.  이상한 값입니다. "
+
+#: libparted/fs/fat/bootsector.c:209 libparted/fs/r/fat/bootsector.c:206
+msgid "FAT boot sector says clusters are 0 sectors.  This is weird. "
+msgstr "FAT 부트 섹터의 클러스터 섹터 수가 0 입니다.  이상한 값입니다. "
+
+#: libparted/fs/fat/bootsector.c:219 libparted/fs/r/fat/bootsector.c:216
+msgid "File system is FAT12, which is unsupported."
+msgstr "지원하지 않는 FAT12 파일 시스템입니다."
+
+#: libparted/fs/linux_swap/linux_swap.c:231
+#, c-format
+msgid "Unrecognised old style linux swap signature '%10s'."
+msgstr "인식할 수 없는 예전 방식의 리눅스 스왑 서명 '%10s' 입니다."
+
+#: libparted/fs/linux_swap/linux_swap.c:269
+#, c-format
+msgid "Unrecognised new style linux swap signature '%10s'."
+msgstr "인식할 수 없는 새 방식의 리눅스 스왑 서명 '%10s' 입니다."
+
+#: libparted/fs/linux_swap/linux_swap.c:309
+#, c-format
+msgid "Unrecognised swsusp linux swap signature '%9s'."
+msgstr "인식할 수 없는 swsusp 리눅스 스왑 서명 '%9s' 입니다."
+
+#: libparted/fs/hfs/probe.c:51 libparted/fs/r/hfs/probe.c:51
+#, c-format
+msgid ""
+"Parted can't use HFS file systems on disks with a sector size not equal to "
+"%d bytes."
+msgstr ""
+"Parted에서 섹터 크기가 %d 바이트가 아닌 HFS 파일 시스템 디스크를 사용할 수 없"
+"습니다."
+
+#: libparted/fs/r/fat/bootsector.c:145
+#, c-format
+msgid ""
+"The file system's CHS geometry is (%d, %d, %d), which is invalid.  The "
+"partition table's CHS geometry is (%d, %d, %d).  If you select Ignore, the "
+"file system's CHS geometry will be left unchanged.  If you select Fix, the "
+"file system's CHS geometry will be set to match the partition table's CHS "
+"geometry."
+msgstr ""
+"파일 시스템의 실린더, 헤드, 섹터(%d, %d, %d) 크기가 잘못되었습니다. 분할 영"
+"역 테이블의 실린더, 헤드, 섹터 크기는(%d, %d, %d) 입니다. 무시를 선택하면 파"
+"일 시스템의 실린더, 헤드, 섹터 크기를 바꾸지 않습니다. 수정을 선택하면, 실린"
+"더, 헤드, 섹터 크기를 분할 영역 테이블의 실린더, 헤드, 섹터 크기에 맞춥니다."
+
+#: libparted/fs/r/fat/bootsector.c:398
+#, c-format
+msgid ""
+"The information sector has the wrong signature (%x).  Select cancel for now, "
+"and send in a bug report.  If you're desperate, it's probably safe to ignore."
+msgstr ""
+"섹터 정보에 잘못된 서명 정보(%x)가 있습니다.  지금 취소를 선택한 후 버그 보고"
+"서를 보내십시오.  자포자기 상태라면 무시해도 안전합니다."
+
+#: libparted/fs/r/fat/calc.c:134
+#, c-format
+msgid ""
+"You need %s of free disk space to shrink this partition to this size.  "
+"Currently, only %s is free."
+msgstr ""
+"이 분할 영역을 지정 크기로 줄이려면 남은 공간을 %s 만큼 확보해야합니다. 현"
+"재, %s 만큼만 남아있습니다."
+
+#: libparted/fs/r/fat/context.c:56
+#, c-format
+msgid ""
+"Cluster start delta = %d, which is not a multiple of the cluster size %d."
+msgstr "클러스터 시작 델타 값 = %d은(는) 클러스터 크기 %d의 배수가 아닙니다."
+
+#: libparted/fs/r/fat/count.c:84
+#, c-format
+msgid "Bad directory entry for %s: first cluster is the end of file marker."
+msgstr "%s의 잘못된 디렉터리 항목: 첫번째 클러스터는 파일 마커의 끝입니다."
+
+#: libparted/fs/r/fat/count.c:97
+#, c-format
+msgid ""
+"Bad FAT: unterminated chain for %s.  You should run dosfsck or scandisk."
+msgstr ""
+"잘못된 FAT: %s에 끝나지 않은 체인이 있습니다.  dosfsck 또는 scandisk를 실행하"
+"십시오."
+
+#: libparted/fs/r/fat/count.c:106
+#, c-format
+msgid ""
+"Bad FAT: cluster %d outside file system in chain for %s.  You should run "
+"dosfsck or scandisk."
+msgstr ""
+"잘못된 FAT: %d번 클러스터가 %s 체인의 파일 시스템 바깥 영역에 있습니다. "
+"dosfsck 또는 scandisk를 실행하십시오."
+
+#: libparted/fs/r/fat/count.c:116
+#, c-format
+msgid ""
+"Bad FAT: cluster %d is cross-linked for %s.  You should run dosfsck or "
+"scandisk."
+msgstr ""
+"잘못된 FAT: %d번 클러스터가 %s와(과) 교차 연결 상태입니다. dosfsck 또는 "
+"scandisk를 실행하십시오."
+
+#: libparted/fs/r/fat/count.c:135
+#, c-format
+msgid "%s is %dk, but it has %d clusters (%dk)."
+msgstr "%s은(는) %dk지만, 클러스터 %d개가 있습니다(%dk)."
+
+#: libparted/fs/r/fat/fat.c:244
+#, c-format
+msgid "Partition too big/small for a %s file system."
+msgstr "%s 파일 시스템의 분할 영역이 너무 크거나 작습니다."
+
+#: libparted/fs/r/fat/fat.c:410
+msgid ""
+"The FATs don't match.  If you don't know what this means, then select "
+"cancel, run scandisk on the file system, and then come back."
+msgstr ""
+"FAT 정보가 일치하지 않습니다.  무슨 의미인지 모르겠다면, 취소를 선택하고 파"
+"일 시스템에서 scandisk를 실행한 후 다시 돌아오십시오."
+
+#: libparted/fs/r/fat/fat.c:450
+msgid "There are no possible configurations for this FAT type."
+msgstr "이 FAT 형식에 가능한 설정이 없습니다."
+
+#: libparted/fs/r/fat/fat.c:462
+#, c-format
+msgid ""
+"File system doesn't have expected sizes for Windows to like it.  Cluster "
+"size is %dk (%dk expected); number of clusters is %d (%d expected); size of "
+"FATs is %d sectors (%d expected)."
+msgstr ""
+"파일 시스템이 윈도우에서 기대하는 크기가 아닙니다. 클러스터 크기는(%2$dk여야 "
+"하지만) %1$dk 입니다. 또한 클러스트 갯수는(%4$dk여야 하지만) %3$dk개 입니다. "
+"FAT의 섹터 갯수는(%6$d개여야 하지만) %5$d개입니다."
+
+#: libparted/fs/r/fat/fat.c:485
+#, c-format
+msgid ""
+"File system is reporting the free space as %d clusters, not %d clusters."
+msgstr ""
+"파일 시스템 여분 공간 클러스터 갯수가 %2$d개가 아닌 %1$d개로 나타납니다."
+
+#: libparted/fs/r/fat/resize.c:159
+msgid ""
+"There's not enough room in the root directory for all of the files.  Either "
+"cancel, or ignore to lose the files."
+msgstr ""
+"모든 파일에 대한 루트 디렉터리 공간이 충분하지 않습니다.  취소를 누르십시오. "
+"또는 무시를 누르시면 파일이 없어집니다."
+
+#: libparted/fs/r/fat/resize.c:303
+msgid "Error writing to the root directory."
+msgstr "루트 디렉터리 기록 중 오류."
+
+#: libparted/fs/r/fat/resize.c:479
+msgid "If you leave your file system as FAT16, then you will have no problems."
+msgstr "FAT16 파일 시스템으로 두면, 문제가 나타나지 않습니다."
+
+#: libparted/fs/r/fat/resize.c:482
+msgid ""
+"If you convert to FAT16, and MS Windows is installed on this partition, then "
+"you must re-install the MS Windows boot loader.  If you want to do this, you "
+"should consult the Parted manual (or your distribution's manual)."
+msgstr ""
+"FAT16으로 변환하고 MS 윈도우를 설치하면 MS 윈도우 부트로더도 다시 설치해야합"
+"니다.  이렇게 하려면 Parted 설명서(또는 배포판 설명서)를 참고하십시오."
+
+#: libparted/fs/r/fat/resize.c:490
+msgid ""
+"If you leave your file system as FAT32, then you will not introduce any new "
+"problems."
+msgstr "파일 시스템을 FAT32로 두면, 새 문제가 나타나지 않습니다."
+
+#: libparted/fs/r/fat/resize.c:494
+msgid ""
+"If you convert to FAT32, and MS Windows is installed on this partition, then "
+"you must re-install the MS Windows boot loader.  If you want to do this, you "
+"should consult the Parted manual (or your distribution's manual).  Also, "
+"converting to FAT32 will make the file system unreadable by MS DOS, MS "
+"Windows 95a, and MS Windows NT."
+msgstr ""
+"FAT32로 변환하고 MS 윈도우를 이 분할 영역에 설치하면 MS 윈도우 부트 로더를 다"
+"시 설치해야합니다. 지침대로 수행하려면 Parted 설명서(또는 배포판 설명서)를 참"
+"고하십시오. 또한 FAT32로 변환하면 MS DOS, MS 윈도우, MS 윈도우 NT에서 파일 시"
+"스템을 인식할 수 없습니다."
+
+#: libparted/fs/r/fat/resize.c:508
+#, c-format
+msgid "%s  %s  %s"
+msgstr "%s  %s  %s"
+
+#: libparted/fs/r/fat/resize.c:509
+msgid "Would you like to use FAT32?"
+msgstr "FAT32를 사용하시겠습니까?"
+
+#: libparted/fs/r/fat/resize.c:540 libparted/fs/r/fat/resize.c:556
+#, c-format
+msgid "%s  %s"
+msgstr "%s  %s"
+
+#: libparted/fs/r/fat/resize.c:541
+msgid ""
+"The file system can only be resized to this size by converting to FAT16."
+msgstr "FAT16으로 변환해야 파일 시스템 크기를 조절할 수 있습니다."
+
+#: libparted/fs/r/fat/resize.c:557
+msgid ""
+"The file system can only be resized to this size by converting to FAT32."
+msgstr "FAT32로 변환해야 파일 시스템 크기를 조절할 수 있습니다."
+
+#: libparted/fs/r/fat/resize.c:570
+msgid ""
+"GNU Parted cannot resize this partition to this size.  We're working on it!"
+msgstr ""
+"GNU Parted에서 분할 영역을 이 크기로 조절할 수 없습니다.  이 문제를 처리중입"
+"니다!"
+
+#: libparted/fs/r/fat/table.c:137
+#, c-format
+msgid ""
+"FAT %d media %x doesn't match the boot sector's media %x.  You should "
+"probably run scandisk."
+msgstr ""
+"%d FAT의 %x 미디어는 부트 섹터의 %x 미디어와 일치하지 않습니다. scandisk를 실"
+"행하십시오."
+
+#: libparted/fs/r/fat/table.c:269
+#, c-format
+msgid "fat_table_set: cluster %ld outside file system"
+msgstr "fat_table_set: %ld 클러스터는 파일 시스템 밖에 있습니다"
+
+#: libparted/fs/r/fat/table.c:301
+#, c-format
+msgid "fat_table_get: cluster %ld outside file system"
+msgstr "fat_table_get: %ld 클러스터는 파일 시스템 밖에 있습니다"
+
+#: libparted/fs/r/fat/table.c:343
+msgid "fat_table_alloc_cluster: no free clusters"
+msgstr "fat_table_alloc_cluster: 여분의 클러스터가 없습니다"
+
+#: libparted/fs/r/filesys.c:152
+msgid "Could not detect file system."
+msgstr "파일 시스템을 발견할 수 없습니다."
+
+#: libparted/fs/r/filesys.c:159 libparted/fs/r/filesys.c:284
+#, c-format
+msgid "resizing %s file systems is not supported"
+msgstr "%s 파일 시스템 크기 조절 기능을 지원하지 않습니다"
+
+#: libparted/fs/r/filesys.c:171
+msgid "The file system is bigger than its volume!"
+msgstr "파일 시스템은 이 볼륨보다 커야합니다!"
+
+#: libparted/fs/r/hfs/advfs.c:123 libparted/fs/r/hfs/advfs_plus.c:122
+#: libparted/fs/r/hfs/reloc.c:417 libparted/fs/r/hfs/reloc.c:513
+#: libparted/fs/r/hfs/reloc_plus.c:540 libparted/fs/r/hfs/reloc_plus.c:660
+#: libparted/fs/r/hfs/reloc_plus.c:774
+msgid "The file system contains errors."
+msgstr "파일 시스템에 오류가 있습니다."
+
+#: libparted/fs/r/hfs/advfs_plus.c:287
+msgid "Bad blocks could not be read."
+msgstr "불량 블록을 읽을 수 없습니다."
+
+#: libparted/fs/r/hfs/cache.c:137
+#, c-format
+msgid ""
+"Trying to register an extent starting at block 0x%X, but another one already "
+"exists at this position.  You should check the file system!"
+msgstr ""
+"0x%X 블록에서 시작하는 범위 정보를 등록하려 했지만, 이미 이 위치에 다른 정보"
+"가 있습니다.  파일 시스템을 검사하십시오!"
+
+#: libparted/fs/r/hfs/cache.c:214
+#, c-format
+msgid ""
+"Trying to move an extent from block 0x%X to block 0x%X, but another one "
+"already exists at this position.  This should not happen!"
+msgstr ""
+"0x%X번 블록에서 0x%X번 블록으로 범위 정보 이동을 시도했지만,  이 위치에 다른 "
+"범위 정보가 있습니다.  이 동작을 시도하면 안됩니다!"
+
+#: libparted/fs/r/hfs/file.c:143
+#, c-format
+msgid "Could not update the extent cache for HFS file with CNID %X."
+msgstr "%X CNID로 HFS 파일의 범위 정보 캐시를 업데이트할 수 없습니다."
+
+#: libparted/fs/r/hfs/file.c:180
+#, c-format
+msgid "Trying to read HFS file with CNID %X behind EOF."
+msgstr "EOF 이전의 %X CNID로 HFS 파일을 읽으려 합니다."
+
+#: libparted/fs/r/hfs/file.c:190 libparted/fs/r/hfs/file.c:220
+#, c-format
+msgid "Could not find sector %lli of HFS file with CNID %X."
+msgstr "%2$X CNID로 HFS 파일의 %1$lli 섹터를 찾을 수 없습니다."
+
+#: libparted/fs/r/hfs/file.c:210
+#, c-format
+msgid "Trying to write HFS file with CNID %X behind EOF."
+msgstr "EOF 이전의 %X CNID로 HFS 파일을 기록하려 합니다."
+
+#: libparted/fs/r/hfs/file_plus.c:157
+#, c-format
+msgid "Could not update the extent cache for HFS+ file with CNID %X."
+msgstr "%X CNID로 HFS+ 파일의 범위 정보 캐시를 업데이트할 수 없습니다."
+
+#: libparted/fs/r/hfs/file_plus.c:202
+#, c-format
+msgid "Trying to read HFS+ file with CNID %X behind EOF."
+msgstr "EOF 이전의 %X CNID로 HFS+ 파일을 읽으려 합니다."
+
+#: libparted/fs/r/hfs/file_plus.c:213 libparted/fs/r/hfs/file_plus.c:256
+#, c-format
+msgid "Could not find sector %lli of HFS+ file with CNID %X."
+msgstr "%2$X CNID로 HFS+ 파일의 %1$lli 섹터를 찾을 수 없습니다."
+
+#: libparted/fs/r/hfs/file_plus.c:245
+#, c-format
+msgid "Trying to write HFS+ file with CNID %X behind EOF."
+msgstr "EOF 이전의 %X CNID로 HFS+ 파일에 기록하려 합니다."
+
+#: libparted/fs/r/hfs/hfs.c:212
+msgid "Sorry, HFS cannot be resized that way yet."
+msgstr "죄송하지만, HFS 크기를 이 방식으로 조절할 수 없습니다."
+
+#: libparted/fs/r/hfs/hfs.c:230 libparted/fs/r/hfs/hfs.c:573
+msgid "shrinking"
+msgstr "크기 줄이는 중"
+
+#: libparted/fs/r/hfs/hfs.c:242 libparted/fs/r/hfs/hfs.c:585
+msgid "Data relocation has failed."
+msgstr "데이터 재배치에 실패했습니다."
+
+#: libparted/fs/r/hfs/hfs.c:261
+msgid "Data relocation left some data in the end of the volume."
+msgstr "데이터 재배치 중 볼륨 마지막 부분에 일부 데이터가 남았습니다."
+
+#: libparted/fs/r/hfs/hfs.c:300
+msgid "writing HFS Master Directory Block"
+msgstr "HFS 마스터 디렉터리 블록 기록 중"
+
+#: libparted/fs/r/hfs/hfs.c:412
+msgid "No valid HFS[+X] signature has been found while opening."
+msgstr "여는 중 유효한 HFS[+X] 서명을 찾지 못했습니다."
+
+#: libparted/fs/r/hfs/hfs.c:422
+#, c-format
+msgid "Version %d of HFS+ isn't supported."
+msgstr "HFS+ %d 버전은 지원하지 않습니다."
+
+#: libparted/fs/r/hfs/hfs.c:433
+#, c-format
+msgid "Version %d of HFSX isn't supported."
+msgstr "HFSX %d 버전은 지원하지 않습니다."
+
+#: libparted/fs/r/hfs/hfs.c:616
+msgid "Data relocation left some data at the end of the volume."
+msgstr "데이터 재배치 중 볼륨 마지막 부분에 일부 데이터가 남았습니다."
+
+#: libparted/fs/r/hfs/hfs.c:664
+msgid "Error while writing the allocation file."
+msgstr "할당 파일을 기록하는 중 오류가 발생했습니다."
+
+#: libparted/fs/r/hfs/hfs.c:679
+msgid "Error while writing the compatibility part of the allocation file."
+msgstr "할당 파일의 호환성 부분을 기록하는 중 오류가 발생했습니다."
+
+#: libparted/fs/r/hfs/hfs.c:694
+msgid "writing HFS+ Volume Header"
+msgstr "HFS+ 볼륨 헤더 기록 중"
+
+#: libparted/fs/r/hfs/hfs.c:794
+msgid "An error occurred while looking for the mandatory bad blocks file."
+msgstr "필수 불량 블록 파일을 찾는 중 오류가 발생했습니다."
+
+#: libparted/fs/r/hfs/hfs.c:847
+msgid ""
+"It seems there is an error in the HFS wrapper: the bad blocks file doesn't "
+"contain the embedded HFS+ volume."
+msgstr ""
+"HFS 래퍼에 오류가 있는 것 같습니다. 불량 블록 파일에 내장 HFS+ 볼륨 정보가 없"
+"습니다."
+
+#: libparted/fs/r/hfs/hfs.c:883
+msgid "Sorry, HFS+ cannot be resized that way yet."
+msgstr "죄송하지만, HFS+ 크기를 이 방식으로 조절할 수 없습니다."
+
+#: libparted/fs/r/hfs/hfs.c:918
+msgid "shrinking embedded HFS+ volume"
+msgstr "내장 HFS+ 볼륨 크기 줄이는 중"
+
+#: libparted/fs/r/hfs/hfs.c:935
+msgid "Resizing the HFS+ volume has failed."
+msgstr "HFS+ 볼륨 크기 조절에 실패했습니다."
+
+#: libparted/fs/r/hfs/hfs.c:942
+msgid "shrinking HFS wrapper"
+msgstr "HFS 래퍼 크기 줄이는 중"
+
+#: libparted/fs/r/hfs/hfs.c:951
+msgid "Updating the HFS wrapper has failed."
+msgstr "HFS 래퍼 업데이트에 실패했습니다."
+
+#: libparted/fs/r/hfs/hfs.c:1053 libparted/fs/r/hfs/hfs.c:1138
+#, c-format
+msgid ""
+"This is not a real %s check.  This is going to extract special low level "
+"files for debugging purposes."
+msgstr ""
+"실제로  %s 검사를 진행하지 않습니다.  디버깅 목적으로 저 수준 파일을 추출합니"
+"다."
+
+#: libparted/fs/r/hfs/journal.c:155
+msgid "Bad block list header checksum."
+msgstr "불량 블록 목록 헤더의 검사합입니다."
+
+#: libparted/fs/r/hfs/journal.c:168
+#, c-format
+msgid ""
+"Invalid size of a transaction block while replaying the journal (%i bytes)."
+msgstr ""
+"저널을 재현하는 동안 트랜잭션 블록 크기가 잘못됨을 발견했습니다(%i바이트)."
+
+#: libparted/fs/r/hfs/journal.c:260
+msgid ""
+"Journal stored outside of the volume are not supported.  Try to deactivate "
+"the journal and run Parted again."
+msgstr ""
+"볼륨 밖에 있는 저널을 지원하지 않습니다.  저널을 비활성화한 후 Parted를 다시 "
+"실행하십시오."
+
+#: libparted/fs/r/hfs/journal.c:271
+msgid "Journal offset or size is not multiple of the sector size."
+msgstr "저널 오프셋 또는 크기가 섹터 크기의 배수가 아닙니다."
+
+#: libparted/fs/r/hfs/journal.c:292
+msgid "Incorrect magic values in the journal header."
+msgstr "저널 헤더의 매직 값이 잘못되었습니다."
+
+#: libparted/fs/r/hfs/journal.c:302
+msgid "Journal size mismatch between journal info block and journal header."
+msgstr "저널 정보 블록 및 저널 헤더간 저널 크기 값이 일치하지 않습니다."
+
+#: libparted/fs/r/hfs/journal.c:314
+msgid "Some header fields are not multiple of the sector size."
+msgstr "일부 헤더 필드 값은 섹터 크기의 배수가 아닙니다."
+
+#: libparted/fs/r/hfs/journal.c:323
+msgid ""
+"The sector size stored in the journal is not 512 bytes.  Parted only "
+"supports 512 bytes length sectors."
+msgstr ""
+"저널에 저장한 섹터 크기가 512 바이트가 아닙니다. Parted에서는 512 바이트 길"
+"이 섹터만 지원합니다."
+
+#: libparted/fs/r/hfs/journal.c:335
+msgid "Bad journal checksum."
+msgstr "잘못된 저널 검사합."
+
+#: libparted/fs/r/hfs/journal.c:355
+msgid ""
+"The journal is not empty.  Parted must replay the transactions before "
+"opening the file system.  This will modify the file system."
+msgstr ""
+"저널이 비어있지 않습니다. Parted에서는 파일 시스템을 열기 전에 트랜잭션을 다"
+"시 수행해야합니다. 이 동작으로 파일 시스템을 수정합니다."
+
+#: libparted/fs/r/hfs/journal.c:383
+msgid ""
+"The volume header or the master directory block has changed while replaying "
+"the journal.  You should restart Parted."
+msgstr ""
+"저널을 재현하는 동안 볼륨 헤더 또는 주 디렉터리 블록을 바꾸었습니다. Parted"
+"를 다시 시작해야합니다."
+
+#: libparted/fs/r/hfs/reloc.c:151 libparted/fs/r/hfs/reloc_plus.c:155
+msgid "An extent has not been relocated."
+msgstr "범위 정보를 다시 배치하지 않았습니다."
+
+#: libparted/fs/r/hfs/reloc.c:251 libparted/fs/r/hfs/reloc_plus.c:307
+msgid ""
+"A reference to an extent comes from a place it should not.  You should check "
+"the file system!"
+msgstr ""
+"범위 정보 참조를 두지 말아야 할 곳에 두었습니다.  파일 시스템을 검사하십시오!"
+
+#: libparted/fs/r/hfs/reloc.c:382
+msgid "This HFS volume has no catalog file.  This is very unusual!"
+msgstr "HFS  볼륨에 카탈로그 파일이 없습니다. 상당히 드문 일입니다!"
+
+#: libparted/fs/r/hfs/reloc.c:479
+msgid "This HFS volume has no extents overflow file.  This is quite unusual!"
+msgstr "HFS 볼륨에 범위 정보 오버플로우 파일이 없습니다. 상당히 드문 일입니다!"
+
+#: libparted/fs/r/hfs/reloc.c:522 libparted/fs/r/hfs/reloc_plus.c:670
+msgid ""
+"The extents overflow file should not contain its own extents!  You should "
+"check the file system."
+msgstr ""
+"자체 범위 정보에 범위 정보 오버플로우 파일이 들어있으면 안됩니다! 파일 시스템"
+"을 검사하십시오."
+
+#: libparted/fs/r/hfs/reloc.c:579 libparted/fs/r/hfs/reloc_plus.c:849
+msgid "Could not cache the file system in memory."
+msgstr "메모리에 파일 시스템을 캐싱할 수 없습니다."
+
+#: libparted/fs/r/hfs/reloc.c:640 libparted/fs/r/hfs/reloc_plus.c:910
+msgid "Bad blocks list could not be loaded."
+msgstr "불량 블록 목록을 불러올 수 없습니다."
+
+#: libparted/fs/r/hfs/reloc.c:654 libparted/fs/r/hfs/reloc_plus.c:926
+msgid "An error occurred during extent relocation."
+msgstr "범위 정보 재배치를 수행하는 동안 오류가 발생했습니다."
+
+#: libparted/fs/r/hfs/reloc_plus.c:495
+msgid "This HFS+ volume has no catalog file.  This is very unusual!"
+msgstr "HFS+ 볼륨에 카탈로그 파일이 없습니다. 상당히 드문 일입니다!"
+
+#: libparted/fs/r/hfs/reloc_plus.c:620
+msgid "This HFS+ volume has no extents overflow file.  This is quite unusual!"
+msgstr ""
+"HFS+ 볼륨에 범위 정보 오버플로우 파일이 없습니다. 상당히 드문 일입니다!"
+
+#: parted/parted.c:137
+msgid "displays this help message"
+msgstr "도움말 메시지를 나타냅니다"
+
+#: parted/parted.c:138
+msgid "lists partition layout on all block devices"
+msgstr "모든 블록 장치의 분할 영역 배치를 나타냅니다"
+
+#: parted/parted.c:139
+msgid "displays machine parseable output"
+msgstr "기계 해석 가능한 출력을 나타냅니다"
+
+#: parted/parted.c:140
+msgid "displays JSON output"
+msgstr "JSON 출력을 표시합니다"
+
+#: parted/parted.c:141
+msgid "never prompts for user intervention"
+msgstr "사용자 개입 여부를 묻지 않음"
+
+#: parted/parted.c:142
+msgid "in script mode, fix instead of abort when asked"
+msgstr "스크립트 모드에서는, 물어볼 때 멈추는 대신 수정합니다"
+
+#: parted/parted.c:143
+msgid "displays the version"
+msgstr "버전 정보를 나타냅니다"
+
+#: parted/parted.c:144
+msgid "alignment for new partitions"
+msgstr "새 분할 영역의 정렬 방식"
+
+#: parted/parted.c:157
+msgid ""
+"NUMBER is the partition number used by Linux.  On MS-DOS disk labels, the "
+"primary partitions number from 1 to 4, logical partitions from 5 onwards.\n"
+msgstr ""
+"<번호>는 리눅스에서 사용하는 분할 영역 번호입니다. MS-DOS 디스크 레이블에서, "
+"주 분할 영역 번호는 1부터 4까지, 논리 분할 영역은 5 이후입니다.\n"
+
+#: parted/parted.c:160
+msgid "LABEL-TYPE is one of: "
+msgstr "<레이블 형식>은 다음 중 하나입니다:"
+
+#: parted/parted.c:161 parted/parted.c:162
+msgid "FLAG is one of: "
+msgstr "<플래그>는 다음 중 하나입니다:"
+
+#: parted/parted.c:163
+msgid "UNIT is one of: "
+msgstr "<단위>는 다음 중 하나입니다:"
+
+#: parted/parted.c:164
+msgid "desired alignment: minimum or optimal"
+msgstr "적절한 정렬값: minimum 또는 optimal"
+
+#: parted/parted.c:165
+msgid "PART-TYPE is one of: primary, logical, extended\n"
+msgstr "<분할 영역 형식>은 다음 중 하나입니다: primary, logical, extended\n"
+
+#: parted/parted.c:167
+msgid "FS-TYPE is one of: "
+msgstr "<파일 시스템 형식> 은 다음 중 하나입니다:"
+
+#: parted/parted.c:168
+msgid ""
+"START and END are disk locations, such as 4GB or 10%.  Negative values count "
+"from the end of the disk.  For example, -1s specifies exactly the last "
+"sector.\n"
+msgstr ""
+"<시작>과 <끝>은 4GB 또는 10% 같은 디스크 위치입니다. 음수 값은 디스크 뒷부분"
+"부터 계산한 값입니다.  예를 들면, -1은 정확히 마지막 섹터를 가리킵니다.\n"
+
+#: parted/parted.c:171
+msgid ""
+"END is disk location, such as 4GB or 10%.  Negative value counts from the "
+"end of the disk.  For example, -1s specifies exactly the last sector.\n"
+msgstr ""
+"<끝>은 4GB 또는 10% 같은 디스크 위치입니다. 음수 값은 디스크 뒷부분부터 계산"
+"한 값입니다.  예를 들면, -1은 정확히 마지막 섹터를 가리킵니다.\n"
+
+#: parted/parted.c:174
+msgid "STATE is one of: on, off\n"
+msgstr "<상태>는 on, off 둘 중 하나입니다\n"
+
+#: parted/parted.c:175
+msgid "DEVICE is usually /dev/hda or /dev/sda\n"
+msgstr "<장치>는 보통 /dev/hda 또는 /dev/sda입니다\n"
+
+#: parted/parted.c:176
+msgid "NAME is any word you want\n"
+msgstr "<이름>은 원하는 어떤 단어든 들어갑니다\n"
+
+#: parted/parted.c:179
+msgid ""
+"Copyright (C) 1998 - 2006 Free Software Foundation, Inc.\n"
+"This program is free software, covered by the GNU General Public License.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+msgstr ""
+"Copyright (C) 1998 - 2006 Free Software Foundation, Inc.\n"
+"This program is free software, covered by the GNU General Public License.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+
+#: parted/parted.c:229
+#, c-format
+msgid "%0.f%%\t(time left %.2d:%.2d)"
+msgstr "%0.f%%\t(남은 시간: %.2d:%.2d)"
+
+#: parted/parted.c:248
+#, c-format
+msgid "Partition %s is being used. Are you sure you want to continue?"
+msgstr "%s 분할 영역을 사용중입니다. 정말 계속하시겠습니까?"
+
+#: parted/parted.c:269
+#, c-format
+msgid "Partition(s) on %s are being used."
+msgstr "%s의 분할 공간을 사용 중입니다."
+
+#: parted/parted.c:281
+#, c-format
+msgid ""
+"The existing disk label on %s will be destroyed and all data on this disk "
+"will be lost. Do you want to continue?"
+msgstr ""
+"%s의 기존 디스크 레이블을 없애며 디스크의 모든 데이터가 사라집니다. 계속하시"
+"겠습니까?"
+
+#: parted/parted.c:542
+msgid "New disk label type?"
+msgstr "새 디스크 레이블 형식?"
+
+#: parted/parted.c:680
+msgid "Partition type?"
+msgstr "분할 영역 형식?"
+
+#: parted/parted.c:698 parted/parted.c:902
+msgid "Partition name?"
+msgstr "분할 영역 이름?"
+
+#: parted/parted.c:708
+msgid "File system type?"
+msgstr "파일 시스템 형식?"
+
+#: parted/parted.c:713 parted/parted.c:1683
+msgid "Start?"
+msgstr "시작점?"
+
+#: parted/parted.c:715 parted/parted.c:1685 parted/parted.c:1768
+msgid "End?"
+msgstr "끝점?"
+
+#: parted/parted.c:782
+#, c-format
+msgid ""
+"You requested a partition from %s to %s (sectors %llu..%llu).\n"
+"The closest location we can manage is %s to %s (sectors %llu..%llu).%s"
+msgstr ""
+"%s부터 %s까지(%llu..%llu 섹터) 영역 분할을 요청했습니다.\n"
+"관리할 수 있는 가까운 위치는 %s부터 %s까지(%llu..%llu 섹터)입니다.%s"
+
+#: parted/parted.c:791
+msgid ""
+"\n"
+"Is this still acceptable to you?"
+msgstr ""
+"\n"
+"여전히 만족합니까?"
+
+#: parted/parted.c:814
+#, c-format
+msgid ""
+"The resulting partition is not properly aligned for best performance: %s"
+msgstr ""
+"최적 성능을 목적으로 분할 영역 배치 과정에서 제대로 정렬하지 않았습니다: %s"
+
+#: parted/parted.c:816 parted/parted.c:1925
+msgid "unknown (malloc failed)"
+msgstr "알 수 없음(malloc 실패)"
+
+#: parted/parted.c:894
+#, c-format
+msgid "%s disk labels do not support partition name."
+msgstr "%s 디스크 레이블은 분할 영역 이름을 지원하지 않습니다."
+
+#: parted/parted.c:899 parted/parted.c:1748 parted/parted.c:1814
+#: parted/parted.c:1908 parted/parted.c:1983
+msgid "Partition number?"
+msgstr "분할 영역 번호?"
+
+#: parted/parted.c:1050
+#, c-format
+msgid "BIOS cylinder,head,sector geometry: %d,%d,%d.  Each cylinder is %s.\n"
+msgstr "BIOS 실린더,헤드,섹터 크기: %d,%d,%d.  각 실린더는 %s 입니다.\n"
+
+#: parted/parted.c:1137
+#, c-format
+msgid "Model: %s (%s)\n"
+msgstr "모델: %s (%s)\n"
+
+#: parted/parted.c:1139
+#, c-format
+msgid "Disk %s: %s\n"
+msgstr "%s 디스크: %s\n"
+
+#: parted/parted.c:1140
+#, c-format
+msgid "Sector size (logical/physical): %lldB/%lldB\n"
+msgstr "섹터 크기(논리/실제): %lld/B%lldB\n"
+
+#: parted/parted.c:1152
+#, c-format
+msgid "Partition Table: %s\n"
+msgstr "분할 영역 테이블: %s\n"
+
+#: parted/parted.c:1153
+#, c-format
+msgid "Disk Flags: %s\n"
+msgstr "디스크 플래그: %s\n"
+
+#: parted/parted.c:1279 parted/parted.c:1282
+msgid "Number"
+msgstr "번호"
+
+#: parted/parted.c:1279 parted/parted.c:1282
+msgid "Start"
+msgstr "시작"
+
+#: parted/parted.c:1280 parted/parted.c:1283
+msgid "End"
+msgstr "끝"
+
+#: parted/parted.c:1283
+msgid "Size"
+msgstr "크기"
+
+#: parted/parted.c:1287
+msgid "Type"
+msgstr "형식"
+
+#: parted/parted.c:1289
+msgid "File system"
+msgstr "파일 시스템"
+
+#: parted/parted.c:1292
+msgid "Name"
+msgstr "이름"
+
+#: parted/parted.c:1294
+msgid "Flags"
+msgstr "플래그"
+
+#: parted/parted.c:1352
+msgid "Free Space"
+msgstr "여분 공간"
+
+#: parted/parted.c:1570
+#, c-format
+msgid ""
+"A %s %s partition was found at %s -> %s.  Do you want to add it to the "
+"partition table?"
+msgstr ""
+"%s %s 분할 영역을 %s->%s에서 찾았습니다. 이 분할 영역을 분할 영역 테이블에 추"
+"가하시겠습니까?"
+
+#: parted/parted.c:1613
+msgid "searching for file systems"
+msgstr "파일 시스템 검색 중"
+
+#: parted/parted.c:1720
+msgid "The resize command has been removed in parted 3.0"
+msgstr "Parted 3.0에서 resize 명령을 제거했습니다"
+
+#: parted/parted.c:1782
+msgid ""
+"Shrinking a partition can cause data loss, are you sure you want to continue?"
+msgstr ""
+"분할 영역 공간을 줄이면 데이터를 잃을 수 있습니다. 정말로 계속하시겠습니까?"
+
+#: parted/parted.c:1838
+msgid "New device?"
+msgstr "새 장치?"
+
+#: parted/parted.c:1906
+msgid "alignment type(min/opt)"
+msgstr "정렬 형식(min/opt)"
+
+#: parted/parted.c:1921
+#, c-format
+msgid "%d aligned\n"
+msgstr "분할 영역 %d은(는) 정렬 상태임\n"
+
+#: parted/parted.c:1923
+#, c-format
+msgid "%d not aligned: %s\n"
+msgstr ""
+"%d번을 정렬하지 않음: %s\n"
+"\n"
+
+#: parted/parted.c:1948 parted/parted.c:1985
+msgid "Flag to Invert?"
+msgstr "반전할 플래그?"
+
+#: parted/parted.c:1953 parted/parted.c:1990
+msgid "New state?"
+msgstr "새 상태?"
+
+#: parted/parted.c:2036
+msgid "Unit?"
+msgstr "단위?"
+
+#: parted/parted.c:2171
+msgid "align-check"
+msgstr "align-check"
+
+#: parted/parted.c:2174
+msgid ""
+"align-check TYPE N                       check partition N for TYPE(min|opt) "
+"alignment"
+msgstr ""
+"align-check <형식> <번호>                       <번호> 분할 영역의 지정 <형식"
+">(min|opt) 정렬 상태를 검사합니다"
+
+#: parted/parted.c:2182
+msgid "help"
+msgstr "help"
+
+#: parted/parted.c:2185
+msgid ""
+"help [COMMAND]                           print general help, or help on "
+"COMMAND"
+msgstr ""
+"help [<명령>]                           일반 도움말 또는 <명령> 도움말을 출력"
+"합니다"
+
+#: parted/parted.c:2191
+msgid "mklabel"
+msgstr "mklabel"
+
+#: parted/parted.c:2191
+msgid "mktable"
+msgstr "mktable"
+
+#: parted/parted.c:2194
+msgid ""
+"mklabel,mktable LABEL-TYPE               create a new disklabel (partition "
+"table)"
+msgstr ""
+"mklabel,mktable <레이블 형식>              새 디스크 레이블(분할 영역 테이블)"
+"을 만듭니다"
+
+#: parted/parted.c:2200
+msgid "mkpart"
+msgstr "mkpart"
+
+#: parted/parted.c:2203
+msgid "mkpart PART-TYPE [FS-TYPE] START END     make a partition"
+msgstr ""
+"mkpart <분할 영역 형식> [<파일 시스템 형식>] <시작> <끝>     분할 영역을 만듭"
+"니다"
+
+#: parted/parted.c:2209
+msgid ""
+"'mkpart' makes a partition without creating a new file system on the "
+"partition.  FS-TYPE may be specified to set an appropriate partition ID.\n"
+msgstr ""
+"‘mkpart’는 분할 영역에 새 파일 시스템을 만들지 않고 분할 영역을 만듭니다. <파"
+"일 시스템 형식>에 적당한 분할 영역 ID를 설정해야 합니다.\n"
+
+#: parted/parted.c:2214
+msgid "name"
+msgstr "name"
+
+#: parted/parted.c:2217
+msgid "name NUMBER NAME                         name partition NUMBER as NAME"
+msgstr ""
+"name <번호> <이름>                         <번호> 분할 영역의 이름을 <이름>으"
+"로 지정합니다"
+
+#: parted/parted.c:2222
+msgid "print"
+msgstr "print"
+
+#: parted/parted.c:2225
+msgid ""
+"print [devices|free|list,all]            display the partition table, or "
+"available devices, or free space, or all found partitions"
+msgstr ""
+"print [devices|free|list,all]     분할 영역 테이블, 존재 장치, 여분 공간, 발"
+"견한 모든 분할 영역을 나타냅니다"
+
+#: parted/parted.c:2229
+msgid ""
+"Without arguments, 'print' displays the entire partition table. However with "
+"the following arguments it performs various other actions.\n"
+msgstr ""
+"‘print’ 명령에 인자를 빼면 전체 분할 영역 테이블을 나타냅니다. 하지만 다음 인"
+"자 값을 넣으면 다양한 다른 동작을 수행합니다.\n"
+
+#: parted/parted.c:2231
+msgid "  devices   : display all active block devices\n"
+msgstr "  devices   : 모든 활성 블록 장치를 나타냅니다\n"
+
+#: parted/parted.c:2232
+msgid ""
+"  free      : display information about free unpartitioned space on the "
+"current block device\n"
+msgstr ""
+"  free      : 현재 블록 장치에서 분할 영역으로 지정하지 않은 여분의 공간 정보"
+"를 나타냅니다\n"
+
+#: parted/parted.c:2234
+msgid ""
+"  list, all : display the partition tables of all active block devices\n"
+msgstr "  list, all : 모든 활성 블록 장치의 분할 영역 테이블을 나타냅니다\n"
+
+#: parted/parted.c:2238
+msgid "quit"
+msgstr "quit"
+
+#: parted/parted.c:2241
+msgid "quit                                     exit program"
+msgstr "quit                                     프로그램을 빠져 나갑니다"
+
+#: parted/parted.c:2246
+msgid "rescue"
+msgstr "rescue"
+
+#: parted/parted.c:2249
+msgid ""
+"rescue START END                         rescue a lost partition near START "
+"and END"
+msgstr ""
+"rescue <시작> <끝>                         <시작> 및 <끝> 영역 주변의 소실 분"
+"할 영역을 복원합니다"
+
+#: parted/parted.c:2255
+msgid "resize"
+msgstr "resize"
+
+#: parted/parted.c:2258
+msgid "The resize command was removed in parted 3.0\n"
+msgstr "Parted 3.0에서 resize 명령을 제거했습니다\n"
+
+#: parted/parted.c:2261
+msgid "resizepart"
+msgstr "resizepart"
+
+#: parted/parted.c:2264
+msgid "resizepart NUMBER END                    resize partition NUMBER"
+msgstr ""
+"resizepart <번호> <끝>                    <번호> 분할 영역의 크기를 조절합니"
+"다"
+
+#: parted/parted.c:2269
+msgid "rm"
+msgstr "rm"
+
+#: parted/parted.c:2272
+msgid "rm NUMBER                                delete partition NUMBER"
+msgstr "rm <번호>                                <번호> 분할 영역을 삭제합니다"
+
+#: parted/parted.c:2277
+msgid "select"
+msgstr "select"
+
+#: parted/parted.c:2280
+msgid "select DEVICE                            choose the device to edit"
+msgstr "select <장치>                            편집할 장치를 선택합니다"
+
+#: parted/parted.c:2285
+msgid "disk_set"
+msgstr "disk_set"
+
+#: parted/parted.c:2288
+msgid ""
+"disk_set FLAG STATE                      change the FLAG on selected device"
+msgstr ""
+"disk_set <플래그> <상태>                      선택한 장치의 <플래그> 값을 바"
+"꿉니다"
+
+#: parted/parted.c:2293
+msgid "disk_toggle"
+msgstr "disk_toggle"
+
+#: parted/parted.c:2296
+msgid ""
+"disk_toggle [FLAG]                       toggle the state of FLAG on "
+"selected device"
+msgstr ""
+"disk_toggle [<플래그>]                       선택한 장치의 <플래그> 상태를 전"
+"환합니다"
+
+#: parted/parted.c:2302
+msgid "set"
+msgstr "set"
+
+#: parted/parted.c:2305
+msgid ""
+"set NUMBER FLAG STATE                    change the FLAG on partition NUMBER"
+msgstr ""
+"set <번호> <플래그> <상태>                    <번호> 분할 영역의 <플래그> 값"
+"을 바꿉니다"
+
+#: parted/parted.c:2311
+msgid "toggle"
+msgstr "toggle"
+
+#: parted/parted.c:2314
+msgid ""
+"toggle [NUMBER [FLAG]]                   toggle the state of FLAG on "
+"partition NUMBER"
+msgstr ""
+"toggle [<번호> [<플래그>]]                   <번호> 분할 영역의 <플래그> 상태"
+"를 전환합니다"
+
+#: parted/parted.c:2320
+msgid "unit"
+msgstr "unit"
+
+#: parted/parted.c:2323
+msgid "unit UNIT                                set the default unit to UNIT"
+msgstr ""
+"unit <단위>                                기본 단위를 <단위> 값으로 설정합니"
+"다"
+
+#: parted/parted.c:2328
+msgid "version"
+msgstr "version"
+
+#: parted/parted.c:2331
+msgid ""
+"version                                  display the version number and "
+"copyright information of GNU Parted"
+msgstr ""
+"version                                  GNU Parted의 버전 번호와 저작 정보"
+"를 나타냅니다"
+
+#: parted/parted.c:2335
+msgid ""
+"'version' displays copyright and version information corresponding to this "
+"copy of GNU Parted\n"
+msgstr ""
+"‘version’ 명령은 GNU Parted 사본과 관련된 저작 정보와 버전 정보를 나타냅니"
+"다\n"
+
+#: parted/parted.c:2405
+#, c-format
+msgid "Usage: %s [-hlmsfv] [-a<align>] [DEVICE [COMMAND [PARAMETERS]]...]\n"
+msgstr ""
+"사용법: %s [-hlmsfv] [-a<정렬방식>] [<장치> [<명령> [<매개변수>]]...]\n"
+
+#: parted/parted.c:2449
+msgid "No device found"
+msgstr "장치가 없습니다"
+
+#: parted/parted.c:2486
+msgid "WARNING: You are not superuser.  Watch out for permissions.\n"
+msgstr "경고: 관리자가 아닙니다. 권한을 확인하십시오.\n"
+
+#: parted/parted.c:2519
+msgid ""
+"You should reinstall your boot loader before rebooting.  Read section 4 of "
+"the Parted User documentation for more information."
+msgstr ""
+"다시 부팅하기 전 부트 로더를 다시 설치해야 합니다. 자세한 정보는 Parted 사용"
+"자 문서 4장을 살펴보십시오."
+
+#: parted/parted.c:2526
+msgid "You may need to update /etc/fstab.\n"
+msgstr "/etc/fstab 정보를 업데이트해야 합니다.\n"
+
+#: parted/ui.c:164
+msgid "Welcome to GNU Parted! Type 'help' to view a list of commands.\n"
+msgstr ""
+"GNU Parted 사용을 환영합니다! 명령 목록을 보려면 ‘help’를 입력하십시오.\n"
+
+#: parted/ui.c:167
+msgid ""
+"Usage: parted [OPTION]... [DEVICE [COMMAND [PARAMETERS]...]...]\n"
+"Apply COMMANDs with PARAMETERS to DEVICE.  If no COMMAND(s) are given, run "
+"in\n"
+"interactive mode.\n"
+msgstr ""
+"사용법: parted [<옵션>]... [<장치> [<명령> [<매개변수>]...]...]\n"
+"<매개변수>를 붙인 <명령>을 <장치>에 적용합니다.  <명령>이 없으면\n"
+"대화식 모드로 실행합니다.\n"
+
+#: parted/ui.c:172
+#, c-format
+msgid ""
+"\n"
+"\n"
+"You found a bug in GNU Parted! Here's what you have to do:\n"
+"\n"
+"Don't panic! The bug has most likely not affected any of your data.\n"
+"Help us to fix this bug by doing the following:\n"
+"\n"
+"Check whether the bug has already been fixed by checking\n"
+"the last version of GNU Parted that you can find at:\n"
+"\n"
+"\thttp://ftp.gnu.org/gnu/parted/\n"
+"\n"
+"Please check this version prior to bug reporting.\n"
+"\n"
+"If this has not been fixed yet or if you don't know how to check,\n"
+"please visit the GNU Parted website:\n"
+"\n"
+"\thttp://www.gnu.org/software/parted\n"
+"\n"
+"for further information.\n"
+"\n"
+"Your report should contain the version of this release (%s)\n"
+"along with the error message below, the output of\n"
+"\n"
+"\tparted DEVICE unit co print unit s print\n"
+"\n"
+"and the following history of commands you entered.\n"
+"Also include any additional information about your setup you\n"
+"consider important.\n"
+msgstr ""
+"\n"
+"\n"
+"GNU Parted의 버그를 찾았습니다! 해야 할 일이 있습니다:\n"
+"\n"
+"절망하지 마십시오! 대부분은 어떤 데이터에도 영향을 주지 않는 버그입니다.\n"
+"다음 절차를 따라 버그 수정을 도와주십시오:\n"
+"\n"
+"다음 주소에서 GNU Parted 최신 버전을 받아 이미 버그를 고쳤는지 \n"
+"확인하십시오:\n"
+"\n"
+"\thttp://ftp.gnu.org/gnu/parted/\n"
+"\n"
+"버그를 보고하기 전 이 버전을 확인하십시오.\n"
+"\n"
+"아직 수정하지 않았거나 확인 방법을 모르신다면, GNU Parted 웹 \n"
+"사이트에 방문하십시오:\n"
+"\n"
+"\thttp://www.gnu.org/software/parted\n"
+"\n"
+"여기서 자세한 정보를 찾아보십시오.\n"
+"\n"
+"보고서에는 이 릴리스 버전(%s)과 하단의 오류 메시지 출력\n"
+"내용을 함께 넣으셔야합니다\n"
+"\n"
+"\tparted DEVICE unit co print unit s print\n"
+"\n"
+"그리고 여러분이 입력한 다음 명령 기록을 넣으십시오.\n"
+"또한 중요하다고 생각하는 추가 설정 정보도 넣으십시오.\n"
+
+#: parted/ui.c:293
+msgid ""
+"\n"
+"Command History:\n"
+msgstr ""
+"\n"
+"명령 기록:\n"
+
+#: parted/ui.c:356
+msgid ""
+"\n"
+"Error: SEGV_MAPERR (Address not mapped to object)\n"
+msgstr ""
+"\n"
+"오류: SEGV_MAPERR (객체에 주소를 매핑하지 않음)\n"
+
+#: parted/ui.c:362
+msgid ""
+"\n"
+"Error: SEGV_ACCERR (Invalid permissions for mapped object)\n"
+msgstr ""
+"\n"
+"오류: SEGV_ACCERR (매핑할 오브젝트에 접근할 권한 없음)\n"
+
+#: parted/ui.c:367
+msgid ""
+"\n"
+"Error: A general SIGSEGV signal was encountered.\n"
+msgstr ""
+"\n"
+"오류: 일반 SIGSEGV 시그널이 발생했습니다.\n"
+
+#: parted/ui.c:391
+msgid ""
+"\n"
+"Error: FPE_INTDIV (Integer: divide by zero)"
+msgstr ""
+"\n"
+"오류: FPE_INTDIV (정수: 0 나누기 오류)"
+
+#: parted/ui.c:396
+msgid ""
+"\n"
+"Error: FPE_INTOVF (Integer: overflow)"
+msgstr ""
+"\n"
+"오류: FPE_INTOVF (정수: 오버플로우)"
+
+#: parted/ui.c:401
+msgid ""
+"\n"
+"Error: FPE_FLTDIV (Float: divide by zero)"
+msgstr ""
+"\n"
+"오류: FPE_FLTDIV (실수: 0 나누기 오류)"
+
+#: parted/ui.c:406
+msgid ""
+"\n"
+"Error: FPE_FLTOVF (Float: overflow)"
+msgstr ""
+"\n"
+"오류: FPE_FLTOVF (실수: 오버플로우)"
+
+#: parted/ui.c:411
+msgid ""
+"\n"
+"Error: FPE_FLTUND (Float: underflow)"
+msgstr ""
+"\n"
+"오류: FPE_FLTUND (실수: 언더플로우)"
+
+#: parted/ui.c:416
+msgid ""
+"\n"
+"Error: FPE_FLTRES (Float: inexact result)"
+msgstr ""
+"\n"
+"오류: FPE_FLTRES (실수: 부정확한 결과)"
+
+#: parted/ui.c:421
+msgid ""
+"\n"
+"Error: FPE_FLTINV (Float: invalid operation)"
+msgstr ""
+"\n"
+"오류: FPE_FLTINV (실수: 잘못된 연산)"
+
+#: parted/ui.c:426
+msgid ""
+"\n"
+"Error: FPE_FLTSUB (Float: subscript out of range)"
+msgstr ""
+"\n"
+"오류: FPE_FLTSUB (실수: 아래 첨자 범위 벗어남)"
+
+#: parted/ui.c:431
+msgid ""
+"\n"
+"Error: A general SIGFPE signal was encountered."
+msgstr ""
+"\n"
+"오류: 일반 SIGFPE 시그널이 발생했습니다."
+
+#: parted/ui.c:455
+msgid ""
+"\n"
+"Error: ILL_ILLOPC (Illegal Opcode)"
+msgstr ""
+"\n"
+"오류: ILL_ILLOPC (잘못된 기계어 코드)"
+
+#: parted/ui.c:460
+msgid ""
+"\n"
+"Error: ILL_ILLOPN (Illegal Operand)"
+msgstr ""
+"\n"
+"오류: ILL_ILLOPN (잘못된 기계어 인자)"
+
+#: parted/ui.c:465
+msgid ""
+"\n"
+"Error: ILL_ILLADR (Illegal addressing mode)"
+msgstr ""
+"\n"
+"오류: ILL_ILLADR (잘못된 주소 모드)"
+
+#: parted/ui.c:470
+msgid ""
+"\n"
+"Error: ILL_ILLTRP (Illegal Trap)"
+msgstr ""
+"\n"
+"오류: ILL_ILLTRP (잘못된 트랩 처리)"
+
+#: parted/ui.c:475
+msgid ""
+"\n"
+"Error: ILL_PRVOPC (Privileged Opcode)"
+msgstr ""
+"\n"
+"오류: ILL_PRVOPC (권한이 필요한 기계어 코드)"
+
+#: parted/ui.c:480
+msgid ""
+"\n"
+"Error: ILL_PRVREG (Privileged Register)"
+msgstr ""
+"\n"
+"오류: ILL_PRVREG (권한이 필요한 레지스터 접근)"
+
+#: parted/ui.c:485
+msgid ""
+"\n"
+"Error: ILL_COPROC (Coprocessor Error)"
+msgstr ""
+"\n"
+"오류: ILL_COPROC (코프로세서 오류)"
+
+#: parted/ui.c:490
+msgid ""
+"\n"
+"Error: ILL_BADSTK (Internal Stack Error)"
+msgstr ""
+"\n"
+"오류: ILL_BADSTK (내부 스택 오류)"
+
+#: parted/ui.c:495
+msgid ""
+"\n"
+"Error: A general SIGILL signal was encountered."
+msgstr ""
+"\n"
+"오류: 일반 SIGILL 시그널이 발생했습니다."
+
+#: parted/ui.c:901
+#, c-format
+msgid "invalid token: %s"
+msgstr "잘못된 토큰: %s"
+
+#: parted/ui.c:1082
+msgid "Expecting a partition number."
+msgstr "분할 영역 번호가 필요합니다."
+
+#: parted/ui.c:1091
+msgid "Partition doesn't exist."
+msgstr "분할 영역이 없습니다."
+
+#: parted/ui.c:1111
+msgid "Expecting a file system type."
+msgstr "파일 시스템 형식이 필요합니다."
+
+#: parted/ui.c:1118
+#, c-format
+msgid "Unknown file system type \"%s\"."
+msgstr "알 수 없는 파일 시스템 형식 “%s”."
+
+#: parted/ui.c:1139
+msgid "Expecting a disk label type."
+msgstr "디스크 레이블 형식이 필요합니다."
+
+#: parted/ui.c:1170 parted/ui.c:1206
+msgid "No flags supported"
+msgstr "지원하는 플래그 없음"
+
+#: parted/ui.c:1280
+msgid "Can't create any more partitions."
+msgstr "더 이상의 분할 영역을 만들 수 없습니다."
+
+#: parted/ui.c:1290
+msgid "Expecting a partition type."
+msgstr "분할 영역 형식이 필요합니다."
+
+#: parted/ui.c:1439
+msgid "on"
+msgstr "on"
+
+#: parted/ui.c:1440
+msgid "off"
+msgstr "off"
+
+#: parted/ui.c:1457
+msgid "optimal"
+msgstr "optimal"
+
+#: parted/ui.c:1458
+msgid "minimal"
+msgstr "minimal"
+
+#: parted/ui.c:1591
+msgid "OPTIONs:"
+msgstr "옵션:"
+
+#: parted/ui.c:1596
+msgid "COMMANDs:"
+msgstr "명령:"
+
+#: parted/ui.c:1599
+#, c-format
+msgid ""
+"\n"
+"Report bugs to %s\n"
+msgstr ""
+"\n"
+"%s에 버그를 보고하십시오\n"
+
+#: parted/ui.c:1606
+#, c-format
+msgid "Using %s\n"
+msgstr "%s 사용법\n"
+
+#: parted/ui.c:1686
+msgid "This command does not make sense in non-interactive mode.\n"
+msgstr "이 명령은 비 대화식 모드에서 동작하지 않습니다.\n"
+
+#~ msgid ""
+#~ "  NUMBER    : display more detailed information about this particular "
+#~ "partition\n"
+#~ msgstr "  <번호>    : 이 분할 영역의 자세한 정보를 나타냅니다\n"
+
+#~ msgid "%s: option '--%s' doesn't allow an argument\n"
+#~ msgstr "%s: ‘--%s’ 옵션은 인자를 허용하지 않습니다\n"
+
+#~ msgid "%s: unrecognized option '--%s'\n"
+#~ msgstr "%s: 인식할 수 없는 ’--%s’ 옵션\n"
+
+#~ msgid "%s: option '-W %s' doesn't allow an argument\n"
+#~ msgstr "%s: ‘-W %s’ 옵션은 인자를 허용하지 않습니다\n"
+
+#~ msgid "%s: option '-W %s' requires an argument\n"
+#~ msgstr "%s: ‘-W %s’ 옵션은 인자가 필요합니다\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "%s 홈페이지: <http://www.gnu.org/software/%s/>\n"
+
+#~ msgid "invalid %s%s argument '%s'"
+#~ msgstr "잘못된 %s%s 인자 ‘%s’"
+
+#~ msgid "invalid suffix in %s%s argument '%s'"
+#~ msgstr "%s%s 인자의 '%s'에 잘못된 접미부"
+
+#~ msgid "%s%s argument '%s' too large"
+#~ msgstr "%s%s 인자의 ‘%s’이(가) 너무 큽니다"
+
+#~ msgid ""
+#~ "The partition table cannot be re-read.  This means you need to reboot "
+#~ "before mounting any modified partitions.  You also need to reinstall your "
+#~ "boot loader before you reboot (which may require mounting modified "
+#~ "partitions).  It is impossible do both things!  So you'll need to boot "
+#~ "off a rescue disk, and reinstall your boot loader from the rescue disk.  "
+#~ "Read section 4 of the Parted User documentation for more information."
+#~ msgstr ""
+#~ "분할 영역 테이블을 다시 읽을 수 없습니다. 수정한 분할 영역을 마운트하기 전"
+#~ "에 다시 부팅해야 합니다. 다시 부팅하기 전에 부트 로더를 다시 설치해야 합니"
+#~ "다(수정한 분할 영역을 마운트하려면 필요합니다). 두 가지를 다 처리할 수 없"
+#~ "습니다. 복구 디스크로 부팅하고 복구 디스크로 부트 로더를 다시 설치해야 합"
+#~ "니다. 자세한 정보는 Parted 사용자 문서 4장을 살펴보십시오."
+
+#~ msgid ""
+#~ "The partition table on %s cannot be re-read (%s).  This means the Hurd "
+#~ "knows nothing about any modifications you made.  You should reboot your "
+#~ "computer before doing anything with %s."
+#~ msgstr ""
+#~ "%s의 분할 영역 테이블을 다시 읽을 수 없습니다(%s). Hurd에서 수정 내역을 파"
+#~ "악하지 못합니다. %s(으)로 무언가를 진행하기 전에 컴퓨터를 다시 부팅해야 합"
+#~ "니다."
+
+#~ msgid "The boot region doesn't start at the start of the partition."
+#~ msgstr "부트 영역이 분할 영역 시작 지점에서 시작하지 않았습니다."
+
+#~ msgid ""
+#~ "This file system has a logical sector size of %d.  GNU Parted is known "
+#~ "not to work properly with sector sizes other than 512 bytes."
+#~ msgstr ""
+#~ "이 파일 시스템의 논리 섹터 크기가 %d 바이트 입니다. GNU Parted에서는 섹터 "
+#~ "크기가 512 바이트 이상인 경우 제대로 동작하지 않습니다."
+
+#~ msgid ""
+#~ "The file %s is marked as a system file.  This means moving it could cause "
+#~ "some programs to stop working."
+#~ msgstr ""
+#~ "%s 파일은 시스템 파일입니다. 이 파일을 옮기면 일부 프로그램의 동작이 멈춥"
+#~ "니다."

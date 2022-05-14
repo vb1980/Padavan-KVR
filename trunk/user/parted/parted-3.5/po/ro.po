@@ -1,0 +1,3493 @@
+# Mesajele în limba română pentru GNU Parted
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the parted package.
+#
+# Laurentiu Buzdugan <lbuz@rolix.org>, 2005.
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2022.
+#
+# Cronologia traducerii fișierului „parted”:
+# Traducerea inițială, făcută de LB, pentru versiunea parted 1.6.23.
+# Actualizare a codării caracteror, la codarea de caractere UTF-8.
+# Actualizare a diacriticelor de la „cu sedilă” la „cu virgulă”.
+# Actualizare a algoritmului formelor de plural (de la „două” la „trei”)
+# Eliminare a mesajelor ce-au dispărut în ultima versiune.
+# Actualizare și completare a traducerilor pentru versiunea 3.3.52.
+# Actualizare a traducerilor pentru versiunea 3.4.64.2.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: parted 3.4.64.2\n"
+"Report-Msgid-Bugs-To: bug-parted@gnu.org\n"
+"POT-Creation-Date: 2022-04-18 14:44-0400\n"
+"PO-Revision-Date: 2022-04-07 01:11+0200\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
+"Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: lib/argmatch.c:147
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "argument nevalid %s pentru %s"
+
+#: lib/argmatch.c:148
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "argument ambiguu %s pentru %s"
+
+#: lib/argmatch.c:167 lib/argmatch.h:238
+msgid "Valid arguments are:"
+msgstr "Argumentele valide sunt:"
+
+#: lib/closeout.c:122 libparted/labels/fdasd.c:145
+msgid "write error"
+msgstr "eroare de scriere"
+
+#: lib/error.c:195
+msgid "Unknown system error"
+msgstr "Eroare de sistem necunoscută"
+
+#: lib/getopt.c:278
+#, c-format
+msgid "%s: option '%s%s' is ambiguous\n"
+msgstr "%s: opțiunea „%s%s” este ambiguă\n"
+
+#: lib/getopt.c:284
+#, c-format
+msgid "%s: option '%s%s' is ambiguous; possibilities:"
+msgstr "%s: opțiunea „%s%s” este ambiguă; posibilități:"
+
+#: lib/getopt.c:319
+#, c-format
+msgid "%s: unrecognized option '%s%s'\n"
+msgstr "%s: opțiune nerecunoscută „%s%s”\n"
+
+#: lib/getopt.c:345
+#, c-format
+msgid "%s: option '%s%s' doesn't allow an argument\n"
+msgstr "%s: opțiunea „%s%s”, nu permite un argument\n"
+
+#: lib/getopt.c:360
+#, c-format
+msgid "%s: option '%s%s' requires an argument\n"
+msgstr "%s: opțiunea „%s%s”, necesită un argument\n"
+
+#: lib/getopt.c:621
+#, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: opțiune nevalidă -- „%c”\n"
+
+#: lib/getopt.c:636 lib/getopt.c:682
+#, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: opțiunea necesită un argument -- „%c”\n"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  For example, a French Unicode local should translate
+#. these to U+00AB (LEFT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), and U+00BB (RIGHT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), respectively.
+#.
+#. If the catalog has no translation, we will try to
+#. use Unicode U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. Unicode U+2019 (RIGHT SINGLE QUOTATION MARK).  If the
+#. current locale is not Unicode, locale_quoting_style
+#. will quote 'like this', and clocale_quoting_style will
+#. quote "like this".  You should always include translations
+#. for "`" and "'" even if U+2018 and U+2019 are appropriate
+#. for your locale.
+#.
+#. If you don't know what to put here, please see
+#. <https://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:355
+msgid "`"
+msgstr "„"
+
+#: lib/quotearg.c:356
+msgid "'"
+msgstr "”"
+
+#: lib/regcomp.c:122
+msgid "Success"
+msgstr "Succes"
+
+# R-GC, scrie:
+# sugestie din partea lui DȘ:
+# msgstr "Nepotrivire"
+# -> aici cred că ar trebui: Nicio potrivire
+#: lib/regcomp.c:125
+msgid "No match"
+msgstr "Nicio potrivire"
+
+#: lib/regcomp.c:128
+msgid "Invalid regular expression"
+msgstr "Expresie regulată nevalidă"
+
+#: lib/regcomp.c:131
+msgid "Invalid collation character"
+msgstr "Caracter de colaționare nevalid"
+
+#: lib/regcomp.c:134
+msgid "Invalid character class name"
+msgstr "Nume de clasă de caractere nevalidă"
+
+#: lib/regcomp.c:137
+msgid "Trailing backslash"
+msgstr "Bara inversă la sfârșit"
+
+#: lib/regcomp.c:140
+msgid "Invalid back reference"
+msgstr "Referință precedentă nevalidă"
+
+#: lib/regcomp.c:143
+msgid "Unmatched [, [^, [:, [., or [="
+msgstr "[, [^, [:, [., sau [= fără pereche"
+
+#: lib/regcomp.c:146
+msgid "Unmatched ( or \\("
+msgstr "( sau \\( fără pereche"
+
+#: lib/regcomp.c:149
+msgid "Unmatched \\{"
+msgstr "\\{ fără pereche"
+
+#: lib/regcomp.c:152
+msgid "Invalid content of \\{\\}"
+msgstr "Conținut nevalid al \\{\\}"
+
+#: lib/regcomp.c:155
+msgid "Invalid range end"
+msgstr "Final de interval nevalid"
+
+#: lib/regcomp.c:158
+msgid "Memory exhausted"
+msgstr "Memorie epuizată"
+
+#: lib/regcomp.c:161
+msgid "Invalid preceding regular expression"
+msgstr "Expresie regulată precedentă, nevalidă"
+
+#: lib/regcomp.c:164
+msgid "Premature end of regular expression"
+msgstr "Final prematur al expresiei regulate"
+
+#: lib/regcomp.c:167
+msgid "Regular expression too big"
+msgstr "Expresie regulată prea lungă"
+
+#: lib/regcomp.c:170
+msgid "Unmatched ) or \\)"
+msgstr ") sau \\) fără pereche"
+
+#: lib/regcomp.c:650
+msgid "No previous regular expression"
+msgstr "Nici o expresie regulată anterioară"
+
+# R-GC, ÎNTREABĂ:
+# rezultatul rulării acestei comenzi în sistemul meu
+# a fost:
+# „^[+1DdYy]”
+# e corectă „traducerea” făcută:
+# „^[dDyY]”  ?
+# =========================
+# DȘ, îmi răspunde:
+# „-> din punct de vedere a expresiei regulate este corect”
+#. TRANSLATORS: A regular expression testing for an affirmative answer
+#. (english: "yes").  Testing the first character may be sufficient.
+#. Take care to consider upper and lower case.
+#. To enquire the regular expression that your system uses for this
+#. purpose, you can use the command
+#. locale -k LC_MESSAGES | grep '^yesexpr='
+#: lib/rpmatch.c:150
+msgid "^[yY]"
+msgstr "^[dDyY]"
+
+#. TRANSLATORS: A regular expression testing for a negative answer
+#. (english: "no").  Testing the first character may be sufficient.
+#. Take care to consider upper and lower case.
+#. To enquire the regular expression that your system uses for this
+#. purpose, you can use the command
+#. locale -k LC_MESSAGES | grep '^noexpr='
+#: lib/rpmatch.c:163
+msgid "^[nN]"
+msgstr "^[nN]"
+
+# R-GC, scrie:
+# pentru traducerea acestui mesaj, m-am
+# inspirat în traducerile făcute de celelalte echipe;
+# cel mai mult din traducerea făcută de
+# Benno Schulenberg.
+# alte traduceri:
+# - Împachetat (de)
+# - Ambalat (de)
+# - Pachet făcut de
+# ========================
+# DȘ, spune:
+# „-> de ce nu 'Împachetat de'”
+# traducerea inițială:
+# „Făcut pachet de ...”
+#: lib/version-etc.c:73
+#, c-format
+msgid "Packaged by %s (%s)\n"
+msgstr "Împachetat de %s (%s)\n"
+
+#: lib/version-etc.c:76
+#, c-format
+msgid "Packaged by %s\n"
+msgstr "Împachetat de %s\n"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:83
+msgid "(C)"
+msgstr "©"
+
+# R-GC, scrie:
+# după revizarea fișierului, DȘ sugerează:
+# „-> ar putea fi 'sau mai nouă'”
+# ========================
+# corectare făcută, adevărul e, că „sună” mai
+# bine așa, față de traducerea inițială:
+# „sau mai mare”
+#. TRANSLATORS: The %s placeholder is the web address of the GPL license.
+#: lib/version-etc.c:88
+#, c-format
+msgid ""
+"License GPLv3+: GNU GPL version 3 or later <%s>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+msgstr ""
+"Licența GPLv3+: GNU GPL versiunea 3 sau mai nouă <%s>.\n"
+"Acesta este software liber: sunteți liber să îl modificați și să îl "
+"redistribuiți.\n"
+"NU există NICIO GARANȚIE, în măsura permisă de lege.\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:105
+#, c-format
+msgid "Written by %s.\n"
+msgstr "Scris de %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:109
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "Scris de %s și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:113
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "Scris de %s, %s, și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:120
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:127
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:134
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, %s și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:142
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, %s, %s și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:150
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:159
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s și %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:170
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"Scris de %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s și alții.\n"
+
+#. TRANSLATORS: The placeholder indicates the bug-reporting address
+#. for this package.  Please add _another line_ saying
+#. "Report translation bugs to <...>\n" with the address for translation
+#. bugs (typically your translation team's web or email address).
+#: lib/version-etc.c:249
+#, c-format
+msgid "Report bugs to: %s\n"
+msgstr "Raportați erorile la: %s\n"
+
+#: lib/version-etc.c:251
+#, c-format
+msgid "Report %s bugs to: %s\n"
+msgstr "Raportați %s erori la: %s\n"
+
+#: lib/version-etc.c:255 lib/version-etc.c:257
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "%s pagina principală: <%s>\n"
+
+#: lib/version-etc.c:260
+#, c-format
+msgid "General help using GNU software: <%s>\n"
+msgstr "Ajutor general pentru utilizarea software-ului GNU: <%s>\n"
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "memorie epuizată"
+
+#: libparted/arch/beos.c:246
+msgid "Disk Image"
+msgstr "Imaginea discului"
+
+#: libparted/arch/beos.c:347 libparted/arch/gnu.c:349
+#: libparted/arch/linux.c:1732
+#, c-format
+msgid "Error opening %s: %s"
+msgstr "Eroare la deschiderea %s: %s"
+
+#: libparted/arch/beos.c:358 libparted/arch/gnu.c:359
+#: libparted/arch/linux.c:1743
+#, c-format
+msgid "Unable to open %s read-write (%s).  %s has been opened read-only."
+msgstr ""
+"Nu se poate deschide %s pentru citire-scriere (%s).  %s a fost deschis ca "
+"numai-citire."
+
+#: libparted/arch/beos.c:420 libparted/arch/linux.c:1908
+#, c-format
+msgid "%s during seek for read on %s"
+msgstr "%s în timpul căutării pentru citire pe %s"
+
+#: libparted/arch/beos.c:453 libparted/arch/gnu.c:497 libparted/arch/gnu.c:596
+#: libparted/arch/gnu.c:724 libparted/arch/linux.c:1868
+#: libparted/arch/linux.c:1950
+#, c-format
+msgid "%s during read on %s"
+msgstr "%s în timpul citirii pe %s"
+
+#: libparted/arch/beos.c:489 libparted/arch/gnu.c:557
+#: libparted/arch/linux.c:2027
+#, c-format
+msgid "Can't write to %s, because it is opened read-only."
+msgstr "Nu se poate scrie pe %s, pentru că este deschis ca numai-citire."
+
+#: libparted/arch/beos.c:505 libparted/arch/linux.c:2052
+#, c-format
+msgid "%s during seek for write on %s"
+msgstr "%s în timpul căutării pentru scriere pe %s"
+
+#: libparted/arch/beos.c:542 libparted/arch/gnu.c:633 libparted/arch/gnu.c:678
+#: libparted/arch/gnu.c:755 libparted/arch/linux.c:2000
+#: libparted/arch/linux.c:2095 libparted/arch/linux.c:2168
+#, c-format
+msgid "%s during write on %s"
+msgstr "%s în timpul scrierii pe %s"
+
+#: partprobe/partprobe.c:149
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Încercați «%s --help» pentru mai multe informații.\n"
+
+#: partprobe/partprobe.c:153
+#, c-format
+msgid "Usage: %s [OPTION] [DEVICE]...\n"
+msgstr "Utilizare: %s [OPȚIUNE] [DISPOZITIV]...\n"
+
+#: partprobe/partprobe.c:154
+msgid ""
+"Inform the operating system about partition table changes.\n"
+"\n"
+"  -d, --dry-run    do not actually inform the operating system\n"
+"  -s, --summary    print a summary of contents\n"
+"  -h, --help       display this help and exit\n"
+"  -v, --version    output version information and exit\n"
+msgstr ""
+"Informează sistemul de operare despre modificările tabelului de partiții.\n"
+"\n"
+"  -d, --dry-run    nu informează sistemul de operare asupra modificărilor "
+"efectuate\n"
+"  -s, --summary    imprimă un rezumat al conținutului modificărilor "
+"efectuate\n"
+"  -h, --help       afișează acest ajutor și iese\n"
+"  -v, --version    afișează informațiile despre versiune și iese\n"
+
+#: partprobe/partprobe.c:162
+msgid ""
+"\n"
+"When no DEVICE is given, probe all partitions.\n"
+msgstr ""
+"\n"
+"Când nu este dat niciun DISPOZITIV, sondează toate partițiile.\n"
+
+#: partprobe/partprobe.c:166
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"\n"
+"Raportați erorile la <%s>.\n"
+
+#: libparted/arch/gnu.c:110
+#, c-format
+msgid "Unable to open %s."
+msgstr "Nu se poate deschide %s."
+
+#: libparted/arch/gnu.c:130
+msgid "Unable to probe store."
+msgstr "Nu se poate explora stocarea."
+
+#: libparted/arch/gnu.c:235
+#, c-format
+msgid ""
+"WARNING: the kernel failed to re-read the partition table on %s (%s).  As a "
+"result, it may not reflect all of your changes until after reboot."
+msgstr ""
+"AVERTISMENT: nucleul nu a reușit să recitească tabelul de partiții de pe %s "
+"(%s).  Ca rezultat, este posibil să nu reflecte toate modificările dvs. "
+"decât după repornire."
+
+#: libparted/arch/gnu.c:261
+#, c-format
+msgid ""
+"Warning: unable to open %s (%s). As a result, it may not reflect all of your "
+"changes until after reboot."
+msgstr ""
+"Avertisment: nu se poate deschide %s (%s). Ca rezultat, este posibil să nu "
+"reflecte toate modificările dvs. decât după repornire."
+
+# R-GC, scrie:
+# prima frază a mesjului, e posibil să necesite
+# unele retușuri; rămîne așa pînă la următoarea
+# versiune de parted (acum, 3.4.64.2).
+#: libparted/arch/gnu.c:274
+#, c-format
+msgid ""
+"Warning: failed to make translator go away on %s (%s). As a result, it may "
+"not reflect all of your changes until after reboot."
+msgstr ""
+"Avertisment: nu s-a putut face translatorul să termine pe %s (%s). Ca "
+"rezultat, este posibil să nu reflecte toate modificările dvs. decât după "
+"repornire."
+
+#: libparted/arch/gnu.c:820
+#, c-format
+msgid "%s trying to sync %s to disk"
+msgstr "%s încearcă să sincronizeze %s pe disc"
+
+#: libparted/arch/linux.c:633
+#, c-format
+msgid "Could not stat device %s - %s."
+msgstr "Nu s-a putut stabili starea dispozitivului %s - %s."
+
+# R-GC:
+# Notă:
+# am interpretat (și tradus), acronimul «dm», ca:
+# disk manager = administarator (de) disc
+# Sper să fie interpretarea corectă...
+#: libparted/arch/linux.c:690
+#, c-format
+msgid "Unable to determine the dm type of %s."
+msgstr "Nu se poate determina tipul administratorului de disc %s."
+
+#: libparted/arch/linux.c:774 libparted/arch/linux.c:907
+#, c-format
+msgid ""
+"Could not determine sector size for %s: %s.\n"
+"Using the default sector size (%lld)."
+msgstr ""
+"Nu s-a putut determina dimensiunea sectorului pentru %s: %s.\n"
+"Se utilizează dimensiunea implicită a sectorului (%lld)."
+
+#: libparted/arch/linux.c:795
+#, c-format
+msgid ""
+"Could not determine physical sector size for %s.\n"
+"Using the logical sector size (%lld)."
+msgstr ""
+"Nu s-a putut determina dimensiunea fizică a sectorului pentru %s.\n"
+"Se utilizează dimensiunea logică a sectorului (%lld)."
+
+#: libparted/arch/linux.c:855
+#, c-format
+msgid "Unable to determine the size of %s (%s)."
+msgstr "Nu se poate determina dimensiunea lui %s (%s)."
+
+#: libparted/arch/linux.c:958 libparted/arch/linux.c:973
+msgid "Generic IDE"
+msgstr "IDE generic"
+
+#: libparted/arch/linux.c:963
+#, c-format
+msgid "Could not get identity of device %s - %s"
+msgstr "Nu se poate obține identificarea dispozitivului %s - %s"
+
+#: libparted/arch/linux.c:994
+#, c-format
+msgid ""
+"Device %s has multiple (%d) logical sectors per physical sector.\n"
+"GNU Parted supports this EXPERIMENTALLY for some special disk label/file "
+"system combinations, e.g. GPT and ext2/3.\n"
+"Please consult the web site for up-to-date information."
+msgstr ""
+"Dispozitivul %s are mai multe (%d) sectoare logice per sector fizic.\n"
+"GNU Parted suportă acest lucru EXPERIMENTAL pentru unele combinații speciale "
+"de etichete de disc/sistem de fișiere, de exp. GPT și ext2/3.\n"
+"Consultați site-ul web pentru informații actualizate."
+
+#: libparted/arch/linux.c:1172
+#, c-format
+msgid "Error initialising SCSI device %s - %s"
+msgstr "Eroare la inițializarea dispozitivului SCSI %s - %s"
+
+# R-GC, scrie:
+# după revizarea fișierului, DȘ, spune:
+# „-> evită forma scurtă a lui "este"”
+#: libparted/arch/linux.c:1236
+#, c-format
+msgid ""
+"The device %s is so small that it cannot possibly store a file system or "
+"partition table.  Perhaps you selected the wrong device?"
+msgstr ""
+"Dispozitivul %s este atât de mic încât nu poate stoca un sistem de fișiere "
+"sau un tabel de partiții. Este posibil să fi selectat dispozitivul greșit?"
+
+#: libparted/arch/linux.c:1349
+#, c-format
+msgid ""
+"Unable to determine geometry of file/device %s.  You should not use Parted "
+"unless you REALLY know what you're doing!"
+msgstr ""
+"Nu se poate determina geometria fișierului/dispozitivului %s.  Nu trebuie să "
+"utilizați Parted decât dacă știți cu ADEVĂRAT ce faceți!"
+
+#: libparted/arch/linux.c:1409
+msgid "Generic SD/MMC Storage Card"
+msgstr "Card de stocare SD/MMC generic"
+
+#: libparted/arch/linux.c:1423
+msgid "NVMe Device"
+msgstr "Dispozitiv NVMe"
+
+#: libparted/arch/linux.c:1484
+msgid "DAC960 RAID controller"
+msgstr "Controlor RAID DAC960"
+
+#: libparted/arch/linux.c:1489
+msgid "Promise SX8 SATA Device"
+msgstr "Dispozitiv Promise SX8 SATA"
+
+#: libparted/arch/linux.c:1494
+msgid "ATA over Ethernet Device"
+msgstr "ATA via dispozitiv Ethernet"
+
+#: libparted/arch/linux.c:1500
+msgid "IBM S390 DASD drive"
+msgstr "unitate IBM S390 DASD"
+
+#: libparted/arch/linux.c:1506
+msgid "IBM iSeries Virtual DASD"
+msgstr "DASD Virtual IBM iSeries"
+
+#: libparted/arch/linux.c:1511
+msgid "Compaq Smart Array"
+msgstr "Compaq Smart Array"
+
+#: libparted/arch/linux.c:1521
+msgid "NVDIMM Device"
+msgstr "Dispozitiv NVDIMM"
+
+#: libparted/arch/linux.c:1526
+msgid "ATARAID Controller"
+msgstr "Controlor ATARAID"
+
+#: libparted/arch/linux.c:1531
+msgid "I2O Controller"
+msgstr "Controlor I2O"
+
+#: libparted/arch/linux.c:1536
+msgid "User-Mode Linux UBD"
+msgstr "Modul utilizator Linux UBD"
+
+#: libparted/arch/linux.c:1546
+msgid "Loopback device"
+msgstr "Dispozitiv de buclă"
+
+# R-GC, scrie:
+# după revizarea fișierului, DȘ, spune:
+# „-> cred că ar trebui la plural: dispozitive”
+# =========================
+# m-am lăsat indus în eroare de traducerea
+# «mot-a-mot”  :)
+# normal, că trebuie să fie, „dispozitive”
+#: libparted/arch/linux.c:1554
+#, c-format
+msgid "Linux device-mapper (%s)"
+msgstr "Cartograf de dispozitive Linux (%s)"
+
+#: libparted/arch/linux.c:1565
+msgid "Xen Virtual Block Device"
+msgstr "Dispozitiv de bloc virtual Xen"
+
+#: libparted/arch/linux.c:1570
+msgid "Unknown"
+msgstr "Necunoscut"
+
+#: libparted/arch/linux.c:1579
+msgid "Virtio Block Device"
+msgstr "Dispozitiv de bloc Virtio"
+
+#: libparted/arch/linux.c:1584
+msgid "Linux Software RAID Array"
+msgstr "Setul de software RAID pentru Linux"
+
+#: libparted/arch/linux.c:1589
+msgid "RAM Drive"
+msgstr "Unitate RAM"
+
+#: libparted/arch/linux.c:1596
+msgid "ped_device_new()  Unsupported device type"
+msgstr "ped_device_new() Tip de dispozitiv nesuportat"
+
+#: libparted/arch/linux.c:1690 libparted/arch/linux.c:1775
+#, c-format
+msgid "Error fsyncing/closing %s: %s"
+msgstr "Eroare la sincronizarea sau închiderea fișierelor %s: %s"
+
+#: libparted/arch/linux.c:1949
+#, c-format
+msgid "%0.0send of file while reading %s"
+msgstr "%0.0s final de fișier în timp ce se citea %s"
+
+#: libparted/arch/linux.c:2691
+#, c-format
+msgid ""
+"Error informing the kernel about modifications to partition %s -- %s.  This "
+"means Linux won't know about any changes you made to %s until you reboot -- "
+"so you shouldn't mount it or use it in any way before rebooting."
+msgstr ""
+"Eroare la informarea nucleului despre modificările făcute partiției %s -- "
+"%s.  Aceasta înseamnă că Linux nu va ști nimic despre schimbările pe care le-"
+"ați făcut lui %s până când nu reporniți -- așa că n-ar trebui să îl montați "
+"sau să îl folosiți în vreun fel înainte de a repornii."
+
+#: libparted/arch/linux.c:2811
+#, c-format
+msgid "Unable to determine the start and length of %s."
+msgstr "Nu se pot determina începutul și lungimea lui %s."
+
+#: libparted/arch/linux.c:3225
+#, c-format
+msgid ""
+"Partition(s) %s on %s have been written, but we have been unable to inform "
+"the kernel of the change, probably because it/they are in use.  As a result, "
+"the old partition(s) will remain in use.  You should reboot now before "
+"making further changes."
+msgstr ""
+"Partițiile %s pe %s au fost scrise, dar nu am reușit să informăm nucleul cu "
+"privire la modificare, probabil pentru că aceasta/ele sunt în uz.  Ca "
+"rezultat, vechea partiție va(vechile partiții vor) rămâne în uz.  Ar trebui "
+"să reporniți acum înainte de a face alte modificări."
+
+#: libparted/cs/geom.c:163
+#, c-format
+msgid "Can't have the end before the start! (start sector=%jd length=%jd)"
+msgstr ""
+"Nu se poate avea sfârșitul înainte de început! (sector de pornire=%jd "
+"lungime=%jd)"
+
+#: libparted/cs/geom.c:379
+#, c-format
+msgid "Attempt to write sectors %ld-%ld outside of partition on %s."
+msgstr "Încercați să scrieți sectoarele %ld-%ld în afara partiției de pe %s."
+
+#: libparted/cs/geom.c:419
+msgid "checking for bad blocks"
+msgstr "se verifică pentru blocuri defectuoase"
+
+#: libparted/debug.c:97
+#, c-format
+msgid "Backtrace has %d calls on stack:\n"
+msgstr ""
+"Urmărirea desfășurării execuției(backtrace), are %d apeluri în stivă:\n"
+
+#: libparted/debug.c:110
+#, c-format
+msgid "Assertion (%s) at %s:%d in function %s() failed."
+msgstr "Declarația (%s) la %s:%d în funcția %s() a eșuat."
+
+#: libparted/disk.c:194
+#, c-format
+msgid "%s: unrecognised disk label"
+msgstr "%s: etichetă de disc nerecunoscută"
+
+#: libparted/disk.c:487
+#, c-format
+msgid ""
+"This libparted doesn't have write support for %s.  Perhaps it was compiled "
+"read-only."
+msgstr ""
+"Această bibliotecă libparted nu are suport pentru %s.  Probabil că a fost "
+"compilată ca numai-citire."
+
+#: libparted/disk.c:632
+#, c-format
+msgid "Partition %d is %s, but the file system is %s."
+msgstr "Partiția %d este %s, dar sistemul de fișiere este %s."
+
+#: libparted/disk.c:841
+msgid "cylinder_alignment"
+msgstr "aliniere_cilindru"
+
+#: libparted/disk.c:843
+msgid "pmbr_boot"
+msgstr "pmbr_boot"
+
+# R-GC, scrie:
+# aici, flag(s), se referă la:
+# „stilul/tipul” partiției: boot, lba
+# ==========================
+# după revizarea fișierului, DȘ, spune:
+# „-> discul nu este același lucru cu partiția, păstrează "disc" și în traducere”
+# *****
+# așa este DȘ, aici am fost mai atent să
+# corectez vechea traducere a lui LB,
+# de la „Flag ...” la „Fanion ...”,
+# decît să citesc/corectez întreaga
+# traducere...
+# De aceea, munca „criticului”, este cel
+# puțin la fel de importantă ca cea a celui
+# ce face traducerea...
+#: libparted/disk.c:848
+#, c-format
+msgid "Unknown disk flag, %d."
+msgstr "Fanion de disc necunoscut, %d."
+
+#: libparted/disk.c:1289
+#, c-format
+msgid "%s disk labels do not support extended partitions."
+msgstr "Etichetele discurilor %s nu acceptă partiții extinse."
+
+#: libparted/disk.c:1821
+#, c-format
+msgid "%s disk labels don't support logical or extended partitions."
+msgstr "Etichetele discurilor %s nu suportă partiții logice sau extinse."
+
+#: libparted/disk.c:1834
+msgid "Too many primary partitions."
+msgstr "Prea multe partiții primare."
+
+#: libparted/disk.c:1843
+#, c-format
+msgid ""
+"Can't add a logical partition to %s, because there is no extended partition."
+msgstr ""
+"Nu se poate adăuga o partiție logică lui %s pentru că aceasta nu este o "
+"partiție extinsă."
+
+#: libparted/disk.c:1867
+#, c-format
+msgid "Can't have more than one extended partition on %s."
+msgstr "Nu puteți avea mai mult de o partiție extinsă pe %s."
+
+#: libparted/disk.c:1877
+msgid "Can't have logical partitions outside of the extended partition."
+msgstr "Nu puteți avea partiții logice în afara partiției extinse."
+
+#: libparted/disk.c:1902
+#, c-format
+msgid "Can't have a logical partition outside of the extended partition on %s."
+msgstr "Nu puteți avea o partiție logică în afara partiției extinse pe %s."
+
+#: libparted/disk.c:1912
+msgid "Can't have a primary partition inside an extended partition."
+msgstr "Nu puteți avea o partiție primară într-o partiție extinsă."
+
+#: libparted/disk.c:1921
+msgid "Can't have a partition outside the disk!"
+msgstr "Nu se poate avea o partiție în afara discului!"
+
+#: libparted/disk.c:1972 libparted/disk.c:2150
+msgid "Can't have overlapping partitions."
+msgstr "Nu puteți avea partiții care se suprapun."
+
+#: libparted/disk.c:2351
+msgid "metadata"
+msgstr "metadata"
+
+#: libparted/disk.c:2353
+msgid "free"
+msgstr "liber"
+
+#: libparted/disk.c:2355 parted/ui.c:1271 parted/ui.c:1299
+msgid "extended"
+msgstr "extinsă"
+
+#: libparted/disk.c:2357 parted/ui.c:1275 parted/ui.c:1303
+msgid "logical"
+msgstr "logică"
+
+#: libparted/disk.c:2359 parted/ui.c:1267 parted/ui.c:1295
+msgid "primary"
+msgstr "primară"
+
+#: libparted/disk.c:2375
+msgid "boot"
+msgstr "de pornire"
+
+#: libparted/disk.c:2377
+msgid "bios_grub"
+msgstr "bios_grub"
+
+#: libparted/disk.c:2379
+msgid "root"
+msgstr "rădăcină"
+
+#: libparted/disk.c:2381
+msgid "swap"
+msgstr "swap"
+
+#: libparted/disk.c:2383
+msgid "hidden"
+msgstr "ascunsă"
+
+#: libparted/disk.c:2385
+msgid "raid"
+msgstr "raid"
+
+#: libparted/disk.c:2387
+msgid "lvm"
+msgstr "lvm"
+
+#: libparted/disk.c:2389
+msgid "lba"
+msgstr "lba"
+
+#: libparted/disk.c:2391
+msgid "hp-service"
+msgstr "hp-service"
+
+#: libparted/disk.c:2393
+msgid "palo"
+msgstr "palo"
+
+#: libparted/disk.c:2395
+msgid "prep"
+msgstr "prep"
+
+#: libparted/disk.c:2397
+msgid "msftres"
+msgstr "msftres"
+
+#: libparted/disk.c:2399
+msgid "msftdata"
+msgstr "msftdata"
+
+#: libparted/disk.c:2401
+msgid "atvrecv"
+msgstr "atvrecv"
+
+#: libparted/disk.c:2403
+msgid "diag"
+msgstr "diag"
+
+#: libparted/disk.c:2405
+msgid "legacy_boot"
+msgstr "legacy_boot"
+
+#: libparted/disk.c:2407
+msgid "irst"
+msgstr "irst"
+
+#: libparted/disk.c:2409
+msgid "esp"
+msgstr "esp"
+
+#: libparted/disk.c:2411
+msgid "chromeos_kernel"
+msgstr "chromeos_kernel"
+
+#: libparted/disk.c:2413
+msgid "bls_boot"
+msgstr "bls_boot"
+
+#: libparted/disk.c:2415
+msgid "linux-home"
+msgstr "linux-home"
+
+#: libparted/disk.c:2421
+#, c-format
+msgid "Unknown partition flag, %d."
+msgstr "Fanion de partiție necunoscut, %d."
+
+#: libparted/exception.c:79
+msgid "Information"
+msgstr "Informaţii"
+
+#: libparted/exception.c:80
+msgid "Warning"
+msgstr "Avertisment"
+
+#: libparted/exception.c:81
+msgid "Error"
+msgstr "Eroare"
+
+#: libparted/exception.c:82
+msgid "Fatal"
+msgstr "Fatală"
+
+#: libparted/exception.c:83
+msgid "Bug"
+msgstr "Eroare"
+
+#: libparted/exception.c:84
+msgid "No Implementation"
+msgstr "Neimplementat"
+
+#: libparted/exception.c:88
+msgid "Fix"
+msgstr "Reparare"
+
+#: libparted/exception.c:89
+msgid "Yes"
+msgstr "Da"
+
+#: libparted/exception.c:90
+msgid "No"
+msgstr "Nu"
+
+# R-GC scrie:
+# Notă:
+# Prefer a traduce Ok = de acord; l-am lăsat așa,
+# pentru a fi în „consonanță” cu Da și Nu...
+#: libparted/exception.c:91
+msgid "OK"
+msgstr "Ok"
+
+#: libparted/exception.c:92
+msgid "Retry"
+msgstr "Reîncercați"
+
+#: libparted/exception.c:93
+msgid "Ignore"
+msgstr "Ignorare"
+
+#: libparted/exception.c:94
+msgid "Cancel"
+msgstr "Anulare"
+
+#: libparted/exception.c:134
+#, c-format
+msgid ""
+"A bug has been detected in GNU Parted.  Refer to the web site of parted "
+"http://www.gnu.org/software/parted/parted.html for more information of what "
+"could be useful for bug submitting!  Please email a bug report to %s "
+"containing at least the version (%s) and the following message:  "
+msgstr ""
+"O eroare a fost detectată în GNU Parted.  Consultați site-ul web al parted "
+"http://www.gnu.org/software/parted/parted.html pentru mai multe informații "
+"despre ceea ce ar putea fi util pentru trimiterea erorilor!  Trimiteți prin "
+"e-mail un raport cu eroarea găsită către %s, care să conțină cel puțin "
+"versiunea (%s) și următorul mesaj:  "
+
+#: libparted/labels/aix.c:92
+msgid "Support for reading AIX disk labels is is not implemented yet."
+msgstr ""
+"Suportul pentru citirea etichetelor discurilor AIX nu este încă implementat."
+
+#: libparted/labels/aix.c:103
+msgid "Support for writing AIX disk labels is is not implemented yet."
+msgstr ""
+"Suportul pentru scrierea etichetelor de disc AIX nu este încă implementat."
+
+#: libparted/labels/aix.c:116
+msgid ""
+"Support for adding partitions to AIX disk labels is not implemented yet."
+msgstr ""
+"Suportul pentru adăugarea de partiții la etichetele discurilor AIX nu este "
+"încă implementat."
+
+#: libparted/labels/aix.c:126
+msgid ""
+"Support for duplicating partitions in AIX disk labels is not implemented yet."
+msgstr ""
+"Suportul pentru duplicarea partițiilor în etichetele discurilor AIX nu este "
+"încă implementat."
+
+#: libparted/labels/aix.c:144
+msgid ""
+"Support for setting system type of partitions in AIX disk labels is not "
+"implemented yet."
+msgstr ""
+"Suportul pentru configurarea tipului de sistem de partiții în etichetele "
+"discurilor AIX nu este încă implementat."
+
+#: libparted/labels/aix.c:154
+msgid "Support for setting flags in AIX disk labels is not implemented yet."
+msgstr ""
+"Suportul pentru configurarea fanioanelor în etichetele discurilor AIX nu "
+"este încă implementat."
+
+#: libparted/labels/atari.c:278
+#, c-format
+msgid ""
+"Can't use Atari partition tables on disks with a sector size not equal to %d "
+"bytes."
+msgstr ""
+"Nu se pot utiliza tabelele de partiții Atari pe discuri cu o dimensiune a "
+"sectorului care nu este egală cu %d octeți."
+
+#: libparted/labels/atari.c:290
+#, c-format
+msgid "Can't use Atari partition tables on disks with more than %d sectors."
+msgstr ""
+"Nu se pot utiliza tabelele de partiții Atari pe discuri cu mai mult de %d "
+"sectoare."
+
+#: libparted/labels/atari.c:403
+msgid ""
+"Too many Atari partitions detected.  Maybe there is a loop in the XGM linked "
+"list.  Aborting."
+msgstr ""
+"Au fost detectate prea multe partiții Atari.  Poate că există o buclă în "
+"lista conexă XGM.  Se renunță."
+
+#: libparted/labels/atari.c:601
+#, c-format
+msgid "No data partition found in the ARS at sector %lli."
+msgstr "Nu a fost găsită nicio partiție de date în ARS la sectorul %lli."
+
+#: libparted/labels/atari.c:622
+#, c-format
+msgid ""
+"The entry of the next logical ARS is not of type XGM in ARS at sector %lli."
+msgstr ""
+"Intrarea următorului ARS logic nu este de tip XGM în ARS la sectorul %lli."
+
+#: libparted/labels/atari.c:653
+#, c-format
+msgid ""
+"There doesn't seem to be an Atari partition table on this disk (%s), or it "
+"is corrupted."
+msgstr ""
+"Nu pare să existe un tabel de partiții Atari pe acest disc (%s), sau acesta "
+"este corupt."
+
+#: libparted/labels/atari.c:883
+#, c-format
+msgid "No room at sector %lli to store ARS of logical partition %d."
+msgstr ""
+"Nu există spațiu în sectorul %lli pentru a stoca ARS-ul partiției logice %d."
+
+#: libparted/labels/atari.c:890
+#, c-format
+msgid "No room at sector %lli to store ARS."
+msgstr "Nu există spațiu în sectorul %lli pentru a stoca ARS."
+
+#: libparted/labels/atari.c:967
+msgid ""
+"The sector count that is stored in the partition table does not correspond "
+"to the size of your device.  Do you want to fix the partition table?"
+msgstr ""
+"Numărul de sectoare care este stocat în tabelul de partiții nu corespunde cu "
+"dimensiunea dispozitivului dvs.  Doriți să remediați tabelul de partiții?"
+
+#: libparted/labels/atari.c:1008
+#, c-format
+msgid "No room at sector %lli to store BSL."
+msgstr "Nu există spațiu în sectorul %lli pentru a stoca BSL."
+
+#: libparted/labels/atari.c:1116
+msgid "There were remaining partitions after filling the main AHDI table."
+msgstr "Au mai rămas partiții după completarea tabelului principal AHDI."
+
+#: libparted/labels/atari.c:1135
+msgid ""
+"The main AHDI table has been filled with all partitions but the ICD table is "
+"not empty so more partitions of unknown size and position will be detected "
+"by ICD compatible software.  Do you want to invalidate the ICD table?"
+msgstr ""
+"Tabelul AHDI principal a fost completat cu toate partițiile, dar tabelul ICD "
+"nu este gol, așa că mai multe partiții de dimensiune și poziție necunoscute "
+"vor fi detectate de software-ul compatibil ICD.  Doriți să invalidați "
+"tabelul ICD?"
+
+#: libparted/labels/atari.c:1169
+msgid "ICD entries can't contain extended or logical partitions."
+msgstr "Intrările ICD nu pot conține partiții logice sau extinse."
+
+#: libparted/labels/atari.c:1191
+msgid "There were remaining partitions after filling the tables."
+msgstr "Au mai rămas partiții după completarea tabelelor."
+
+#: libparted/labels/atari.c:1231
+#, c-format
+msgid ""
+"You can't use an extended XGM partition in ICD mode (more than %d primary "
+"partitions, if XGM is the first one it counts for two)."
+msgstr ""
+"Nu puteți folosi o partiție XGM extinsă în modul ICD (mai mult de %d "
+"partiții primare, dacă XGM este prima, aceasta contează pentru două)."
+
+#: libparted/labels/atari.c:1662 libparted/labels/bsd.c:563
+#: libparted/labels/dasd.c:895 libparted/labels/dos.c:2303
+#: libparted/labels/dvh.c:770 libparted/labels/gpt.c:1769
+#: libparted/labels/loop.c:244 libparted/labels/mac.c:1409
+#: libparted/labels/pc98.c:697 libparted/labels/rdb.c:1054
+#: libparted/labels/sun.c:781
+msgid "Unable to satisfy all constraints on the partition."
+msgstr "Nu se pot satisface toate constrângerile asupra partiției."
+
+#: libparted/labels/atari.c:1762
+#, c-format
+msgid ""
+"You can't use more than %d primary partitions (ICD mode) if you use an "
+"extended XGM partition.  If XGM is the first partition it counts for two."
+msgstr ""
+"Nu puteți utiliza mai mult de %d partiții primare (mod ICD) dacă utilizați o "
+"partiție XGM extinsă.  Dacă XGM este prima partiție, aceasta contează pentru "
+"două."
+
+#: libparted/labels/atari.c:1828 libparted/labels/rdb.c:1082
+msgid "Unable to allocate a partition number."
+msgstr "Nu se poate aloca un număr de partiție."
+
+#: libparted/labels/bsd.c:588
+msgid "Unable to allocate a bsd disklabel slot."
+msgstr "Nu se poate aloca un slot pentru etichetă de disc bsd."
+
+#: libparted/labels/dasd.c:626
+msgid "The partition table of DASD-LDL device cannot be changed.\n"
+msgstr ""
+"Tabelul de partiții al dispozitivului DASD-LDL nu poate fi modificat.\n"
+
+#: libparted/labels/dasd.c:921
+msgid "Unable to allocate a dasd disklabel slot"
+msgstr "Nu se poate aloca un slot pentru etichetă de disc dasd"
+
+#: libparted/labels/dos.c:1008
+#, c-format
+msgid "Invalid partition table on %s -- wrong signature %x."
+msgstr "Tabel de partiții nevalid pe %s -- semnătură greșită %x."
+
+#: libparted/labels/dos.c:1036
+#, c-format
+msgid "Invalid partition table - recursive partition on %s."
+msgstr "Tabel de partiții nevalid - partiție recursivă pe %s."
+
+#: libparted/labels/dos.c:1567
+msgid "Extended partitions cannot be hidden on msdos disk labels."
+msgstr "Partițiile extinse nu pot fi ascunse pe etichetele discurilor msdos."
+
+#: libparted/labels/dos.c:1579
+msgid "Extended partitions cannot be recovery partitions on msdos disk labels."
+msgstr ""
+"Partițiile extinse nu pot fi partiții de recuperare pe etichetele de disc "
+"msdos."
+
+#: libparted/labels/dos.c:2285
+msgid "Parted can't resize partitions managed by Windows Dynamic Disk."
+msgstr ""
+"Parted nu poate redimensiona partițiile gestionate de Windows Dynamic Disk."
+
+#: libparted/labels/dos.c:2541
+msgid "cannot create any more partitions"
+msgstr "nu se mai poate crea nici o partiție în plus"
+
+#: libparted/labels/dvh.c:183
+#, c-format
+msgid "%s has no extended partition (volume header partition)."
+msgstr "%s nu are nicio partiție extinsă (partiția antetului volumului)."
+
+#: libparted/labels/dvh.c:309
+msgid "Checksum is wrong, indicating the partition table is corrupt."
+msgstr ""
+"Suma de verificare este greșită, indicând faptul că tabelul de partiții este "
+"corupt."
+
+#: libparted/labels/dvh.c:614
+msgid "Only primary partitions can be root partitions."
+msgstr "Doar partițiile primare pot fi partiții rădăcină."
+
+#: libparted/labels/dvh.c:628
+msgid "Only primary partitions can be swap partitions."
+msgstr "Doar partițiile primare pot fi partiții swap."
+
+#: libparted/labels/dvh.c:642
+msgid "Only logical partitions can be a boot file."
+msgstr "Doar partițiile logice pot fi un fișier de pornire."
+
+#: libparted/labels/dvh.c:719
+#, c-format
+msgid ""
+"failed to set dvh partition name to %s:\n"
+"Only logical partitions (boot files) have a name."
+msgstr ""
+"nu s-a putut stabili numele partiției dvh la %s:n\n"
+"Numai partițiile logice (fișierele de pornire) au un nume."
+
+#: libparted/labels/dvh.c:812
+msgid "Too many primary partitions"
+msgstr "Prea multe partiții primare"
+
+#: libparted/labels/fdasd.c:136
+msgid "open error"
+msgstr "eroare la deschidere"
+
+#: libparted/labels/fdasd.c:139
+msgid "seek error"
+msgstr "eroare în timpul căutării"
+
+#: libparted/labels/fdasd.c:142
+msgid "read error"
+msgstr "eroare la citire"
+
+#: libparted/labels/fdasd.c:148
+msgid "ioctl() error"
+msgstr "eroare ioctl()"
+
+#: libparted/labels/fdasd.c:152
+msgid "API version mismatch"
+msgstr "Versiunea API nu corespunde"
+
+#: libparted/labels/fdasd.c:156
+msgid "Unsupported disk type"
+msgstr "Tip de disc neacceptat"
+
+#: libparted/labels/fdasd.c:160
+msgid "Unsupported disk format"
+msgstr "Format de disc neacceptat"
+
+#: libparted/labels/fdasd.c:164
+msgid "Disk is in use"
+msgstr "Discul este în uz"
+
+#: libparted/labels/fdasd.c:168
+msgid "Syntax error in config file"
+msgstr "Eroare de sintaxă în fișierul de configurare"
+
+#: libparted/labels/fdasd.c:172
+msgid "Volume label is corrupted"
+msgstr "Eticheta de volum este coruptă"
+
+#: libparted/labels/fdasd.c:176
+msgid "A data set name is corrupted"
+msgstr "Numele unui set de date este corupt"
+
+#: libparted/labels/fdasd.c:180
+msgid "Memory allocation failed"
+msgstr "Alocarea memoriei a eșuat"
+
+#: libparted/labels/fdasd.c:184
+msgid "Device verification failed"
+msgstr "Verificarea dispozitivului a eșuat"
+
+#: libparted/labels/fdasd.c:185
+msgid "The specified device is not a valid DASD device"
+msgstr "Dispozitivul specificat nu este un dispozitiv DASD valid"
+
+#: libparted/labels/fdasd.c:188
+msgid "VOLSER not found on device"
+msgstr "VOLSER nu a fost găsit pe dispozitiv"
+
+#: libparted/labels/fdasd.c:191 libparted/labels/vtoc.c:179
+msgid "Fatal error"
+msgstr "Eroare fatală"
+
+#: libparted/labels/fdasd.c:243
+msgid "No room for volume label."
+msgstr "Nu există spațiu pentru eticheta de volum."
+
+#: libparted/labels/fdasd.c:251
+msgid "No room for partition info."
+msgstr "Nu există spațiu pentru informații despre partiții."
+
+#: libparted/labels/fdasd.c:828
+msgid "Invalid VTOC."
+msgstr "VTOC nevalid."
+
+#: libparted/labels/fdasd.c:912
+msgid "Could not retrieve API version."
+msgstr "Nu s-a putut obține versiunea API."
+
+#: libparted/labels/fdasd.c:915
+#, c-format
+msgid ""
+"The current API version '%d' doesn't match dasd driver API version '%d'!"
+msgstr ""
+"Versiunea actuală a API „%d” nu se potrivește cu versiunea API a driver-ului "
+"dasd „%d”!"
+
+#: libparted/labels/fdasd.c:1020
+msgid "Could not retrieve disk size."
+msgstr "Nu s-a putut obține dimensiunea discului."
+
+#: libparted/labels/fdasd.c:1029
+msgid "Could not retrieve disk geometry information."
+msgstr "Nu s-au putut obține informațiile despre geometria discului."
+
+#: libparted/labels/fdasd.c:1035
+msgid "Could not retrieve blocksize information."
+msgstr "Nu s-au putut obține informații despre dimensiunea blocului."
+
+#: libparted/labels/fdasd.c:1045
+msgid "Disk geometry does not match a DASD device of type 3390."
+msgstr "Geometria discului nu corespunde unui dispozitiv DASD de tip 3390."
+
+#: libparted/labels/gpt.c:569
+msgid "device is too small for GPT"
+msgstr "dispozitivul este prea mic pentru GPT"
+
+#: libparted/labels/gpt.c:771
+#, c-format
+msgid ""
+"The format of the GPT partition table is version %x, which is newer than "
+"what Parted can recognise.  Please report this!"
+msgstr ""
+"Formatul tabelului de partiții GPT este versiunea %x, care este mai nouă "
+"decât ceea ce Parted poate recunoaște.  Vă rugăm să raportați acest lucru!"
+
+#: libparted/labels/gpt.c:807
+#, c-format
+msgid ""
+"Not all of the space available to %s appears to be used, you can fix the GPT "
+"to use all of the space (an extra %llu blocks) or continue with the current "
+"setting? "
+msgstr ""
+"Nu tot spațiul disponibil pentru %s pare să fie folosit; puteți repara GPT-"
+"ul pentru a utiliza tot spațiul (%llu blocuri suplimentare) sau, puteți "
+"continua cu setarea curentă!  Ce decideți? "
+
+#: libparted/labels/gpt.c:1006
+msgid ""
+"The backup GPT table is not at the end of the disk, as it should be.  Fix, "
+"by moving the backup to the end (and removing the old backup)?"
+msgstr ""
+"Tabelul GPT de rezervă nu se află la sfârșitul discului, așa cum ar trebui "
+"să fie.  Remediați, prin mutarea copiei de rezervă la sfârșitul discului (și "
+"eliminând copia de rezervă veche)?"
+
+#: libparted/labels/gpt.c:1024
+msgid ""
+"Both the primary and backup GPT tables are corrupt.  Try making a fresh "
+"table, and using Parted's rescue feature to recover partitions."
+msgstr ""
+"Atât tabelul primar GPT cât și cel de rezervă sunt corupte.  Încercați să "
+"faceți un tabel nou și să utilizați caracteristica de salvare a lui Parted "
+"pentru a recupera partițiile."
+
+#: libparted/labels/gpt.c:1035
+msgid ""
+"The backup GPT table is corrupt, but the primary appears OK, so that will be "
+"used."
+msgstr ""
+"Tabelul GPT de rezervă este corupt, dar principalul pare să fie corect, așa "
+"că va fi folosit."
+
+#: libparted/labels/gpt.c:1047
+msgid ""
+"The primary GPT table is corrupt, but the backup appears OK, so that will be "
+"used."
+msgstr ""
+"Tabelul GPT principal este corupt, dar copia de rezervă pare să fie corectă, "
+"așa că va fi folosit acesta."
+
+#: libparted/labels/gpt.c:1071
+msgid "primary partition table array CRC mismatch"
+msgstr "nepotrivire CRC a matricei de tabel de partiții primare"
+
+#: libparted/labels/gpt.c:1655 libparted/labels/gpt.c:1682
+msgid "failed to translate partition name"
+msgstr "nu s-a putut traduce numele partiției"
+
+#: libparted/labels/mac.c:185
+#, c-format
+msgid "Invalid signature %x for Mac disk labels."
+msgstr "Semnătură nevalidă %x pentru etichetele de disc pentru Mac."
+
+#: libparted/labels/mac.c:232
+msgid "Partition map has no partition map entry!"
+msgstr "Harta partiției nu are nicio intrare în harta de partiții!"
+
+#: libparted/labels/mac.c:280
+#, c-format
+msgid "%s is too small for a Mac disk label!"
+msgstr "%s este prea mic pentru o etichetă de disc pentru Mac!"
+
+#: libparted/labels/mac.c:507
+#, c-format
+msgid "Partition %d has an invalid signature %x."
+msgstr "Partiția %d are o semnătură nevalidă %x."
+
+#: libparted/labels/mac.c:524
+#, c-format
+msgid "Partition %d has an invalid length of 0 bytes!"
+msgstr "Partiția %d are o lungime nevalidă de 0 octeți!"
+
+#: libparted/labels/mac.c:555
+msgid "The data region doesn't start at the start of the partition."
+msgstr "Regiunea de date nu începe la începutul partiției."
+
+#: libparted/labels/mac.c:572
+msgid "The partition's boot region doesn't occupy the entire partition."
+msgstr "Regiunea de pornire a partiției nu ocupă întreaga partiție."
+
+#: libparted/labels/mac.c:583
+msgid "The partition's data region doesn't occupy the entire partition."
+msgstr "Regiunea de date a partiției nu ocupă întreaga partiție."
+
+#: libparted/labels/mac.c:635
+#, c-format
+msgid ""
+"Weird block size on device descriptor: %d bytes is not divisible by 512."
+msgstr ""
+"Dimensiune de bloc ciudată pe descriptorul dispozitivului: %d octeți nu este "
+"divizibil cu 512."
+
+#: libparted/labels/mac.c:648
+#, c-format
+msgid ""
+"The driver descriptor says the physical block size is %d bytes, but Linux "
+"says it is %d bytes."
+msgstr ""
+"Descriptorul de driver spune că dimensiunea fizică a blocului este %d de "
+"octeți, dar Linux spune că este %d de octeți."
+
+#: libparted/labels/mac.c:701
+msgid "No valid partition map found."
+msgstr "Nu a fost găsită nici o hartă de partiție validă."
+
+#: libparted/labels/mac.c:775
+#, c-format
+msgid ""
+"Conflicting partition map entry sizes!  Entry 1 says it is %d, but entry %d "
+"says it is %d!"
+msgstr ""
+"Dimensiuni în conflict ale intrărilor din harta partițiilor!  Intrarea 1 "
+"spune că aceasta este de %d, dar intrarea %d spune că este de %d!"
+
+#: libparted/labels/mac.c:806
+msgid "Weird!  There are 2 partitions map entries!"
+msgstr "Ciudat!  Există 2 intrări în harta partiției!"
+
+#: libparted/labels/mac.c:1345
+msgid ""
+"Changing the name of a root or swap partition will prevent Linux from "
+"recognising it as such."
+msgstr ""
+"Schimbarea numelui unei partiții rădăcină sau de swap va împiedica ca Linux "
+"să o recunoască ca atare."
+
+#: libparted/labels/mac.c:1444
+msgid "Can't add another partition -- the partition map is too small!"
+msgstr ""
+"Nu se poate adăuga o altă partiție -- harta partițiilor este prea mică!"
+
+#: libparted/labels/pc98.c:285
+#, c-format
+msgid "Invalid partition table on %s."
+msgstr "Tabel de partiții nevalid pe %s."
+
+#: libparted/labels/pc98.c:338 libparted/labels/pc98.c:416
+#, c-format
+msgid ""
+"Partition %d isn't aligned to cylinder boundaries.  This is still "
+"unsupported."
+msgstr ""
+"Partiția %d nu este aliniată la limitele cilindrului.  Acest lucru este încă "
+"neacceptat."
+
+#: libparted/labels/pc98.c:729
+msgid "Can't add another partition."
+msgstr "Nu se poate adăuga o altă partiție."
+
+#: libparted/labels/pt-tools.c:134
+#, c-format
+msgid ""
+"partition length of %jd sectors exceeds the %s-partition-table-imposed "
+"maximum of %jd"
+msgstr ""
+"lungimea partiției cu %1$jd sectoare depășește maximul de %3$jd impus de "
+"tabelul de partiții %2$s"
+
+#: libparted/labels/pt-tools.c:147
+#, c-format
+msgid ""
+"starting sector number, %jd exceeds the %s-partition-table-imposed maximum "
+"of %jd"
+msgstr ""
+"numărul sectorului de pornire, %1$jd depășește maximul de %3$jd impus de "
+"tabelul de partiții %2$s"
+
+#: libparted/labels/rdb.c:170
+#, c-format
+msgid "%s : Bad checksum on block %llu of type %s."
+msgstr "%s : Sumă de verificare greșită în blocul %llu de tip %s."
+
+#: libparted/labels/rdb.c:486
+#, c-format
+msgid "%s : Didn't find rdb block, should never happen."
+msgstr "%s: Nu a fost găsit blocul rdb, nu ar trebui să se întâmple niciodată."
+
+#: libparted/labels/rdb.c:575
+#, c-format
+msgid "%s : Loop detected at block %d."
+msgstr "%s : Buclă detectată în blocul %d."
+
+#: libparted/labels/rdb.c:594
+#, c-format
+msgid "%s : The %s list seems bad at block %s."
+msgstr "%s : Lista %s pare greșită în blocul %s."
+
+#: libparted/labels/rdb.c:693
+#, c-format
+msgid "%s : Failed to list bad blocks."
+msgstr "%s : Nu s-au putut enumera blocurile defecte."
+
+#: libparted/labels/rdb.c:701
+#, c-format
+msgid "%s : Failed to list partition blocks."
+msgstr "%s : Nu s-au putut enumera blocurile de partiții."
+
+#: libparted/labels/rdb.c:709
+#, c-format
+msgid "%s : Failed to list file system blocks."
+msgstr "%s : Nu s-au putut enumera blocurile sistemului de fișiere."
+
+#: libparted/labels/rdb.c:717
+#, c-format
+msgid "%s : Failed to list boot blocks."
+msgstr "%s : Nu s-au putut enumera blocurile de pornire."
+
+#: libparted/labels/rdb.c:744
+#, c-format
+msgid "Failed to write partition block at %d."
+msgstr "Nu s-a putut scrie blocul de partiții la %d."
+
+#: libparted/labels/sun.c:162
+msgid "Corrupted Sun disk label detected."
+msgstr "S-a detectat o etichetă coruptă a discului Sun."
+
+# R-GC, scrie:
+# CHS = Cylinder Head Sector ==>
+# Cilindru Cap Sector = CCS
+# ***
+# NB: sistemul CCS/CHS, este limitat
+# la dicuri dure, de pînă la 8GB
+#: libparted/labels/sun.c:277
+#, c-format
+msgid ""
+"The disk CHS geometry (%d,%d,%d) reported by the operating system does not "
+"match the geometry stored on the disk label (%d,%d,%d)."
+msgstr ""
+"Geometria CCS(CHS în engleză) a discului (%d,%d,%d) raportată de sistemul de "
+"operare nu se potrivește cu geometria stocată pe eticheta discului (%d,%d,"
+"%d)."
+
+#: libparted/labels/sun.c:299
+#, c-format
+msgid "The disk label describes a disk bigger than %s."
+msgstr "Eticheta discului descrie un disc mai mare de %s."
+
+#: libparted/labels/sun.c:474
+#, c-format
+msgid "The disk has %d cylinders, which is greater than the maximum of 65536."
+msgstr "Discul are %d cilindri, ceea ce este mai mult decât maximul de 65536."
+
+# R-GC, scrie:
+# după revizarea fișierului, DȘ, spune:
+# „-> "fără ea" în loc de "fără el"”
+# ***
+# corect, (data viitoare, fi mai atent, R-GC și
+# citește tot mesajul, odată ce-ai terminat de tradus!).
+#: libparted/labels/sun.c:813
+msgid ""
+"The Whole Disk partition is the only available one left.  Generally, it is "
+"not a good idea to overwrite this partition with a real one.  Solaris may "
+"not be able to boot without it, and SILO (the sparc boot loader) appreciates "
+"it as well."
+msgstr ""
+"Partiția «Whole Disk» este singura disponibilă rămasă.  În general, nu este "
+"o idee bună să suprascrieți această partiție cu una reală.  Este posibil ca "
+"Solaris să nu poată porni fără ea, iar SILO (încărcătorul de pornire sparc) "
+"o folosește, de asemenea."
+
+# R-GC, scrie:
+# nu știu ce mă face să cred că traducerea corectă,
+# ar fi:
+# „Eticheta discului Sun este pe deplin completată.”
+# ***
+# Opinii / Idei ?
+#: libparted/labels/sun.c:828
+msgid "Sun disk label is full."
+msgstr "Eticheta discului Sun este plină."
+
+#: libparted/labels/vtoc.c:164
+msgid "opening of device failed"
+msgstr "deschiderea dispozitivului a eșuat"
+
+#: libparted/labels/vtoc.c:168
+msgid "seeking on device failed"
+msgstr "căutarea pe dispozitiv a eșuat"
+
+#: libparted/labels/vtoc.c:172
+msgid "writing to device failed"
+msgstr "scrierea pe dispozitiv a eșuat"
+
+#: libparted/labels/vtoc.c:176
+msgid "reading from device failed"
+msgstr "citirea de pe dispozitiv a eșuat"
+
+#: libparted/labels/vtoc.c:371 libparted/labels/vtoc.c:378
+#: libparted/labels/vtoc.c:399 libparted/labels/vtoc.c:406
+msgid "Could not read volume label."
+msgstr "Nu s-a putut citi eticheta de volum."
+
+#: libparted/labels/vtoc.c:426 libparted/labels/vtoc.c:431
+msgid "Could not write volume label."
+msgstr "Nu s-a putut scrie eticheta de volum."
+
+#: libparted/labels/vtoc.c:537
+msgid "Could not read VTOC labels."
+msgstr "Nu s-au putut citi etichetele VTOC."
+
+#: libparted/labels/vtoc.c:543
+msgid "Could not read VTOC FMT1 DSCB."
+msgstr "Nu s-a putut citi VTOC FMT1 DSCB."
+
+#: libparted/labels/vtoc.c:550
+msgid "Could not read VTOC FMT4 DSCB."
+msgstr "Nu s-a putut citi VTOC FMT4 DSCB."
+
+#: libparted/labels/vtoc.c:557
+msgid "Could not read VTOC FMT5 DSCB."
+msgstr "Nu s-a putut citi VTOC FMT5 DSCB."
+
+#: libparted/labels/vtoc.c:564
+msgid "Could not read VTOC FMT7 DSCB."
+msgstr "Nu s-a putut citi VTOC FMT7 DSCB."
+
+#: libparted/labels/vtoc.c:585
+msgid "Could not write VTOC labels."
+msgstr "Nu s-au putut scrie etichetele VTOC."
+
+#: libparted/labels/vtoc.c:591
+msgid "Could not write VTOC FMT1 DSCB."
+msgstr "Nu s-a putut scrie VTOC FMT1 DSCB."
+
+#: libparted/labels/vtoc.c:598
+msgid "Could not write VTOC FMT4 DSCB."
+msgstr "Nu s-a putut scrie VTOC FMT4 DSCB."
+
+#: libparted/labels/vtoc.c:605
+msgid "Could not write VTOC FMT5 DSCB."
+msgstr "Nu s-a putut scrie VTOC FMT5 DSCB."
+
+#: libparted/labels/vtoc.c:612
+msgid "Could not write VTOC FMT7 DSCB."
+msgstr "Nu s-a putut scrie VTOC FMT7 DSCB."
+
+#: libparted/labels/vtoc.c:622
+msgid "Could not write VTOC FMT9 DSCB."
+msgstr "Nu s-a putut scrie VTOC FMT9 DSCB."
+
+#: libparted/libparted.c:247
+msgid "Out of memory."
+msgstr "Memorie insuficientă."
+
+#: libparted/unit.c:140
+msgid "Cannot get unit size for special unit 'COMPACT'."
+msgstr ""
+"Nu se poate obține dimensiunea unității pentru unitatea specială „COMPACT”."
+
+#: libparted/unit.c:386
+#, c-format
+msgid "\"%s\" has invalid syntax for locations."
+msgstr "„%s” are o sintaxă nevalidă pentru locații."
+
+# R-GC, scrie:
+# luînd în considerare, referința pe care o are
+# mesajul «libparted/unit.c:394», am considerat
+# că traducerea directă „mote-a-mote”, este o
+# traducere înșelătoare/greșită.
+#: libparted/unit.c:394
+#, c-format
+msgid "The maximum head value is %d."
+msgstr "Numărul maxim de capete este de %d."
+
+#: libparted/unit.c:401
+#, c-format
+msgid "The maximum sector value is %d."
+msgstr "Valoarea maximă a sectorului este %d."
+
+#: libparted/unit.c:413 libparted/unit.c:565
+#, c-format
+msgid "The location %s is outside of the device %s."
+msgstr "Locația %s se află în afara dispozitivului %s."
+
+#: libparted/unit.c:527
+msgid "Invalid number."
+msgstr "Număr nevalid."
+
+#: libparted/unit.c:533
+msgid "Use a smaller unit instead of a value < 1"
+msgstr "Utilizați o unitate mai mică de măsură în loc de o valoare < 1"
+
+#: libparted/fs/amiga/affs.c:64 libparted/fs/amiga/apfs.c:58
+#: libparted/fs/amiga/asfs.c:72
+#, c-format
+msgid "%s : Failed to allocate partition block\n"
+msgstr "%s : Nu s-a reușit alocarea blocului de partiții\n"
+
+#: libparted/fs/amiga/affs.c:78 libparted/fs/amiga/apfs.c:71
+#: libparted/fs/amiga/asfs.c:84
+#, c-format
+msgid "%s : Failed to allocate block\n"
+msgstr "%s : Nu s-a reușit alocarea blocului\n"
+
+#: libparted/fs/amiga/affs.c:83 libparted/fs/amiga/apfs.c:76
+#, c-format
+msgid "%s : Couldn't read boot block %llu\n"
+msgstr "%s : Nu s-a putut citi blocul de pornire %llu\n"
+
+#: libparted/fs/amiga/affs.c:97 libparted/fs/amiga/apfs.c:87
+#: libparted/fs/amiga/asfs.c:90 libparted/fs/amiga/asfs.c:104
+#, c-format
+msgid "%s : Couldn't read root block %llu\n"
+msgstr "%s : Nu s-a putut citi blocul rădăcină %llu\n"
+
+#: libparted/fs/amiga/amiga.c:72
+#, c-format
+msgid "%s : Failed to allocate id list element\n"
+msgstr "%s : Nu s-a putut aloca elementul din lista de ID-uri\n"
+
+#: libparted/fs/amiga/amiga.c:189
+#, c-format
+msgid "%s : Couldn't read block %llu\n"
+msgstr "%s : Nu s-a putut citi blocul %llu\n"
+
+#: libparted/fs/amiga/amiga.c:202
+#, c-format
+msgid "%s : Bad checksum on block %llu of type %s\n"
+msgstr "%s : Sumă de verificare greșită pe blocul %llu de tip %s\n"
+
+#: libparted/fs/amiga/amiga.c:212
+#, c-format
+msgid "%s : Couldn't write block %d\n"
+msgstr "%s : Nu s-a putut scrie blocul %d\n"
+
+#: libparted/fs/amiga/amiga.c:279
+#, c-format
+msgid "%s : Failed to allocate disk_specific rdb block\n"
+msgstr ""
+"%s : Nu s-a putut aloca memorie pentru blocul „rdb(ram_disk_block)” specific "
+"discului\n"
+
+#: libparted/fs/amiga/amiga.c:290
+#, c-format
+msgid "%s : Didn't find rdb block, should never happen\n"
+msgstr ""
+"%s : Nu s-a găsit niciun bloc „rdb(ram_disk_block)” - nu ar trebui să se "
+"întâmple niciodată\n"
+
+#: libparted/fs/amiga/amiga.c:319
+#, c-format
+msgid "%s : Failed to read partition block %llu\n"
+msgstr "%s : Nu s-a putut citi blocul de partiție %llu\n"
+
+#: libparted/fs/fat/fat.c:149
+msgid ""
+"GNU Parted was miscompiled: the FAT boot sector should be 512 bytes.  FAT "
+"support will be disabled."
+msgstr ""
+"GNU Parted a fost compilat greșit: sectorul de pornire FAT ar trebui să aibă "
+"512 octeți.  Suportul FAT va fi dezactivat."
+
+#: libparted/fs/fat/bootsector.c:50 libparted/fs/r/fat/bootsector.c:49
+msgid "File system has an invalid signature for a FAT file system."
+msgstr ""
+"Sistemul de fișiere are o semnătură nevalidă pentru un sistem de fișiere FAT."
+
+#: libparted/fs/fat/bootsector.c:58 libparted/fs/r/fat/bootsector.c:57
+msgid "File system has an invalid sector size for a FAT file system."
+msgstr ""
+"Sistemul de fișiere are o dimensiune de sector nevalidă pentru un sistem de "
+"fișiere FAT."
+
+#: libparted/fs/fat/bootsector.c:65 libparted/fs/r/fat/bootsector.c:64
+msgid "File system has an invalid cluster size for a FAT file system."
+msgstr ""
+"Sistemul de fișiere are o dimensiune de cluster nevalidă pentru un sistem de "
+"fișiere FAT."
+
+#: libparted/fs/fat/bootsector.c:72 libparted/fs/r/fat/bootsector.c:71
+msgid ""
+"File system has an invalid number of reserved sectors for a FAT file system."
+msgstr ""
+"Sistemul de fișiere are un număr nevalid de sectoare rezervate pentru un "
+"sistem de fișiere FAT."
+
+#: libparted/fs/fat/bootsector.c:79 libparted/fs/r/fat/bootsector.c:78
+msgid "File system has an invalid number of FATs."
+msgstr "Sistemul de fișiere are un număr nevalid de tabele FAT."
+
+#: libparted/fs/fat/bootsector.c:162
+#, c-format
+msgid ""
+"The file system's CHS geometry is (%d, %d, %d), which is invalid.  The "
+"partition table's CHS geometry is (%d, %d, %d)."
+msgstr ""
+"Geometria CCS(CHS) a sistemului de fișiere este (%d, %d, %d), care este "
+"nevalidă.  Geometria CCS(CHS) a tabelului de partiții este (%d, %d, %d)."
+
+#: libparted/fs/fat/bootsector.c:197 libparted/fs/r/fat/bootsector.c:194
+msgid "FAT boot sector says logical sector size is 0.  This is weird. "
+msgstr ""
+"Sectorul de pornire FAT spune că dimensiunea sectorului logic este 0.  Acest "
+"lucru este ciudat. "
+
+#: libparted/fs/fat/bootsector.c:203 libparted/fs/r/fat/bootsector.c:200
+msgid "FAT boot sector says there are no FAT tables.  This is weird. "
+msgstr ""
+"Sectorul de pornire FAT spune că nu există tabele FAT.  Acest lucru este "
+"ciudat. "
+
+#: libparted/fs/fat/bootsector.c:209 libparted/fs/r/fat/bootsector.c:206
+msgid "FAT boot sector says clusters are 0 sectors.  This is weird. "
+msgstr ""
+"Sectorul de pornire FAT spune că, clusterele au 0 sectoare.  Acest lucru "
+"este ciudat. "
+
+#: libparted/fs/fat/bootsector.c:219 libparted/fs/r/fat/bootsector.c:216
+msgid "File system is FAT12, which is unsupported."
+msgstr "Sistemul de fișiere este FAT12, care nu este suportat."
+
+#: libparted/fs/linux_swap/linux_swap.c:231
+#, c-format
+msgid "Unrecognised old style linux swap signature '%10s'."
+msgstr ""
+"Semnătură a spațiului memoriei de interschimb(swap) în stilul linux vechi "
+"nerecunoscută „%10s”."
+
+#: libparted/fs/linux_swap/linux_swap.c:269
+#, c-format
+msgid "Unrecognised new style linux swap signature '%10s'."
+msgstr ""
+"Semnătură a spațiului memoriei de interschimb(swap) în stilul linux nou "
+"nerecunoscută „%10s”."
+
+#: libparted/fs/linux_swap/linux_swap.c:309
+#, c-format
+msgid "Unrecognised swsusp linux swap signature '%9s'."
+msgstr ""
+"Semnătură a spațiului memoriei de interschimb(swap) linux pentru comutarea "
+"suspendării(swsusp), nerecunoscută „%9s”."
+
+#: libparted/fs/hfs/probe.c:51 libparted/fs/r/hfs/probe.c:51
+#, c-format
+msgid ""
+"Parted can't use HFS file systems on disks with a sector size not equal to "
+"%d bytes."
+msgstr ""
+"Parted nu poate utiliza sisteme de fișiere HFS pe discuri cu o dimensiune a "
+"sectorului care nu este egală cu %d octeți."
+
+#: libparted/fs/r/fat/bootsector.c:145
+#, c-format
+msgid ""
+"The file system's CHS geometry is (%d, %d, %d), which is invalid.  The "
+"partition table's CHS geometry is (%d, %d, %d).  If you select Ignore, the "
+"file system's CHS geometry will be left unchanged.  If you select Fix, the "
+"file system's CHS geometry will be set to match the partition table's CHS "
+"geometry."
+msgstr ""
+"Geometria CCS(CHS) a sistemului de fișiere este (%d, %d, %d), care este "
+"nevalidă.  Geometria CCS(CHS) a tabelului de partiții este (%d, %d, %d).  "
+"Dacă selectați «Ignorare», geometria CCS(CHS) a sistemului de fișiere va "
+"rămâne neschimbată.  Dacă selectați «Reparare», geometria CCS(CHS) a "
+"sistemului de fișiere va fi setată pentru a se potrivi cu geometria CCS(CHS) "
+"a tabelului de partiții."
+
+#: libparted/fs/r/fat/bootsector.c:398
+#, c-format
+msgid ""
+"The information sector has the wrong signature (%x).  Select cancel for now, "
+"and send in a bug report.  If you're desperate, it's probably safe to ignore."
+msgstr ""
+"Sectorul de informații are o semnătură greșită (%x).  Pentru moment, alegeți "
+"«Anulare» și trimiteți un raport de eroare la <bug-parted@gnu.org>.  Dacă "
+"sunteți cu adevărat disperat, probabil că este sigur să alegeți «Ignorare»."
+
+#: libparted/fs/r/fat/calc.c:134
+#, c-format
+msgid ""
+"You need %s of free disk space to shrink this partition to this size.  "
+"Currently, only %s is free."
+msgstr ""
+"Aveți nevoie de %s spațiu liber pe disc pentru a micșora această partiție la "
+"această dimensiune.  În prezent, numai %s este liber."
+
+#: libparted/fs/r/fat/context.c:56
+#, c-format
+msgid ""
+"Cluster start delta = %d, which is not a multiple of the cluster size %d."
+msgstr ""
+"Clusterul începe la delta = %d, care nu este un multiplu al dimensiunii "
+"clusterului %d."
+
+#: libparted/fs/r/fat/count.c:84
+#, c-format
+msgid "Bad directory entry for %s: first cluster is the end of file marker."
+msgstr ""
+"Intrare greșită în director pentru %s: primul cluster este marcatorul de "
+"sfârșit al fișierului."
+
+# R-GC, scrie:
+# după revizuirea fișierului, DȘ, spune:
+# „-> propun "FAT degradat" (deteriorat)”
+# ***
+# „deteriorat”, mi se pare o bună substituție,
+# pentru „incorect”, inițial.
+#: libparted/fs/r/fat/count.c:97
+#, c-format
+msgid ""
+"Bad FAT: unterminated chain for %s.  You should run dosfsck or scandisk."
+msgstr ""
+"FAT deteriorat: lanț neterminat pentru %s.  Ar trebui să rulați dosfsck sau "
+"scandisk."
+
+#: libparted/fs/r/fat/count.c:106
+#, c-format
+msgid ""
+"Bad FAT: cluster %d outside file system in chain for %s.  You should run "
+"dosfsck or scandisk."
+msgstr ""
+"Tabel FAT incorect: clusterul %d din lanțul pentru %s este în afara "
+"sistemului de fișiere.  Ar trebui să rulați dosfsck sau scandisk."
+
+#: libparted/fs/r/fat/count.c:116
+#, c-format
+msgid ""
+"Bad FAT: cluster %d is cross-linked for %s.  You should run dosfsck or "
+"scandisk."
+msgstr ""
+"Tabel FAT incorect: clusterul %d are o referință încrucișată la %s.  Ar "
+"trebui să rulați dosfsck sau scandisk."
+
+#: libparted/fs/r/fat/count.c:135
+#, c-format
+msgid "%s is %dk, but it has %d clusters (%dk)."
+msgstr "%s este %dk, dar are %d clustere (%dk)."
+
+#: libparted/fs/r/fat/fat.c:244
+#, c-format
+msgid "Partition too big/small for a %s file system."
+msgstr "Partiție prea mică/mare pentru un sistem de fișiere %s."
+
+#: libparted/fs/r/fat/fat.c:410
+msgid ""
+"The FATs don't match.  If you don't know what this means, then select "
+"cancel, run scandisk on the file system, and then come back."
+msgstr ""
+"Tabelele FAT nu se potrivesc. Dacă nu știți ce înseamnă acest lucru, "
+"selectați «Anulare», rulați scandisk pe sistemul de fișiere și apoi reveniți."
+
+#: libparted/fs/r/fat/fat.c:450
+msgid "There are no possible configurations for this FAT type."
+msgstr "Nu există configurații posibile pentru acest tip de FAT."
+
+#: libparted/fs/r/fat/fat.c:462
+#, c-format
+msgid ""
+"File system doesn't have expected sizes for Windows to like it.  Cluster "
+"size is %dk (%dk expected); number of clusters is %d (%d expected); size of "
+"FATs is %d sectors (%d expected)."
+msgstr ""
+"Sistemul de fișiere nu are dimensiunea așteptată pentru a fi compatibil cu "
+"Windows.  Dimensiunea clusterului este %dk (se așteaptă %dk); numărul de "
+"clustere este %d (se așteaptă %d); dimensiunea FAT-urilor este de %d "
+"sectoare (se așteaptă %d)."
+
+# R-GC, scrie:
+# lipsește forma de plural.
+#: libparted/fs/r/fat/fat.c:485
+#, c-format
+msgid ""
+"File system is reporting the free space as %d clusters, not %d clusters."
+msgstr ""
+"Sistemul de fișiere raportează spațiul liber ca fiind %d (de) clustere, nu "
+"%d (de) clustere."
+
+#: libparted/fs/r/fat/resize.c:159
+msgid ""
+"There's not enough room in the root directory for all of the files.  Either "
+"cancel, or ignore to lose the files."
+msgstr ""
+"Nu există suficient spațiu în directorul rădăcină pentru toate fișierele.  "
+"Fie anulați, fie ignorați pentru și veți pierde fișierele."
+
+#: libparted/fs/r/fat/resize.c:303
+msgid "Error writing to the root directory."
+msgstr "Eroare la scrierea în directorul rădăcină."
+
+#: libparted/fs/r/fat/resize.c:479
+msgid "If you leave your file system as FAT16, then you will have no problems."
+msgstr ""
+"Dacă lăsați sistemul de fișiere ca FAT16, atunci nu veți avea probleme."
+
+#: libparted/fs/r/fat/resize.c:482
+msgid ""
+"If you convert to FAT16, and MS Windows is installed on this partition, then "
+"you must re-install the MS Windows boot loader.  If you want to do this, you "
+"should consult the Parted manual (or your distribution's manual)."
+msgstr ""
+"Dacă convertiți la FAT16 și MS Windows este instalat pe această partiție, "
+"atunci va trebui să reinstalați încărcătorul de pornire MS Windows.  Dacă "
+"doriți să faceți acest lucru, ar trebui să consultați manualul Parted (sau "
+"manualul distribuției dvs.)."
+
+#: libparted/fs/r/fat/resize.c:490
+msgid ""
+"If you leave your file system as FAT32, then you will not introduce any new "
+"problems."
+msgstr ""
+"Dacă lăsați sistemul de fișiere ca FAT32, atunci nu veți introduce probleme "
+"noi."
+
+#: libparted/fs/r/fat/resize.c:494
+msgid ""
+"If you convert to FAT32, and MS Windows is installed on this partition, then "
+"you must re-install the MS Windows boot loader.  If you want to do this, you "
+"should consult the Parted manual (or your distribution's manual).  Also, "
+"converting to FAT32 will make the file system unreadable by MS DOS, MS "
+"Windows 95a, and MS Windows NT."
+msgstr ""
+"Dacă convertiți la FAT32 și MS Windows este instalat pe această partiție, "
+"atunci va trebui să reinstalați încărcătorul de pornire MS Windows.  Dacă "
+"doriți să faceți acest lucru, ar trebui să consultați manualul Parted (sau "
+"manualul distribuției dvs.).  De asemenea, conversia la FAT32 va face ca "
+"sistemul de fișiere să nu fie citit de MS DOS, MS Windows 95a și MS Windows "
+"NT."
+
+#: libparted/fs/r/fat/resize.c:508
+#, c-format
+msgid "%s  %s  %s"
+msgstr "%s  %s  %s"
+
+#: libparted/fs/r/fat/resize.c:509
+msgid "Would you like to use FAT32?"
+msgstr "Doriți să utilizați FAT32?"
+
+#: libparted/fs/r/fat/resize.c:540 libparted/fs/r/fat/resize.c:556
+#, c-format
+msgid "%s  %s"
+msgstr "%s  %s"
+
+#: libparted/fs/r/fat/resize.c:541
+msgid ""
+"The file system can only be resized to this size by converting to FAT16."
+msgstr ""
+"Sistemul de fișiere poate fi redimensionat la această dimensiune numai prin "
+"conversia la FAT16."
+
+#: libparted/fs/r/fat/resize.c:557
+msgid ""
+"The file system can only be resized to this size by converting to FAT32."
+msgstr ""
+"Sistemul de fișiere poate fi redimensionat la această dimensiune numai prin "
+"conversia la FAT32."
+
+#: libparted/fs/r/fat/resize.c:570
+msgid ""
+"GNU Parted cannot resize this partition to this size.  We're working on it!"
+msgstr ""
+"GNU Parted, nu poate redimensiona această partiție, la această dimensiune. "
+"Lucrăm pentru a rezolva această problemă!"
+
+#: libparted/fs/r/fat/table.c:137
+#, c-format
+msgid ""
+"FAT %d media %x doesn't match the boot sector's media %x.  You should "
+"probably run scandisk."
+msgstr ""
+"Tipul de FAT %d din suportul media %x nu se potrivește cu sectoarele de "
+"pornire ale suportului media %x.  Probabil ar trebui să rulați scandisk."
+
+#: libparted/fs/r/fat/table.c:269
+#, c-format
+msgid "fat_table_set: cluster %ld outside file system"
+msgstr "fat_table_set: cluster %ld în afara sistemului de fișiere"
+
+#: libparted/fs/r/fat/table.c:301
+#, c-format
+msgid "fat_table_get: cluster %ld outside file system"
+msgstr "fat_table_get: cluster %ld în afara sistemului de fișiere"
+
+#: libparted/fs/r/fat/table.c:343
+msgid "fat_table_alloc_cluster: no free clusters"
+msgstr "fat_table_alloc_cluster: nu există clustere libere"
+
+#: libparted/fs/r/filesys.c:152
+msgid "Could not detect file system."
+msgstr "Nu s-a putut detecta sistemul de fișiere."
+
+#: libparted/fs/r/filesys.c:159 libparted/fs/r/filesys.c:284
+#, c-format
+msgid "resizing %s file systems is not supported"
+msgstr "redimensionarea sistemelor de fișiere %s nu este suportată"
+
+#: libparted/fs/r/filesys.c:171
+msgid "The file system is bigger than its volume!"
+msgstr "Sistemul de fișiere este mai mare decât volumul său!"
+
+#: libparted/fs/r/hfs/advfs.c:123 libparted/fs/r/hfs/advfs_plus.c:122
+#: libparted/fs/r/hfs/reloc.c:417 libparted/fs/r/hfs/reloc.c:513
+#: libparted/fs/r/hfs/reloc_plus.c:540 libparted/fs/r/hfs/reloc_plus.c:660
+#: libparted/fs/r/hfs/reloc_plus.c:774
+msgid "The file system contains errors."
+msgstr "Sistemul de fișiere conține erori."
+
+#: libparted/fs/r/hfs/advfs_plus.c:287
+msgid "Bad blocks could not be read."
+msgstr "Blocurile deteriorate nu au putut fi citite."
+
+# R-GC, scrie:
+# Daniel, urmărește, te rog, evoluția traducerii
+# lui «extent», de-a lungul fișierului, și comentariile lăsate, și spune-mi ce părere ai
+# despre asta.
+#: libparted/fs/r/hfs/cache.c:137
+#, c-format
+msgid ""
+"Trying to register an extent starting at block 0x%X, but another one already "
+"exists at this position.  You should check the file system!"
+msgstr ""
+"Se încearcă înregistrarea unei extensii care să înceapă de la blocul 0x% X, "
+"dar există deja una în această poziție. Ar trebui să verificați sistemul de "
+"fișiere!"
+
+#: libparted/fs/r/hfs/cache.c:214
+#, c-format
+msgid ""
+"Trying to move an extent from block 0x%X to block 0x%X, but another one "
+"already exists at this position.  This should not happen!"
+msgstr ""
+"Se încearcă mutarea unei extensii de la blocul 0x%X la blocul 0x%X, dar "
+"există deja una în această poziție. Acest lucru nu ar trebui să se întâmple!"
+
+#: libparted/fs/r/hfs/file.c:143
+#, c-format
+msgid "Could not update the extent cache for HFS file with CNID %X."
+msgstr ""
+"Nu s-a putut actualiza memoria tampon a extinderii pentru fișierul HFS cu "
+"CNID %X."
+
+#: libparted/fs/r/hfs/file.c:180
+#, c-format
+msgid "Trying to read HFS file with CNID %X behind EOF."
+msgstr ""
+"Se încearcă să se citească fișierul HFS cu CNID %X după sfârșitul fișierului."
+
+#: libparted/fs/r/hfs/file.c:190 libparted/fs/r/hfs/file.c:220
+#, c-format
+msgid "Could not find sector %lli of HFS file with CNID %X."
+msgstr "Nu s-a putut găsi sectorul %lli al fișierului HFS cu CNID %X."
+
+#: libparted/fs/r/hfs/file.c:210
+#, c-format
+msgid "Trying to write HFS file with CNID %X behind EOF."
+msgstr ""
+"Se încearcă să se scrie fișierul HFS cu CNID %X după sfârșitul fișierului."
+
+#: libparted/fs/r/hfs/file_plus.c:157
+#, c-format
+msgid "Could not update the extent cache for HFS+ file with CNID %X."
+msgstr ""
+"Nu s-a putut actualiza memoria tampon a extinderii pentru fișierul HFS+ cu "
+"CNID %X."
+
+#: libparted/fs/r/hfs/file_plus.c:202
+#, c-format
+msgid "Trying to read HFS+ file with CNID %X behind EOF."
+msgstr ""
+"Se încearcă să se citească fișierul HFS+ cu CNID %X după sfârșitul "
+"fișierului."
+
+#: libparted/fs/r/hfs/file_plus.c:213 libparted/fs/r/hfs/file_plus.c:256
+#, c-format
+msgid "Could not find sector %lli of HFS+ file with CNID %X."
+msgstr "Nu s-a putut găsi sectorul %lli al fișierului HFS+ cu CNID %X."
+
+#: libparted/fs/r/hfs/file_plus.c:245
+#, c-format
+msgid "Trying to write HFS+ file with CNID %X behind EOF."
+msgstr ""
+"Se încearcă să se scrie fișierul HFS+ cu CNID %X după sfârșitul fișierului."
+
+#: libparted/fs/r/hfs/hfs.c:212
+msgid "Sorry, HFS cannot be resized that way yet."
+msgstr "Ne pare rău, HFS nu poate fi redimensionat încă în acest fel."
+
+#: libparted/fs/r/hfs/hfs.c:230 libparted/fs/r/hfs/hfs.c:573
+msgid "shrinking"
+msgstr "se micșorează"
+
+#: libparted/fs/r/hfs/hfs.c:242 libparted/fs/r/hfs/hfs.c:585
+msgid "Data relocation has failed."
+msgstr "Mutarea datelor a eșuat."
+
+#: libparted/fs/r/hfs/hfs.c:261
+msgid "Data relocation left some data in the end of the volume."
+msgstr "Mutarea datelor a lăsat câteva date la sfârșitul volumului."
+
+#: libparted/fs/r/hfs/hfs.c:300
+msgid "writing HFS Master Directory Block"
+msgstr "se scrie blocul directorului principal HFS"
+
+#: libparted/fs/r/hfs/hfs.c:412
+msgid "No valid HFS[+X] signature has been found while opening."
+msgstr "Nu a fost găsită nicio semnătură HFS[+X] validă în timpul deschiderii."
+
+#: libparted/fs/r/hfs/hfs.c:422
+#, c-format
+msgid "Version %d of HFS+ isn't supported."
+msgstr "Versiunea %d de HFS+ nu este suportată."
+
+#: libparted/fs/r/hfs/hfs.c:433
+#, c-format
+msgid "Version %d of HFSX isn't supported."
+msgstr "Versiunea %d de HFSX nu este suportată."
+
+#: libparted/fs/r/hfs/hfs.c:616
+msgid "Data relocation left some data at the end of the volume."
+msgstr "Mutarea datelor a lăsat câteva date la sfârșitul volumului."
+
+#: libparted/fs/r/hfs/hfs.c:664
+msgid "Error while writing the allocation file."
+msgstr "Eroare în timpul scrierii fișierului de alocare."
+
+#: libparted/fs/r/hfs/hfs.c:679
+msgid "Error while writing the compatibility part of the allocation file."
+msgstr ""
+"Eroare în timpul scrierii părții de compatibilitate a fișierului de alocare."
+
+#: libparted/fs/r/hfs/hfs.c:694
+msgid "writing HFS+ Volume Header"
+msgstr "se scrie antetul volumului HFS+"
+
+#: libparted/fs/r/hfs/hfs.c:794
+msgid "An error occurred while looking for the mandatory bad blocks file."
+msgstr ""
+"A apărut o eroare în timpul căutării fișierului obligatoriu de blocuri "
+"defectuoase."
+
+#: libparted/fs/r/hfs/hfs.c:847
+msgid ""
+"It seems there is an error in the HFS wrapper: the bad blocks file doesn't "
+"contain the embedded HFS+ volume."
+msgstr ""
+"Se pare că există o eroare în pachetul HFS: fișierul cu blocuri defectuoase "
+"nu conține volumul HFS+ încorporat."
+
+#: libparted/fs/r/hfs/hfs.c:883
+msgid "Sorry, HFS+ cannot be resized that way yet."
+msgstr "Ne pare rău, HFS+ nu poate fi redimensionat încă în acest fel."
+
+#: libparted/fs/r/hfs/hfs.c:918
+msgid "shrinking embedded HFS+ volume"
+msgstr "se micșorează volumul HFS+ încorporat"
+
+#: libparted/fs/r/hfs/hfs.c:935
+msgid "Resizing the HFS+ volume has failed."
+msgstr "Redimensionarea volumului HFS+ a eșuat."
+
+#: libparted/fs/r/hfs/hfs.c:942
+msgid "shrinking HFS wrapper"
+msgstr "se micșorează pachetul HFS"
+
+#: libparted/fs/r/hfs/hfs.c:951
+msgid "Updating the HFS wrapper has failed."
+msgstr "Actualizarea pachetului HFS a eșuat."
+
+#: libparted/fs/r/hfs/hfs.c:1053 libparted/fs/r/hfs/hfs.c:1138
+#, c-format
+msgid ""
+"This is not a real %s check.  This is going to extract special low level "
+"files for debugging purposes."
+msgstr ""
+"Aceasta nu este o verificare reală %s.  Aceasta va extrage fișiere speciale "
+"de nivel scăzut pentru scopuri de depanare."
+
+#: libparted/fs/r/hfs/journal.c:155
+msgid "Bad block list header checksum."
+msgstr "Suma de verificare a antetului listei de blocuri este greșită."
+
+#: libparted/fs/r/hfs/journal.c:168
+#, c-format
+msgid ""
+"Invalid size of a transaction block while replaying the journal (%i bytes)."
+msgstr ""
+"Dimensiune nevalidă a unui bloc de tranzacții în timpul reluării jurnalului "
+"(%i octeți)."
+
+#: libparted/fs/r/hfs/journal.c:260
+msgid ""
+"Journal stored outside of the volume are not supported.  Try to deactivate "
+"the journal and run Parted again."
+msgstr ""
+"Jurnalele stocate în afara volumului nu sunt suportate.  Încercați să "
+"dezactivați jurnalul și rulați din nou Parted."
+
+#: libparted/fs/r/hfs/journal.c:271
+msgid "Journal offset or size is not multiple of the sector size."
+msgstr ""
+"Decalajul sau dimensiunea jurnalului nu este un multiplu al dimensiunii "
+"sectorului."
+
+#: libparted/fs/r/hfs/journal.c:292
+msgid "Incorrect magic values in the journal header."
+msgstr "Valori magice incorecte în antetul jurnalului."
+
+#: libparted/fs/r/hfs/journal.c:302
+msgid "Journal size mismatch between journal info block and journal header."
+msgstr ""
+"Dimensiunea jurnalului nu este aceeași în blocul de informații din jurnal și "
+"în antetul jurnalului."
+
+#: libparted/fs/r/hfs/journal.c:314
+msgid "Some header fields are not multiple of the sector size."
+msgstr "Unele câmpuri din antet nu sunt multipli ai dimensiunii sectorului."
+
+#: libparted/fs/r/hfs/journal.c:323
+msgid ""
+"The sector size stored in the journal is not 512 bytes.  Parted only "
+"supports 512 bytes length sectors."
+msgstr ""
+"Dimensiunea sectorului stocat în jurnal nu este de 512 octeți.  Parted "
+"acceptă numai sectoare cu lungimea de 512 octeți."
+
+#: libparted/fs/r/hfs/journal.c:335
+msgid "Bad journal checksum."
+msgstr "Suma de control a jurnalului este greșită."
+
+#: libparted/fs/r/hfs/journal.c:355
+msgid ""
+"The journal is not empty.  Parted must replay the transactions before "
+"opening the file system.  This will modify the file system."
+msgstr ""
+"Jurnalul nu este gol.  Parted trebuie să reia tranzacțiile înainte de a "
+"deschide sistemul de fișiere.  Acest lucru va modifica sistemul de fișiere."
+
+#: libparted/fs/r/hfs/journal.c:383
+msgid ""
+"The volume header or the master directory block has changed while replaying "
+"the journal.  You should restart Parted."
+msgstr ""
+"Antetul volumului sau blocul directorului principal, s-a modificat în timpul "
+"reluării jurnalului.  Ar trebui să reporniți Parted."
+
+# R-GC, scrie:
+# care dintre cele două variante,
+# reprezintă traducerea corectă?
+# Eu, înclin, spre cea de-a doua...
+# ***
+# Referința mesajului, este:
+# libparted/fs/r/hfs/reloc.c:151 libparted/fs/r/hfs/reloc_plus.c:155
+# ***
+# Opinii / Idei ?
+# PS: mai jos, am lăsat «extent», neatins, cu o explicație
+#: libparted/fs/r/hfs/reloc.c:151 libparted/fs/r/hfs/reloc_plus.c:155
+msgid "An extent has not been relocated."
+msgstr ""
+"O extensie nu a fost realocată.\n"
+"O „întindere” nu a fost mutată."
+
+#: libparted/fs/r/hfs/reloc.c:251 libparted/fs/r/hfs/reloc_plus.c:307
+msgid ""
+"A reference to an extent comes from a place it should not.  You should check "
+"the file system!"
+msgstr ""
+"O referire la o anumită „întindere” vine dintr-un loc din care nu ar trebui. "
+"Ar trebui să verificați sistemul de fișiere!"
+
+#: libparted/fs/r/hfs/reloc.c:382
+msgid "This HFS volume has no catalog file.  This is very unusual!"
+msgstr ""
+"Acest volum HFS nu are fișier de catalog. Acest lucru este foarte neobișnuit!"
+
+# R-GC, scrie:
+# cred că:
+# „extents overflow file”, vrea să zică:
+# «fișier de depășire de zone», conform
+# explicațiilor găsite în pagina:
+# <https://en.wikipedia.org/wiki/Hierarchical_File_System>, cum nu sunt sigur
+# de această traducere, prefer să las:
+# „extents overflow” netraduse...
+# ***
+# Opinii / Idei ?
+#: libparted/fs/r/hfs/reloc.c:479
+msgid "This HFS volume has no extents overflow file.  This is quite unusual!"
+msgstr ""
+"Acest volum HFS nu are un fișier „extents overflow”.  Acest lucru este "
+"destul de neobișnuit!"
+
+#: libparted/fs/r/hfs/reloc.c:522 libparted/fs/r/hfs/reloc_plus.c:670
+msgid ""
+"The extents overflow file should not contain its own extents!  You should "
+"check the file system."
+msgstr ""
+"Fișierul „extents overflow” nu trebuie să conțină propriile „extents”!  Ar "
+"trebui să verificați sistemul de fișiere."
+
+#: libparted/fs/r/hfs/reloc.c:579 libparted/fs/r/hfs/reloc_plus.c:849
+msgid "Could not cache the file system in memory."
+msgstr "Nu s-a putut stoca în memoria tampon sistemul de fișiere."
+
+#: libparted/fs/r/hfs/reloc.c:640 libparted/fs/r/hfs/reloc_plus.c:910
+msgid "Bad blocks list could not be loaded."
+msgstr "Nu s-a putut încărca lista de blocuri defectuoase."
+
+#: libparted/fs/r/hfs/reloc.c:654 libparted/fs/r/hfs/reloc_plus.c:926
+msgid "An error occurred during extent relocation."
+msgstr "A apărut o eroare în timpul mutării „extent”."
+
+#: libparted/fs/r/hfs/reloc_plus.c:495
+msgid "This HFS+ volume has no catalog file.  This is very unusual!"
+msgstr ""
+"Acest volum HFS+ nu are fișier de catalog.  Acest lucru este foarte "
+"neobișnuit!"
+
+#: libparted/fs/r/hfs/reloc_plus.c:620
+msgid "This HFS+ volume has no extents overflow file.  This is quite unusual!"
+msgstr ""
+"Acest volum HFS+ nu are un fișier „extents overflow”.  Acest lucru este "
+"destul de neobișnuit!"
+
+#: parted/parted.c:137
+msgid "displays this help message"
+msgstr "afișează acest mesaj de ajutor"
+
+#: parted/parted.c:138
+msgid "lists partition layout on all block devices"
+msgstr "enumeră etichetele partițiilor de pe toate dispozitivele bloc"
+
+#: parted/parted.c:139
+msgid "displays machine parseable output"
+msgstr "afișează ieșirea analizabilă a mașinii"
+
+#: parted/parted.c:140
+msgid "displays JSON output"
+msgstr "afișează ieșirea JSON"
+
+#: parted/parted.c:141
+msgid "never prompts for user intervention"
+msgstr "nu solicită niciodată intervenția utilizatorului"
+
+#: parted/parted.c:142
+msgid "in script mode, fix instead of abort when asked"
+msgstr "în modul script, remediați în loc să anulați atunci când vi se cere"
+
+#: parted/parted.c:143
+msgid "displays the version"
+msgstr "afișează versiunea"
+
+#: parted/parted.c:144
+msgid "alignment for new partitions"
+msgstr "aliniere pentru partiții noi"
+
+#: parted/parted.c:157
+msgid ""
+"NUMBER is the partition number used by Linux.  On MS-DOS disk labels, the "
+"primary partitions number from 1 to 4, logical partitions from 5 onwards.\n"
+msgstr ""
+"NUMĂR este numărul partiției folosit de Linux.  Pe etichetele discurilor MS-"
+"DOS, partițiile primare sunt numărate de la 1 la 4, partițiile logice de la "
+"5 încolo.\n"
+
+#: parted/parted.c:160
+msgid "LABEL-TYPE is one of: "
+msgstr "TIP-ETICHETĂ este unul dintre: "
+
+#: parted/parted.c:161 parted/parted.c:162
+msgid "FLAG is one of: "
+msgstr "FANION este unul dintre: "
+
+#: parted/parted.c:163
+msgid "UNIT is one of: "
+msgstr "UNITATEA este una dintre: "
+
+#: parted/parted.c:164
+msgid "desired alignment: minimum or optimal"
+msgstr "alinierea dorită: minimă sau optimă"
+
+# R-GC, scrie:
+# știu că acordul gramatical, lipsește,
+# este greșit, dar mesajul se referă la:
+# Î: „Partiția ca tip, de care e?”, și nu la:
+# „De ce tip este partiția?”
+# R: „Partiție primară, partiție logică și
+# partiție extinsă”
+# ***
+# Opinii /Idei?
+#: parted/parted.c:165
+msgid "PART-TYPE is one of: primary, logical, extended\n"
+msgstr "TIP-PARTIȚIE este una dintre: primară, logică, extinsă\n"
+
+#: parted/parted.c:167
+msgid "FS-TYPE is one of: "
+msgstr "TIP-SF este unul dintre: "
+
+#: parted/parted.c:168
+msgid ""
+"START and END are disk locations, such as 4GB or 10%.  Negative values count "
+"from the end of the disk.  For example, -1s specifies exactly the last "
+"sector.\n"
+msgstr ""
+"START și SFÂRȘIT sunt locații de disc, cum ar fi 4GB sau 10%.  Valorile "
+"negative sunt calculate de la sfârșitul discului.  De exemplu, -1s specifică "
+"exact ultimul sector.\n"
+
+#: parted/parted.c:171
+msgid ""
+"END is disk location, such as 4GB or 10%.  Negative value counts from the "
+"end of the disk.  For example, -1s specifies exactly the last sector.\n"
+msgstr ""
+"SFÂRȘIT este locația discului, cum ar fi 4GB sau 10%. Valoarea negativă se "
+"calculează de la sfârșitul discului. De exemplu, -1s specifică exact ultimul "
+"sector.\n"
+
+#: parted/parted.c:174
+msgid "STATE is one of: on, off\n"
+msgstr "STARE este una dintre: on, off\n"
+
+#: parted/parted.c:175
+msgid "DEVICE is usually /dev/hda or /dev/sda\n"
+msgstr "DISPOZITIV este de obicei  /dev/hda or /dev/sda\n"
+
+#: parted/parted.c:176
+msgid "NAME is any word you want\n"
+msgstr "NUME este orice cuvânt pe care îl doriți\n"
+
+#: parted/parted.c:179
+msgid ""
+"Copyright (C) 1998 - 2006 Free Software Foundation, Inc.\n"
+"This program is free software, covered by the GNU General Public License.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+msgstr ""
+"Copyright © 1998 - 2006 Free Software Foundation, Inc.\n"
+"Acest program e software liber, distribuit sub Licența publică generală "
+"GNU. \n"
+"\n"
+"Acest program este distribuit cu speranța că va fi folositor, dar FĂRĂ NICI\n"
+"O GARANȚIE; chiar şi fără garanția implicită de VÂNZARE sau POTRIVIRE\n"
+"PENTRU UN SCOP ANUME.  Vedeți Licența Publică Generală GNU (GNU GPL)\n"
+"pentru detalii suplimentare.\n"
+
+#: parted/parted.c:229
+#, c-format
+msgid "%0.f%%\t(time left %.2d:%.2d)"
+msgstr "%0.f%% (timpul rămas %.2d:%.2d)"
+
+#: parted/parted.c:248
+#, c-format
+msgid "Partition %s is being used. Are you sure you want to continue?"
+msgstr "Partiția %s este utilizată. Sigur doriți să continuați?"
+
+#: parted/parted.c:269
+#, c-format
+msgid "Partition(s) on %s are being used."
+msgstr "Partiția(ile) de pe %s este(sunt) utilizată(e)."
+
+#: parted/parted.c:281
+#, c-format
+msgid ""
+"The existing disk label on %s will be destroyed and all data on this disk "
+"will be lost. Do you want to continue?"
+msgstr ""
+"Eticheta de disc existentă pe %s va fi distrusă și toate datele de pe acest "
+"disc se vor pierde. Doriți să continuați?"
+
+#: parted/parted.c:542
+msgid "New disk label type?"
+msgstr "Nou tip de etichetă de disc?"
+
+#: parted/parted.c:680
+msgid "Partition type?"
+msgstr "Tipul partiției?"
+
+#: parted/parted.c:698 parted/parted.c:902
+msgid "Partition name?"
+msgstr "Numele partiției?"
+
+#: parted/parted.c:708
+msgid "File system type?"
+msgstr "Tipul sistemului de fișiere?"
+
+#: parted/parted.c:713 parted/parted.c:1683
+msgid "Start?"
+msgstr "Începe(de unde)?"
+
+#: parted/parted.c:715 parted/parted.c:1685 parted/parted.c:1768
+msgid "End?"
+msgstr "Termină(până unde)?"
+
+#: parted/parted.c:782
+#, c-format
+msgid ""
+"You requested a partition from %s to %s (sectors %llu..%llu).\n"
+"The closest location we can manage is %s to %s (sectors %llu..%llu).%s"
+msgstr ""
+"Ați solicitat o partiție de la %s la %s (sectoare %llu..%llu).\n"
+"Cea mai apropiată locație pe care o puteți utiliza este %s la %s (sectoarele "
+"%llu..%llu).%s"
+
+#: parted/parted.c:791
+msgid ""
+"\n"
+"Is this still acceptable to you?"
+msgstr ""
+"\n"
+"Este aceasta acceptabil pentru tine?"
+
+#: parted/parted.c:814
+#, c-format
+msgid ""
+"The resulting partition is not properly aligned for best performance: %s"
+msgstr ""
+"Partiția rezultată nu este aliniată corect pentru o performanță optimă: %s"
+
+#: parted/parted.c:816 parted/parted.c:1925
+msgid "unknown (malloc failed)"
+msgstr "necunoscută (malloc a eșuat, memorie disponibilă insuficientă)"
+
+#: parted/parted.c:894
+#, c-format
+msgid "%s disk labels do not support partition name."
+msgstr "etichetele de disc %s nu acceptă numele partiției."
+
+#: parted/parted.c:899 parted/parted.c:1748 parted/parted.c:1814
+#: parted/parted.c:1908 parted/parted.c:1983
+msgid "Partition number?"
+msgstr "Numărul partiției?"
+
+#: parted/parted.c:1050
+#, c-format
+msgid "BIOS cylinder,head,sector geometry: %d,%d,%d.  Each cylinder is %s.\n"
+msgstr ""
+"Dispunerea logică a discului conform BIOS: %d,%d,%d (cilindri,capete,"
+"sectoare).  Fiecare cilindru este de %s.\n"
+
+#: parted/parted.c:1137
+#, c-format
+msgid "Model: %s (%s)\n"
+msgstr "Model: %s (%s)\n"
+
+#: parted/parted.c:1139
+#, c-format
+msgid "Disk %s: %s\n"
+msgstr "Disc %s: %s\n"
+
+#: parted/parted.c:1140
+#, c-format
+msgid "Sector size (logical/physical): %lldB/%lldB\n"
+msgstr "Dimensiunea sectorului (logică/fizică): %lldB/%lldB\n"
+
+#: parted/parted.c:1152
+#, c-format
+msgid "Partition Table: %s\n"
+msgstr "Tabel de partiții: %s\n"
+
+#: parted/parted.c:1153
+#, c-format
+msgid "Disk Flags: %s\n"
+msgstr "Fanioane disc: %s\n"
+
+#: parted/parted.c:1279 parted/parted.c:1282
+msgid "Number"
+msgstr "Număr"
+
+#: parted/parted.c:1279 parted/parted.c:1282
+msgid "Start"
+msgstr "Start"
+
+#: parted/parted.c:1280 parted/parted.c:1283
+msgid "End"
+msgstr "Sfârşit"
+
+#: parted/parted.c:1283
+msgid "Size"
+msgstr "Dimensiune"
+
+#: parted/parted.c:1287
+msgid "Type"
+msgstr "Tip"
+
+#: parted/parted.c:1289
+msgid "File system"
+msgstr "Sistem de fișiere"
+
+#: parted/parted.c:1292
+msgid "Name"
+msgstr "Nume"
+
+#: parted/parted.c:1294
+msgid "Flags"
+msgstr "Fanioane"
+
+#: parted/parted.c:1352
+msgid "Free Space"
+msgstr "Spațiu liber"
+
+#: parted/parted.c:1570
+#, c-format
+msgid ""
+"A %s %s partition was found at %s -> %s.  Do you want to add it to the "
+"partition table?"
+msgstr ""
+"O partiție %s %s a fost găsită la %s -> %s.  Doriți s-o adăugați la tabelul "
+"de partiții?"
+
+#: parted/parted.c:1613
+msgid "searching for file systems"
+msgstr "se caută după sisteme de fișiere"
+
+#: parted/parted.c:1720
+msgid "The resize command has been removed in parted 3.0"
+msgstr "Comanda „resize” a fost eliminată în parted 3.0"
+
+#: parted/parted.c:1782
+msgid ""
+"Shrinking a partition can cause data loss, are you sure you want to continue?"
+msgstr ""
+"Micșorarea unei partiții poate provoca pierderi de date; sunteți sigur că "
+"doriți să continuați?"
+
+#: parted/parted.c:1838
+msgid "New device?"
+msgstr "Dispozitiv nou?"
+
+#: parted/parted.c:1906
+msgid "alignment type(min/opt)"
+msgstr "tipul de aliniere (minimă/optimă)"
+
+#: parted/parted.c:1921
+#, c-format
+msgid "%d aligned\n"
+msgstr "%d aliniat\n"
+
+#: parted/parted.c:1923
+#, c-format
+msgid "%d not aligned: %s\n"
+msgstr "%d nealiniat: %s\n"
+
+#: parted/parted.c:1948 parted/parted.c:1985
+msgid "Flag to Invert?"
+msgstr "Fanion pentru inversare?"
+
+#: parted/parted.c:1953 parted/parted.c:1990
+msgid "New state?"
+msgstr "Stare nouă?"
+
+#: parted/parted.c:2036
+msgid "Unit?"
+msgstr "Unitate?"
+
+# R-GC, scrie:
+# autorii de Parted, oferă posibilitatea traducerii
+# comenzilor utilizate în cadrul programului, dar
+# din următoarele motive, n-am făcut-o, ordinea
+# e arbitrară:
+# - necunoașterii poziției diacriticelor pe tastatură
+# - necunoașterii formei de ale folosi (Alt Gr + *)
+# - dorința uniformizării (de exp: dacă pentru cele-
+# lalte programe, folosim (--)help pentru ca să se
+# afișeze ajutorul pentru programul respectiv, aici
+# să rămînă la fel, nu tastînd «ajutor»
+#: parted/parted.c:2171
+msgid "align-check"
+msgstr "align-check"
+
+#: parted/parted.c:2174
+msgid ""
+"align-check TYPE N                       check partition N for TYPE(min|opt) "
+"alignment"
+msgstr ""
+"align-check TIP N                        verifică partiția N pentru "
+"alinierea TIP(min|opt)"
+
+#: parted/parted.c:2182
+msgid "help"
+msgstr "help"
+
+# R-GC, scrie:
+# Notă:
+# acest mesaj, face parte din mesajele de ajutor,
+# afișate la lansarea comenzii «parted --help», așa
+# că, vă rog, nu-i modificați structura...
+#: parted/parted.c:2185
+msgid ""
+"help [COMMAND]                           print general help, or help on "
+"COMMAND"
+msgstr ""
+"help [COMANDĂ]                           afișează informații de ajutor "
+"general, sau despre COMANDĂ"
+
+#: parted/parted.c:2191
+msgid "mklabel"
+msgstr "mklabel"
+
+#: parted/parted.c:2191
+msgid "mktable"
+msgstr "mktable"
+
+#: parted/parted.c:2194
+msgid ""
+"mklabel,mktable LABEL-TYPE               create a new disklabel (partition "
+"table)"
+msgstr ""
+"mklabel,mktable TIP-ETICHETĂ             creează o nouă etichetă de disc "
+"(tabel de partiții)"
+
+#: parted/parted.c:2200
+msgid "mkpart"
+msgstr "mkpart"
+
+#: parted/parted.c:2203
+msgid "mkpart PART-TYPE [FS-TYPE] START END     make a partition"
+msgstr "mkpart TIP-PART [TIP-SF] START SFÂRȘIT   creează o partiție"
+
+#: parted/parted.c:2209
+msgid ""
+"'mkpart' makes a partition without creating a new file system on the "
+"partition.  FS-TYPE may be specified to set an appropriate partition ID.\n"
+msgstr ""
+"«mkpart» creează o partiție fără să creeze un nou sistem de fișiere pe acea "
+"partiție. TIP-SF poate fi specificat pentru a stabili un anumit ID de "
+"partiție.\n"
+
+#: parted/parted.c:2214
+msgid "name"
+msgstr "name"
+
+#: parted/parted.c:2217
+msgid "name NUMBER NAME                         name partition NUMBER as NAME"
+msgstr ""
+"name NUMĂR NUME                          numește partiția NUMĂR ca NUME"
+
+#: parted/parted.c:2222
+msgid "print"
+msgstr "print"
+
+#: parted/parted.c:2225
+msgid ""
+"print [devices|free|list,all]            display the partition table, or "
+"available devices, or free space, or all found partitions"
+msgstr ""
+"print [devices|free|list,all]            afișează tabelul de partiții, "
+"dispozitivele disponibile,\n"
+"                                                            spațiul liber "
+"sau toate partițiile găsite"
+
+#: parted/parted.c:2229
+msgid ""
+"Without arguments, 'print' displays the entire partition table. However with "
+"the following arguments it performs various other actions.\n"
+msgstr ""
+"Fără argumente, «print» afișează întregul tabel de partiţii.  Cu următoarele "
+"argumente arată informații mai specifice: \n"
+
+#: parted/parted.c:2231
+msgid "  devices   : display all active block devices\n"
+msgstr "  devices   : afișează toate dispozitivele bloc active\n"
+
+#: parted/parted.c:2232
+msgid ""
+"  free      : display information about free unpartitioned space on the "
+"current block device\n"
+msgstr ""
+"  free      : afișează informații despre spațiul liber nepartiționat pe "
+"dispozitivul bloc curent\n"
+
+#: parted/parted.c:2234
+msgid ""
+"  list, all : display the partition tables of all active block devices\n"
+msgstr ""
+"  list, all : afișează tabelele de partiții ale tuturor dispozitivelor bloc "
+"active\n"
+
+#: parted/parted.c:2238
+msgid "quit"
+msgstr "quit"
+
+#: parted/parted.c:2241
+msgid "quit                                     exit program"
+msgstr "quit                                     ieșire din program"
+
+#: parted/parted.c:2246
+msgid "rescue"
+msgstr "rescue"
+
+#: parted/parted.c:2249
+msgid ""
+"rescue START END                         rescue a lost partition near START "
+"and END"
+msgstr ""
+"rescue START SFÂRȘIT                     recuperează o partiție pierdută "
+"aflată între START și SFÂRȘIT"
+
+#: parted/parted.c:2255
+msgid "resize"
+msgstr "resize"
+
+#: parted/parted.c:2258
+msgid "The resize command was removed in parted 3.0\n"
+msgstr "Comanda „resize” a fost eliminată în parted 3.0\n"
+
+#: parted/parted.c:2261
+msgid "resizepart"
+msgstr "resizepart"
+
+#: parted/parted.c:2264
+msgid "resizepart NUMBER END                    resize partition NUMBER"
+msgstr ""
+"resizepart NUMĂR SFÂRȘIT                 redimensionează partiția NUMĂR"
+
+#: parted/parted.c:2269
+msgid "rm"
+msgstr "rm"
+
+#: parted/parted.c:2272
+msgid "rm NUMBER                                delete partition NUMBER"
+msgstr "rm NUMĂR                                 șterge partiția NUMĂR"
+
+#: parted/parted.c:2277
+msgid "select"
+msgstr "select"
+
+#: parted/parted.c:2280
+msgid "select DEVICE                            choose the device to edit"
+msgstr "select UNITATE                           alege unitatea de editat"
+
+#: parted/parted.c:2285
+msgid "disk_set"
+msgstr "disk_set"
+
+#: parted/parted.c:2288
+msgid ""
+"disk_set FLAG STATE                      change the FLAG on selected device"
+msgstr ""
+"disk_set FANION STARE                    schimbă FANION(ul) de pe "
+"dispozitivul selectat"
+
+#: parted/parted.c:2293
+msgid "disk_toggle"
+msgstr "disk_toggle"
+
+#: parted/parted.c:2296
+msgid ""
+"disk_toggle [FLAG]                       toggle the state of FLAG on "
+"selected device"
+msgstr ""
+"disk_toggle [FANION]                     comută starea FANION(ului) pe "
+"dispozitivul selectat"
+
+#: parted/parted.c:2302
+msgid "set"
+msgstr "set"
+
+#: parted/parted.c:2305
+msgid ""
+"set NUMBER FLAG STATE                    change the FLAG on partition NUMBER"
+msgstr ""
+"set NUMĂR FANION STARE                   schimbă FANION(ul) pe partiția NUMĂR"
+
+#: parted/parted.c:2311
+msgid "toggle"
+msgstr "toggle"
+
+#: parted/parted.c:2314
+msgid ""
+"toggle [NUMBER [FLAG]]                   toggle the state of FLAG on "
+"partition NUMBER"
+msgstr ""
+"toggle [NUMĂR [FANION]]                  comută starea FANION(ului) pe "
+"partiția NUMĂR"
+
+#: parted/parted.c:2320
+msgid "unit"
+msgstr "unit"
+
+#: parted/parted.c:2323
+msgid "unit UNIT                                set the default unit to UNIT"
+msgstr ""
+"unit UNITATE                             setează unitatea implicită ca "
+"UNITATE"
+
+#: parted/parted.c:2328
+msgid "version"
+msgstr "version"
+
+#: parted/parted.c:2331
+msgid ""
+"version                                  display the version number and "
+"copyright information of GNU Parted"
+msgstr ""
+"version                                  afișează numărul versiunii și "
+"informațiile despre drepturile de autor ale GNU Parted"
+
+#: parted/parted.c:2335
+msgid ""
+"'version' displays copyright and version information corresponding to this "
+"copy of GNU Parted\n"
+msgstr ""
+"„version” afișează informații despre drepturile de autor și versiunea "
+"corespunzătoare a acestei copii de GNU Parted\n"
+
+#: parted/parted.c:2405
+#, c-format
+msgid "Usage: %s [-hlmsfv] [-a<align>] [DEVICE [COMMAND [PARAMETERS]]...]\n"
+msgstr ""
+"Utilizare: %s [-hlmsfv] [-a<align>] [DISPOZITIV [COMANDĂ [PARAMETRII]]...]\n"
+
+#: parted/parted.c:2449
+msgid "No device found"
+msgstr "Nu a fost găsit niciun dispozitiv"
+
+#: parted/parted.c:2486
+msgid "WARNING: You are not superuser.  Watch out for permissions.\n"
+msgstr "AVERTISMENT: Nu sunteți superutilizator.  Atenție la permisiuni.\n"
+
+#: parted/parted.c:2519
+msgid ""
+"You should reinstall your boot loader before rebooting.  Read section 4 of "
+"the Parted User documentation for more information."
+msgstr ""
+"Ar trebui să reinstalați încărcătorul de pornire înainte de a reporni.  "
+"Citiți secțiunea 4 din documentația utilizatorului Parted pentru mai multe "
+"informații."
+
+#: parted/parted.c:2526
+msgid "You may need to update /etc/fstab.\n"
+msgstr "Este posibil să fie nevoie să actualizați /etc/fstab.\n"
+
+#: parted/ui.c:164
+msgid "Welcome to GNU Parted! Type 'help' to view a list of commands.\n"
+msgstr ""
+"Bine ați venit la GNU Parted!  Tastați „help” pentru a vedea o listă de "
+"comenzi.\n"
+
+#: parted/ui.c:167
+msgid ""
+"Usage: parted [OPTION]... [DEVICE [COMMAND [PARAMETERS]...]...]\n"
+"Apply COMMANDs with PARAMETERS to DEVICE.  If no COMMAND(s) are given, run "
+"in\n"
+"interactive mode.\n"
+msgstr ""
+"Utilizare: parted [OPȚIUNE]... {UNITATE [COMANDĂ [PARAMETRII]...]...]\n"
+"Aplică COMANDA cu PARAMETRII la UNITATE.  Dacă nu este dată nici o COMANDĂ,\n"
+"rulează în mod interactiv.\n"
+
+#: parted/ui.c:172
+#, c-format
+msgid ""
+"\n"
+"\n"
+"You found a bug in GNU Parted! Here's what you have to do:\n"
+"\n"
+"Don't panic! The bug has most likely not affected any of your data.\n"
+"Help us to fix this bug by doing the following:\n"
+"\n"
+"Check whether the bug has already been fixed by checking\n"
+"the last version of GNU Parted that you can find at:\n"
+"\n"
+"\thttp://ftp.gnu.org/gnu/parted/\n"
+"\n"
+"Please check this version prior to bug reporting.\n"
+"\n"
+"If this has not been fixed yet or if you don't know how to check,\n"
+"please visit the GNU Parted website:\n"
+"\n"
+"\thttp://www.gnu.org/software/parted\n"
+"\n"
+"for further information.\n"
+"\n"
+"Your report should contain the version of this release (%s)\n"
+"along with the error message below, the output of\n"
+"\n"
+"\tparted DEVICE unit co print unit s print\n"
+"\n"
+"and the following history of commands you entered.\n"
+"Also include any additional information about your setup you\n"
+"consider important.\n"
+msgstr ""
+"\n"
+"\n"
+"Ați găsit o eroare în GNU Parted! Iată ce trebuie să faceți:\n"
+"\n"
+"Nu intrați în panică! Eroarea, cel mai probabil, nu a afectat niciuna\n"
+"dintre datele dumneavoastră.\n"
+"Ajutați-ne să remediam această eroare făcând următoarele:\n"
+"\n"
+"Verificați dacă eroarea a fost deja remediată verificând ultima\n"
+"versiune de GNU Parted pe care o puteți găsi la:\n"
+"\n"
+"\thttp://ftp.gnu.org/gnu/parted/\n"
+"\n"
+"Verificați această versiune înainte de raportarea erorilor.\n"
+"\n"
+"Dacă acest lucru nu a fost remediat încă sau dacă nu știți cum\n"
+"să verificați, vizitați site-ul web GNU Parted:\n"
+"\n"
+"\thttp://www.gnu.org/software/parted\n"
+"\n"
+"pentru informații suplimentare.\n"
+"\n"
+"Raportul dvs. ar trebui să conțină versiunea acestei ediții (%s)\n"
+"împreună cu mesajul de eroare de mai jos, ieșirea comenzii:\n"
+"\n"
+"\t«parted DEVICE unit co print unit s print»\n"
+"\n"
+"urmat de istoricul comenzilor pe care le-ați introdus.\n"
+"Includeți, de asemenea, orice informații suplimentare despre\n"
+"configurarea dvs. pe care le considerați importante.\n"
+
+#: parted/ui.c:293
+msgid ""
+"\n"
+"Command History:\n"
+msgstr ""
+"\n"
+"Istoricul comenzilor:\n"
+
+#: parted/ui.c:356
+msgid ""
+"\n"
+"Error: SEGV_MAPERR (Address not mapped to object)\n"
+msgstr ""
+"\n"
+"Eroare: SEGV_MAPERR (Adresa nu este cartografiată la obiect)\n"
+
+#: parted/ui.c:362
+msgid ""
+"\n"
+"Error: SEGV_ACCERR (Invalid permissions for mapped object)\n"
+msgstr ""
+"\n"
+"Eroare: SEGV_ACCERR (permisiuni nevalide pentru obiectul cartografiat)\n"
+
+#: parted/ui.c:367
+msgid ""
+"\n"
+"Error: A general SIGSEGV signal was encountered.\n"
+msgstr ""
+"\n"
+"Eroare: A fost întâlnit un semnal SIGSEGV general.\n"
+
+#: parted/ui.c:391
+msgid ""
+"\n"
+"Error: FPE_INTDIV (Integer: divide by zero)"
+msgstr ""
+"\n"
+"Eroare: FPE_INTDIV (Număr întreg: împărțire la zero)"
+
+#: parted/ui.c:396
+msgid ""
+"\n"
+"Error: FPE_INTOVF (Integer: overflow)"
+msgstr ""
+"\n"
+"Eroare: FPE_INTOVF (Număr întreg: depășire)"
+
+#: parted/ui.c:401
+msgid ""
+"\n"
+"Error: FPE_FLTDIV (Float: divide by zero)"
+msgstr ""
+"\n"
+"Eroare: FPE_FLTDIV (Virgulă flotantă: împărțire la zero)"
+
+#: parted/ui.c:406
+msgid ""
+"\n"
+"Error: FPE_FLTOVF (Float: overflow)"
+msgstr ""
+"\n"
+"Eroare: FPE_FLTOVF (Virgulă flotantă: depășire)"
+
+#: parted/ui.c:411
+msgid ""
+"\n"
+"Error: FPE_FLTUND (Float: underflow)"
+msgstr ""
+"\n"
+"Eroare: FPE_FLTUND (Virgulă flotantă: subnivel)"
+
+#: parted/ui.c:416
+msgid ""
+"\n"
+"Error: FPE_FLTRES (Float: inexact result)"
+msgstr ""
+"\n"
+"Eroare: FPE_FLTRES (Virgulă flotantă: rezultat inexact)"
+
+#: parted/ui.c:421
+msgid ""
+"\n"
+"Error: FPE_FLTINV (Float: invalid operation)"
+msgstr ""
+"\n"
+"Eroare: FPE_FLTINV (Virgulă flotantă: operație nevlidă)"
+
+#: parted/ui.c:426
+msgid ""
+"\n"
+"Error: FPE_FLTSUB (Float: subscript out of range)"
+msgstr ""
+"\n"
+"Eroare: FPE_FLTSUB (virgulă flotantă: sub-indice în afara intervalului)"
+
+#: parted/ui.c:431
+msgid ""
+"\n"
+"Error: A general SIGFPE signal was encountered."
+msgstr ""
+"\n"
+"Eroare: A fost întâlnit un semnal SIGFPE general."
+
+#: parted/ui.c:455
+msgid ""
+"\n"
+"Error: ILL_ILLOPC (Illegal Opcode)"
+msgstr ""
+"\n"
+"Eroare: ILL_ILLOPC (Cod operațional ilegal)"
+
+#: parted/ui.c:460
+msgid ""
+"\n"
+"Error: ILL_ILLOPN (Illegal Operand)"
+msgstr ""
+"\n"
+"Eroare: ILL_ILLOPN (Operand ilegal)"
+
+#: parted/ui.c:465
+msgid ""
+"\n"
+"Error: ILL_ILLADR (Illegal addressing mode)"
+msgstr ""
+"\n"
+"Eroare: ILL_ILLADR (Mod de adresare ilegal)"
+
+#: parted/ui.c:470
+msgid ""
+"\n"
+"Error: ILL_ILLTRP (Illegal Trap)"
+msgstr ""
+"\n"
+"Eroare: ILL_ILLTRP (Capturare ilegală)"
+
+#: parted/ui.c:475
+msgid ""
+"\n"
+"Error: ILL_PRVOPC (Privileged Opcode)"
+msgstr ""
+"\n"
+"Eroare: ILL_PRVOPC (Cod operațional privilegiat)"
+
+#: parted/ui.c:480
+msgid ""
+"\n"
+"Error: ILL_PRVREG (Privileged Register)"
+msgstr ""
+"\n"
+"Eroare: ILL_PRVREG (Registrare privilegiată)"
+
+#: parted/ui.c:485
+msgid ""
+"\n"
+"Error: ILL_COPROC (Coprocessor Error)"
+msgstr ""
+"\n"
+"Eroare: ILL_COPROC (Eroare coprocesor)"
+
+#: parted/ui.c:490
+msgid ""
+"\n"
+"Error: ILL_BADSTK (Internal Stack Error)"
+msgstr ""
+"\n"
+"Eroare: ILL_BADSTK (Eroare internă de stivă)"
+
+#: parted/ui.c:495
+msgid ""
+"\n"
+"Error: A general SIGILL signal was encountered."
+msgstr ""
+"\n"
+"Eroare: A fost întâlnit un semnal SIGILL general."
+
+#: parted/ui.c:901
+#, c-format
+msgid "invalid token: %s"
+msgstr "simbol nevalid: %s"
+
+#: parted/ui.c:1082
+msgid "Expecting a partition number."
+msgstr "Se așteaptă un număr de partiție."
+
+#: parted/ui.c:1091
+msgid "Partition doesn't exist."
+msgstr "Partiția nu există."
+
+#: parted/ui.c:1111
+msgid "Expecting a file system type."
+msgstr "Se așteaptă un tip de sistem de fișiere."
+
+#: parted/ui.c:1118
+#, c-format
+msgid "Unknown file system type \"%s\"."
+msgstr "Tip de sistem de fișiere necunoscut \"%s\"."
+
+#: parted/ui.c:1139
+msgid "Expecting a disk label type."
+msgstr "Se așteaptă un tip de etichetă de disc."
+
+#: parted/ui.c:1170 parted/ui.c:1206
+msgid "No flags supported"
+msgstr "Nu sunt suportate fanioane"
+
+#: parted/ui.c:1280
+msgid "Can't create any more partitions."
+msgstr "Nu se mai poate crea nici o partiție."
+
+#: parted/ui.c:1290
+msgid "Expecting a partition type."
+msgstr "Se așteaptă un tip de partiție."
+
+#: parted/ui.c:1439
+msgid "on"
+msgstr "pornit"
+
+#: parted/ui.c:1440
+msgid "off"
+msgstr "oprit"
+
+#: parted/ui.c:1457
+msgid "optimal"
+msgstr "optim"
+
+#: parted/ui.c:1458
+msgid "minimal"
+msgstr "minim"
+
+#: parted/ui.c:1591
+msgid "OPTIONs:"
+msgstr "OPȚIUNI:"
+
+#: parted/ui.c:1596
+msgid "COMMANDs:"
+msgstr "COMENZI:"
+
+#: parted/ui.c:1599
+#, c-format
+msgid ""
+"\n"
+"Report bugs to %s\n"
+msgstr ""
+"\n"
+"Raportați erorile la %s.\n"
+
+#: parted/ui.c:1606
+#, c-format
+msgid "Using %s\n"
+msgstr "Se utilizează %s\n"
+
+#: parted/ui.c:1686
+msgid "This command does not make sense in non-interactive mode.\n"
+msgstr "Această comandă nu are sens în modul neinteractiv.\n"
+
+#~ msgid ""
+#~ "  NUMBER    : display more detailed information about this particular "
+#~ "partition\n"
+#~ msgstr ""
+#~ "  NUMĂR     : afișează informații mai detaliate despre această partiție "
+#~ "particulară\n"
