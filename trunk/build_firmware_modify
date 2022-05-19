@@ -31,13 +31,13 @@ echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=y" >> .config #simple-obfs混淆插件
 ##科学上网##
 
 ##广告管理##
-echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=n" >> .config #adbyby plus+
+echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> .config #adbyby plus+
 echo "CONFIG_FIRMWARE_INCLUDE_KOOLPROXY=n" >> .config #KP广告过滤
 ##广告管理##
 
 ##DNS服务##
-echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=n" >> .config #smartdns
-echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=n" >> .config #adg DNS去AD
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config #smartdns
+echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config #adg DNS去AD
 
 ##DNS服务##
 
@@ -53,13 +53,13 @@ echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> .config #网易云解锁GO版本执�
 
 ##内网穿透服务##
 echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
-echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=n" >> .config #aliddns
+echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> .config #aliddns
 echo "CONFIG_FIRMWARE_INCLUDE_FRPC=n" >> .config #frpc
 echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >> .config #frps
-echo "CONFIG_FIRMWARE_INCLUDE_DDNSTO=n" >> .config #ddnsto
+echo "CONFIG_FIRMWARE_INCLUDE_DDNSTO=y" >> .config #ddnsto
 #echo "CONFIG_FIRMWARE_INCLUDE_NPC=n" >> .config #npc
 ##内网穿透服务##
-echo "CONFIG_FIRMWARE_INCLUDE_ALDRIVER=y" >> .config
+echo "CONFIG_FIRMWARE_INCLUDE_ALDRIVER=n" >> .config
 sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
 
 fi
