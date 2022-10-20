@@ -1,5 +1,5 @@
-SRC_NAME=ttyd-1.6.3
-SRC_URL=https://github.com/tsl0922/ttyd/archive/1.6.3.tar.gz
+SRC_NAME=ttyd-1.7.2
+SRC_URL=https://github.com/tsl0922/ttyd/archive/1.7.2.tar.gz
 
 THISDIR = $(shell pwd)
 
@@ -27,7 +27,9 @@ config_test:
 
 configure:
 	( mkdir -p $(SRC_NAME)/build && cd $(SRC_NAME)/build ; \
-	cmake -DCMAKE_TOOLCHAIN_FILE=../../cross-mipsel-linux.cmake -DCMAKE_BUILD_TYPE=RELEASE .. \
+	cmake -DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_TOOLCHAIN_FILE=$(CONFIG_CMAKE_TOOLCHAIN_FILE) \
+	.. \
 	)
 
 clean:
