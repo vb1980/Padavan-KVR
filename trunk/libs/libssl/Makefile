@@ -1,4 +1,4 @@
-SRC_NAME=openssl-1.1.1q
+SRC_NAME=openssl-1.1.1s
 SRC_URL=https://www.openssl.org/source/$(SRC_NAME).tar.gz
 
 # openssl use CROSS_COMPILE prefix
@@ -23,15 +23,14 @@ OPENSSL_CIPHERS = no-capieng no-cms no-rfc3779 no-seed \
   no-sm3 no-sm4 no-afalgeng no-comp
 
 ifneq ($(CONFIG_FIRMWARE_INCLUDE_SSWAN),y)
-OPENSSL_OPTIONS += no-rc2
+OPENSSL_CIPHERS += no-rc2
 endif
 
-ifeq (,$(filter y,$(CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC) $(CONFIG_FIRMWARE_INCLUDE_TOR)))
-OPENSSL_OPTIONS += no-ec
+ifneq ($(CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC),y)
+OPENSSL_CIPHERS += no-ec
 endif
 
-#all: download_test extract_test config_test
-all: config_test
+all: download_test extract_test config_test
 	$(MAKE) -j$(HOST_NCPU) -C $(SRC_NAME)
 
 download_test:
@@ -73,16 +72,11 @@ install:
 	$(MAKE) -C $(SRC_NAME) install_ssldirs DESTDIR="$(STAGEDIR)"
 	rm -f $(DESTDIR)/lib/libssl.a
 	rm -f $(DESTDIR)/lib/libcrypto.a
-	# fix pkgconfig
-	sed -i 's,^prefix=.*,prefix=$(STAGEDIR),g' $(STAGEDIR)/lib/pkgconfig/libcrypto.pc
-	sed -i 's,^prefix=.*,prefix=$(STAGEDIR),g' $(STAGEDIR)/lib/pkgconfig/libssl.pc
-	sed -i 's,^prefix=.*,prefix=$(STAGEDIR),g' $(STAGEDIR)/lib/pkgconfig/openssl.pc
 
 romfs:
 	cp -fP $(DESTDIR)/lib/libssl.so* $(ROMFSDIR)/lib
 	cp -fP $(DESTDIR)/lib/libcrypto.so* $(ROMFSDIR)/lib
 	$(ROMFSINST) /etc_ro/openssl.cnf
-	$(ROMFSINST) /etc_ro/ca-certificates.crt
 ifeq ($(CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE),y)
 	$(ROMFSINST) $(SRC_NAME)/apps/openssl /usr/bin/openssl
 endif

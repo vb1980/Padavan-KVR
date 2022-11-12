@@ -237,9 +237,38 @@ stop_udpxy(void)
 void
 start_udpxy(char *wan_ifname)
 {
-	if (nvram_get_int("udpxy_enable_x") < 1024)
+	int port = nvram_get_int("udpxy_enable_x");
+	if (port < 1024)
 		return;
-
+	
+#if defined (APP_MSD_LITE)
+	char *src_conf = "/etc_ro/msd_lite.conf";
+	char *dst_conf = "/etc/storage/msd_lite.conf";
+	if (!check_if_file_exist(dst_conf))
+		doSystem("cp -f %s %s", src_conf, dst_conf);
+	char line[256];
+	FILE *fp1, *fp2;
+	fp1 = fopen(dst_conf, "w");
+	if (fp1) {
+		fp2 = fopen(src_conf, "r");
+		if (fp2) {
+			while (fgets(line, sizeof(line), fp2)){
+				if (strstr(line, "<ifName>"))
+					snprintf(line, sizeof(line), "\t\t\t\t<ifName>%s</ifName>\n", wan_ifname);
+				else if (strstr(line, "<bind><address>0.0.0.0:"))
+					snprintf(line, sizeof(line), "\t\t\t<bind><address>0.0.0.0:%d</address><fAcceptFilter>y</fAcceptFilter></bind>\n", port);
+				else if (strstr(line, "<bind><address>[::]:"))
+					snprintf(line, sizeof(line), "\t\t\t<bind><address>[::]:%d</address></bind>\n", port);
+				fprintf(fp1, "%s", line);
+			}
+			fclose(fp2);
+		}
+		fclose(fp1);
+	}
+	nvram_set("msd_lite_enable", "1");
+	eval("/usr/bin/msd_lite", "-d", "-c", dst_conf);
+#else
+	
 	eval("/usr/sbin/udpxy",
 		"-m", wan_ifname,
 		"-p", nvram_safe_get("udpxy_enable_x"),
@@ -247,6 +276,7 @@ start_udpxy(char *wan_ifname)
 		"-c", nvram_safe_get("udpxy_clients"),
 		"-M", nvram_safe_get("udpxy_renew_period")
 		);
+#endif
 }
 
 #if defined(APP_XUPNPD)
@@ -381,7 +411,7 @@ start_xupnpd(char *wan_ifname)
 void
 stop_igmpproxy(char *wan_ifname)
 {
-	char *svcs[] = { "xupnpd", "udpxy", "igmpproxy", NULL };
+	char *svcs[] = { "xupnpd", "udpxy", "msd_lite", "igmpproxy", NULL };
 
 	/* check used IPTV via VLAN interface */
 	if (wan_ifname) {

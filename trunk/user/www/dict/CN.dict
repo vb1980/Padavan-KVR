@@ -256,8 +256,8 @@ Adm_System_https_wopen=允许外网访问 HTTPS 管理
 Adm_System_https_wport=外网 HTTPS 访问 Web 服务端口:
 Adm_System_https_certs=Web 服务器 HTTPS 证书
 Adm_System_https_query=确定要创建新的 HTTPS 服务证书?\n\n注意:\n-这将会覆盖原证书。
-Adm_System_udpxy_wopen=允许外网访问 UDPXY 代理
-Adm_System_udpxy_wport=外网 UDP-HTTP 代理端口 (UDPXY):
+Adm_System_udpxy_wopen=允许外网访问 IPTV 代理
+Adm_System_udpxy_wport=外网 UDP-HTTP 代理端口 (IPTV):
 Adm_System_ntpp=NTP 同步周期:
 Adm_Access_WAN=外网访问设置
 LAN_STP=启用生成树协议 (STP)
@@ -554,7 +554,7 @@ PrinterStatus_x_Monopoly_itemdesc=开启独占模式可临时创建到路由器�
 Switch_band=切换频段
 Current_band=当前频率
 LANHostConfig_DomainName_itemdesc2=只能包含英文字母、数字、破折号!
-RouterConfig_IPTV_itemname=UDP 代理 (Udpxy)
+RouterConfig_IPTV_itemname=UDP 代理 (MSD_LITE)
 RHELP_desc9=输入 0 以禁用此功能。
 WLANConfig11b_TxPower_itemname=发射功率调整 (%):
 WLANConfig11b_TxPower_itemdesc=调整天线功率以增强无线质量。
@@ -1902,5 +1902,3 @@ Login=登录
 BTN_SHUTDOWN=关机
 JS_shutdown=关机后需要手动断电并重新接电才能启动路由!!!\n确定要关机吗？
 BTN_FREEMEMORY=清理内存
-
-

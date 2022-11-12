@@ -129,7 +129,9 @@ dir_y							+= inadyn
 dir_y							+= miniupnpd
 dir_y							+= dnsmasq
 dir_y							+= igmpproxy
-dir_y							+= udpxy
+ifneq ($(CONFIG_FIRMWARE_INCLUDE_MSD_LITE),y)
+dir_y						        += udpxy
+endif
 dir_y							+= utils
 dir_y							+= lanauth
 dir_y							+= 802.1x
@@ -200,6 +202,7 @@ dir_$(CONFIG_FIRMWARE_INCLUDE_WING) 			+= wing
 dir_$(CONFIG_FIRMWARE_INCLUDE_WING) 			+= ipt2socks
 dir_$(CONFIG_FIRMWARE_INCLUDE_REDSOCKS)			+= redsocks
 dir_$(CONFIG_FIRMWARE_INCLUDE_3PROXY)			+= 3proxy
+dir_$(CONFIG_FIRMWARE_INCLUDE_MSD_LITE)		        += msd_lite
 
 ifdef CONFIG_BLK_DEV_SD
 dir_$(CONFIG_FIRMWARE_INCLUDE_HDPARM)			+= hdparm
